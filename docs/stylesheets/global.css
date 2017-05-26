@@ -100,6 +100,14 @@ body {
 	padding: 25px;
 	position: fixed;
 	bottom: 70px;
+
+}
+
+.face-page__title p {
+	-webkit-transition: .5s ease-in-out;
+	-moz-transition: .5s ease-in-out;
+	-o-transition: .5s ease-in-out;
+	transition: .5s ease-in-out;
 }
 
 .face-page__title h1 {
@@ -109,6 +117,10 @@ body {
 	line-height: 130px;	
 	text-transform: uppercase;
 	margin-bottom: 0px;
+	-webkit-transition: .5s ease-in-out;
+	-moz-transition: .5s ease-in-out;
+	-o-transition: .5s ease-in-out;
+	transition: .5s ease-in-out;
 }
 
 .face-page__title h2 {
@@ -118,13 +130,27 @@ body {
 	line-height: 40px;
 	text-transform: uppercase;
 	margin-top: 0px;
+	-webkit-transition: .5s ease-in-out;
+	-moz-transition: .5s ease-in-out;
+	-o-transition: .5s ease-in-out;
+	transition: .5s ease-in-out;
+}
+
+.face-page__title.open h1,
+.face-page__title.open h2,
+.face-page__title.open p {
+	color: #313A54;
+	-webkit-transition: .5s ease-in-out;
+	-moz-transition: .5s ease-in-out;
+	-o-transition: .5s ease-in-out;
+	transition: .5s ease-in-out;
 }
 
 .footer {
 	padding: 21px;
 	font-size: 1.5rem;
+	/* background-color: #313A54; */
 	/* background-color: #E94E53; */
-	background-color: #313A54;
 	position: absolute;
 	width: 100%;
 	bottom: 0;

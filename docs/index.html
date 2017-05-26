@@ -53,6 +53,7 @@
 	<div class="face-page container-fluid">
 		<div class="header row">
 			<div class="header__logo col-xs-2">
+				<!-- svg для фейда нужно сделать-->
 				<img src="files/logo.png" alt="">
 			</div>
 			<div class="header__menu-button col-xs-offset-9 col-xs-1">
@@ -75,6 +76,7 @@
 
 		<div class="footer row">
 			<div class="col-xs-4">
+				<!-- svg для фейда нужно сделать-->
 				<a href="""><img src="files/FB.png" alt=""></a>
 				<a href="""><img src="files/VK.png" alt=""></a>
 			</div>
@@ -98,10 +100,12 @@
 		$(".header__menu-button_icon").click(function(){
 			if(slide) {
 				$(this).removeClass('open');
+				$(".face-page__title").removeClass('open');
 		        $(".object__menu-slide-box").animate({right: '-39vw'}, 600);
 		        slide = false;
 		    } else {
 		    	$(this).toggleClass('open');
+		    	$(".face-page__title").toggleClass('open');
 		        $(".object__menu-slide-box").animate({right: '0vw'}, 600);
 		        slide = true;
 		    }
