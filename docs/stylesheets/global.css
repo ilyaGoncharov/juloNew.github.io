@@ -29,7 +29,7 @@ body {
  
 .object__background-image {
 	background-color: #313A54;
-	background-image: url("../files/mainPhoto.jpg");
+	background-image: url("../files/jpg/photo.jpg");
 	background-size: cover;
 	height: 100vh;
 	position: fixed;
@@ -40,6 +40,20 @@ body {
 	background-blend-mode: multiply;
 	filter: blur(3px) ;
 	-webkit-filter: blur(3px);
+	-webkit-transition: .5s ease-in-out;
+	-moz-transition: .5s ease-in-out;
+	-o-transition: .5s ease-in-out;
+	transition: .5s ease-in-out;
+}
+
+.object__background-image.open {
+	opacity: .3;
+	filter: blur(4px) ;
+	-webkit-filter: blur(4px)
+	-webkit-transition: .5s ease-in-out;
+	-moz-transition: .5s ease-in-out;
+	-o-transition: .5s ease-in-out;
+	transition: .5s ease-in-out;
 }
 
 .object__menu-slide-box {
@@ -86,8 +100,17 @@ body {
 }
 
 .header__logo img {
+	display: block;
 	height: 28px;
 	float: left;
+}
+
+.header__logo img.hidden {
+	display: none;
+}
+
+.logo-dark {
+	display: none;
 }
 
 .header__menu-button {
@@ -158,10 +181,39 @@ body {
 }
 
 .footer img {
+	display: inline-block;
 	height: 28px;
+	width: 28px;
 	margin-left: 5px;
 	margin-right: 25px;
+	opacity: .9;
 }
+
+img.hidden, 
+img.hidden {
+	display: none;
+}
+
+
+
+
+
+/* .fb {
+	background-image: url("../files/svg/FB.svg");
+}
+
+.fb.open {
+	background-image: url("../files/svg/FB-dark.svg");
+}
+
+.vk {
+	background-image: url("../files/svg/VK.svg");
+}
+
+.vk.open {
+	background-image: url("../files/svg/VK-dark.svg");
+} */
+
 
 .footer__contacts {
 	text-align: right;
