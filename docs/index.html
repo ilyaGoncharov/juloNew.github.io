@@ -55,7 +55,7 @@
 	</div>
 	<div class="object__contact-form">
 		<img class="object__contact-form_logo coverup" src="files/png/logo.png" alt="">
-		<form id="form" class="object__contact-form_box" action="//forms.brace.io/karnebero@gmail.com" method="post">
+		<form id="form" class="object__contact-form_box" action="//formspree.io/karnebero@gmail.com" method="post">
 			<input type="text" id="name" placeholder="Имя" required/>
 			<input type="text" id="company" placeholder="Компания" required/>
 			<textarea cols="30" rows="6" id="message" placeholder="Сообщение" required></textarea>
@@ -157,20 +157,20 @@
 	contactForm.submit(function(e) {
 		e.preventDefault();
 		$.ajax({
-			url: '//forms.brace.io/karnebero@gmail.com',
+			url: '//formspree.io/karnebero@gmail.com',
 			method: 'POST',
 			data: $(this).serialize(),
 			dataType: 'json',
 			beforeSend: function() {
-				contactForm.append('<div class="alert alert--loading">Sending message…</div>');
+				contactForm.append('<div class="alert alert--loading">Отправляю...</div>');
 			},
 			success: function(data) {
 				contactForm.find('.alert--loading').hide();
-				contactForm.append('<div class="alert alert--success">Message sent!</div>');
+				contactForm.append('<div class="alert alert--success">Отправлено!</div>');
 			},
 			error: function(err) {
 				contactForm.find('.alert--loading').hide();
-				contactForm.append('<div class="alert alert--error">Ops, there was an error.</div>');
+				contactForm.append('<div class="alert alert--error">Упс, возникли какие-то проблемы...</div>');
 			}
 		});
 	});
