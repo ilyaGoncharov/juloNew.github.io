@@ -60,7 +60,7 @@
 			<input type="text" id="company" placeholder="Компания" required/>
 			<textarea cols="30" rows="6" id="message" placeholder="Сообщение" required></textarea>
 			<input type="text" id="email" placeholder="Email" required/>	
-			<input class="object__contact-form_box-button" type="button" type="submit" value="Отправить" />
+			<input class="object__contact-form_box-button" type="submit" value="Отправить" />
 			<input class="object__contact-form_box-hidden" type="text" name="_gotcha">
 		</form>
 	</div>
@@ -153,8 +153,8 @@
 		});
 	});
 
-	var $contactForm = $('#form');
-	$contactForm.submit(function(e) {
+	var contactForm = $("#form");
+	contactForm.submit(function(e) {
 		e.preventDefault();
 		$.ajax({
 			url: '//forms.brace.io/karnebero@gmail.com',
@@ -162,15 +162,15 @@
 			data: $(this).serialize(),
 			dataType: 'json',
 			beforeSend: function() {
-				$contactForm.append('<div class="alert alert--loading">Sending message…</div>');
+				contactForm.append('<div class="alert alert--loading">Sending message…</div>');
 			},
 			success: function(data) {
-				$contactForm.find('.alert--loading').hide();
-				$contactForm.append('<div class="alert alert--success">Message sent!</div>');
+				contactForm.find('.alert--loading').hide();
+				contactForm.append('<div class="alert alert--success">Message sent!</div>');
 			},
 			error: function(err) {
-				$contactForm.find('.alert--loading').hide();
-				$contactForm.append('<div class="alert alert--error">Ops, there was an error.</div>');
+				contactForm.find('.alert--loading').hide();
+				contactForm.append('<div class="alert alert--error">Ops, there was an error.</div>');
 			}
 		});
 	});
