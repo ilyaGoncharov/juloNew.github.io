@@ -48,16 +48,22 @@
 		<ul>
             <li class="object__menu-slide-box_element"><a href="#">Портфолио</a></li>
             <li class="object__menu-slide-box_menu-element"><a href="#">Команда</a></li>
-            <li class="object__menu-slide-box_menu-element"><a href="#">Связь</a></li>
+            <li class="object__menu-slide-box_menu-element"> 
+            	<a href="#" class="object__contact-form_activator">Связь</a>
+            </li> 
         </ul>
 	</div>
-	<!-- <div class="object__contact-form">
-		<ul>
-            <li class="object__menu-slide-box_element"><a href="#">Портфолио</a></li>
-            <li class="object__menu-slide-box_menu-element"><a href="#">Команда</a></li>
-            <li class="object__menu-slide-box_menu-element"><a href="#">Связь</a></li>
-        </ul>
-	</div> -->
+	<div class="object__contact-form">
+		<img class="object__contact-form_logo coverup" src="files/png/logo.png" alt="">
+		<form id="form" class="object__contact-form_box">
+			<!-- <p id="returnmessage"></p> -->
+			<input type="text" id="name" placeholder="Имя"/>
+			<input type="text" id="company" placeholder="Компания"/>
+			<textarea id="message" placeholder="Сообщение"></textarea>
+			<input type="text" id="email" placeholder="Email"/>
+			<input type="button" id="submit" value="Отправить" class="object__contact-form_box-button"/>
+		</form>
+	</div>
 	<div class="face-page container-fluid">
 		<div class="header row">
 			<div class="header__logo col-xs-2">
@@ -65,7 +71,7 @@
 				<!-- <object type="image/svg+xml" data="files/svg/logo.svg" class="logo">
 				</object> -->
 				<img class="logo" src="files/png/logo.png" alt="">
-				<img class="logo-dark hidden" src="files/png/logo-dark.png" alt="">
+				<img class="logo-dark coverup" src="files/png/logo-dark.png" alt="">
 			</div>
 			<div class="header__menu-button col-xs-offset-9 col-xs-1">
 				<div class="header__menu-button_icon">
@@ -76,7 +82,6 @@
 				</div>
 			</div>	
 		</div>
-
 		<div class="face-page__title row">
 			<div class="col-xs-6">
 				<h1>julo</h1>
@@ -84,7 +89,6 @@
 				<p>Душа моя озарена неземной радостью, как эти чудесные весенние утра, которыми я наслаждаюсь от всего сердца.</p>
 			</div>
 		</div>
-
 		<div class="footer row">
 			<div class="footer__link-modul col-xs-5">
 				<a class="footer__link-modul-icon" href=""">
@@ -92,11 +96,11 @@
 					<!-- <object type="image/svg+xml" data="files/svg/FB.svg" class="logo">
 					</object> -->
 					<img class="fb" src="files/png/FB.png" alt="">
-					<img class="fb-dark hidden" src="files/png/FB-dark.png" alt="">
+					<img class="fb-dark coverup" src="files/png/FB-dark.png" alt="">
 				</a>
 				<a class="footer__link-modul-icon" href=""">
 					<img class="vk" src="files/png/VK.png" alt=""> 
-					<img class="vk-dark hidden" src="files/png/VK-dark.png" alt="">
+					<img class="vk-dark coverup" src="files/png/VK-dark.png" alt="">
 				</a>
 			</div>
 			<div class="footer__contacts col-xs-offset-2 col-xs-5">
@@ -115,27 +119,60 @@
 
 <script type="text/javascript">
 	$(document).ready(function(){
-		var slide = false;
+		var slideMenu = false;
+		var slideForm = false;
+		$( ".object__contact-form_activator" ).click(function() {
+			if(slideForm) {
+				$(".object__contact-form").animate({left: '-61vw'}, 600);
+				$(".object__contact-form_logo").toggleClass('coverup');
+		        slideForm = false;
+		    } else {
+		    	$(".object__contact-form").animate({left: '0vw'}, 600);
+		    	$(".object__contact-form_logo").removeClass('coverup');
+		        slideForm = true;
+		    }	
+		});
 		$(".header__menu-button_icon").click(function(){
-			if(slide) {
+			if(slideMenu) {
 				$(this).removeClass('open');
 		        $(".object__menu-slide-box").animate({right: '-39vw'}, 600);
-		        $(".face-page__title, .object__background-image").removeClass('open');
-		        $(".logo-dark, .fb-dark, .vk-dark").toggleClass('hidden');
-		        $(".logo, .fb, .vk").removeClass('hidden');
-		       /* $( "#contact" ).click(function() {
-				  alert( "Handler for .click() called." );
-				});*/
-		        slide = false;
+		        $(".face-page__title, .object__background-image, .footer__contacts").removeClass('open');
+		        $(".logo-dark, .fb-dark, .vk-dark").toggleClass('coverup');
+		        $(".logo, .fb, .vk").removeClass('coverup');
+		        $(".object__contact-form").animate({left: '-61vw'}, 600);
+		        $(".object__contact-form_logo").toggleClass('coverup');
+		        slideForm = false;
+		        slideMenu = false;
 		    } else {
 		    	$(this).toggleClass('open');
 		        $(".object__menu-slide-box").animate({right: '0vw'}, 600);
-		        $(".face-page__title, .object__background-image").toggleClass('open');
-		        $(".st0").toggleClass('open');
-		        $(".logo, .fb, .vk").toggleClass('hidden');
-		        $(".logo-dark, .fb-dark, .vk-dark").removeClass('hidden');
-		        slide = true;
+		        $(".face-page__title, .object__background-image, .footer__contacts").toggleClass('open');
+		        $(".logo, .fb, .vk").toggleClass('coverup');
+		        $(".logo-dark, .fb-dark, .vk-dark").removeClass('coverup');
+		        slideMenu = true;
 		    }
+		});
+		$("#submit").click(function() {
+			var name = $("#name").val();
+			var email = $("#company").val();
+			var message = $("#message").val();
+			var contact = $("#email").val();
+			if (name == '' || email == '' || contact == '') {
+			alert("Нужо теперь галочки крестики сделать");
+			} else {
+			$.post('php/contact_form.php', {
+			name1: name,
+			email1: email,
+			message1: message,
+			company1: contact
+			}, function(data) {
+				/*$("#returnmessage").append(data);*/ // Append returned message to message paragraph.
+			if (data == "???") {
+				/*$("#form")[0].reset();*/ // To reset form fields on success.
+				/*Галочка + сообщение отправлено на кнопке*/
+			}
+			});
+			}
 		});
 	});
 
