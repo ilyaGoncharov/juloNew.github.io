@@ -172,6 +172,10 @@ body {
 	background-color: #E94E53;
 }
 
+.object__contact-form_box-hidden {
+	display: none !important;
+}
+
 .header {
 	height: 100px;
 	padding: 25px;

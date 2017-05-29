@@ -55,13 +55,13 @@
 	</div>
 	<div class="object__contact-form">
 		<img class="object__contact-form_logo coverup" src="files/png/logo.png" alt="">
-		<form id="form" class="object__contact-form_box">
-			<!-- <p id="returnmessage"></p> -->
-			<input type="text" id="name" placeholder="Имя"/>
-			<input type="text" id="company" placeholder="Компания"/>
-			<textarea id="message" placeholder="Сообщение"></textarea>
-			<input type="text" id="email" placeholder="Email"/>
-			<input type="button" id="submit" value="Отправить" class="object__contact-form_box-button"/>
+		<form id="form" class="object__contact-form_box" action="//forms.brace.io/karnebero@gmail.com" method="post">
+			<input type="text" id="name" placeholder="Имя" required/>
+			<input type="text" id="company" placeholder="Компания" required/>
+			<textarea cols="30" rows="6" id="message" placeholder="Сообщение" required></textarea>
+			<input type="text" id="email" placeholder="Email" required/>	
+			<input class="object__contact-form_box-button" type="button" type="submit" value="Отправить" />
+			<input class="object__contact-form_box-hidden" type="text" name="_gotcha">
 		</form>
 	</div>
 	<div class="face-page container-fluid">
@@ -137,10 +137,9 @@
 				$(this).removeClass('open');
 		        $(".object__menu-slide-box").animate({right: '-39vw'}, 600);
 		        $(".face-page__title, .object__background-image, .footer__contacts").removeClass('open');
-		        $(".logo-dark, .fb-dark, .vk-dark").toggleClass('coverup');
+		        $(".logo-dark, .fb-dark, .vk-dark, .object__contact-form_logo").toggleClass('coverup');
 		        $(".logo, .fb, .vk").removeClass('coverup');
 		        $(".object__contact-form").animate({left: '-61vw'}, 600);
-		        $(".object__contact-form_logo").toggleClass('coverup');
 		        slideForm = false;
 		        slideMenu = false;
 		    } else {
@@ -152,26 +151,26 @@
 		        slideMenu = true;
 		    }
 		});
-		$("#submit").click(function() {
-			var name = $("#name").val();
-			var email = $("#company").val();
-			var message = $("#message").val();
-			var contact = $("#email").val();
-			if (name == '' || email == '' || contact == '') {
-			alert("Нужо теперь галочки крестики сделать");
-			} else {
-			$.post('php/contact_form.php', {
-			name1: name,
-			email1: email,
-			message1: message,
-			company1: contact
-			}, function(data) {
-				/*$("#returnmessage").append(data);*/ // Append returned message to message paragraph.
-			if (data == "???") {
-				/*$("#form")[0].reset();*/ // To reset form fields on success.
-				/*Галочка + сообщение отправлено на кнопке*/
-			}
-			});
+	});
+
+	var $contactForm = $('#form');
+	$contactForm.submit(function(e) {
+		e.preventDefault();
+		$.ajax({
+			url: '//forms.brace.io/karnebero@gmail.com',
+			method: 'POST',
+			data: $(this).serialize(),
+			dataType: 'json',
+			beforeSend: function() {
+				$contactForm.append('<div class="alert alert--loading">Sending message…</div>');
+			},
+			success: function(data) {
+				$contactForm.find('.alert--loading').hide();
+				$contactForm.append('<div class="alert alert--success">Message sent!</div>');
+			},
+			error: function(err) {
+				$contactForm.find('.alert--loading').hide();
+				$contactForm.append('<div class="alert alert--error">Ops, there was an error.</div>');
 			}
 		});
 	});
