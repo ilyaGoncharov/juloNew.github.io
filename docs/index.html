@@ -39,16 +39,6 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 
-
-<script
-  src="https://code.jquery.com/jquery-3.2.1.min.js"
-  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-  crossorigin="anonymous">
-</script>
-
-<script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.js"></script>
-<script src="http://malsup.github.com/jquery.form.js"></script>
-
 </head>
 <body> 
 	<div class="object__background-image"></div>
@@ -63,14 +53,36 @@
 	</div>
 	<div class="object__contact-form">
 		<img class="object__contact-form_logo coverup" src="files/png/logo.png" alt="">
-		<form id="form" class="object__contact-form_box" method="post" >
+
+		<form id="ajax-contact" method="post" action="sender.php">
+		    <div class="field">
+		        <label for="name">Name:</label>
+		        <input type="text" id="name" name="name" required>
+		    </div>
+
+		    <div class="field">
+		        <label for="email">Email:</label>
+		        <input type="email" id="email" name="email" required>
+		    </div>
+
+		    <div class="field">
+		        <label for="message">Message:</label>
+		        <textarea id="message" name="message" required></textarea>
+		    </div>
+
+		    <div class="field">
+		        <button type="submit">Send</button>
+		    </div>
+		</form>
+<!-- 
+		<form id="form" class="object__contact-form_box" method="post" action="php/sender.php">
 			<input type="text" id="name" placeholder="Имя"/>
 			<input type="text" id="company" placeholder="Компания"/>
 			<textarea  id="message"  maxlength="220" placeholder="Сообщение"></textarea>
 			<input type="text" id="email" placeholder="Email"/>	
 			<input type="submit" id="submitForm" class="object__contact-form_box-button" value="Отправить"/>
 			<div id="form-messages"></div>
-		</form>
+		</form> -->
 	</div>
 	<div class="face-page container-fluid">
 		<div class="header row">
@@ -117,59 +129,69 @@
 			</div>
 		</div>
 	</div>
+
+	<script
+	  src="https://code.jquery.com/jquery-3.2.1.min.js"
+	  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+	  crossorigin="anonymous">
+	</script>
+
+	<script type="text/javascript" src="js/contact-form.js"></script>
+
+	<script type="text/javascript">
+		$(document).ready(function(){
+			var slideMenu = false;
+			var slideForm = false;
+			$( ".object__contact-form_activator" ).click(function() {
+				if(slideForm) {
+					$(".object__contact-form").animate({left: '-61vw'}, 600);
+					$(".object__contact-form_logo").toggleClass('coverup');
+			        slideForm = false;
+			    } else {
+			    	$(".object__contact-form").animate({left: '0vw'}, 600);
+			    	$(".object__contact-form_logo").removeClass('coverup');
+			        slideForm = true;
+			    }	
+			});
+			$(".header__menu-button_icon").click(function(){
+				if(slideMenu) {
+					$(this).removeClass('open');
+			        $(".face-page__title, .object__background-image, .footer__contacts").removeClass('open');
+			        $(".logo-dark, .fb-dark, .vk-dark, .object__contact-form_logo").toggleClass('coverup');
+			        $(".logo, .fb, .vk").removeClass('coverup');
+			        $(".object__menu-slide-box").animate({right: '-39vw'}, 600);
+			        $(".object__contact-form").animate({left: '-61vw'}, 600);
+			        slideForm = false;
+			        slideMenu = false;
+			    } else {
+			    	$(this).toggleClass('open');
+			        $(".object__menu-slide-box").animate({right: '0vw'}, 600);
+			        $(".face-page__title, .object__background-image, .footer__contacts").toggleClass('open');
+			        $(".logo, .fb, .vk").toggleClass('coverup');
+			        $(".logo-dark, .fb-dark, .vk-dark").removeClass('coverup');
+			        slideMenu = true;
+			    }
+			});
+		});
+
+		/*window.onload = function() {
+			var a = screen.availHeight;
+			var b = document.getElementById('frame').clientHeight;
+			console.log(a + b);
+		};*/
+
+		/*if (screen.availHeight == 775) {
+			document.body.style.background="red";
+		} 
+		else {
+			document.body.style.background="green"; 
+		}*/
+	</script>
+
+	<!-- <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.js"></script>
+	<script src="http://malsup.github.com/jquery.form.js"></script>
+ -->
+
 </body>
-
-<script type="text/javascript" src="js/contact-form.js"></script>
-
-<script type="text/javascript">
-	$(document).ready(function(){
-		var slideMenu = false;
-		var slideForm = false;
-		$( ".object__contact-form_activator" ).click(function() {
-			if(slideForm) {
-				$(".object__contact-form").animate({left: '-61vw'}, 600);
-				$(".object__contact-form_logo").toggleClass('coverup');
-		        slideForm = false;
-		    } else {
-		    	$(".object__contact-form").animate({left: '0vw'}, 600);
-		    	$(".object__contact-form_logo").removeClass('coverup');
-		        slideForm = true;
-		    }	
-		});
-		$(".header__menu-button_icon").click(function(){
-			if(slideMenu) {
-				$(this).removeClass('open');
-		        $(".face-page__title, .object__background-image, .footer__contacts").removeClass('open');
-		        $(".logo-dark, .fb-dark, .vk-dark, .object__contact-form_logo").toggleClass('coverup');
-		        $(".logo, .fb, .vk").removeClass('coverup');
-		        $(".object__menu-slide-box").animate({right: '-39vw'}, 600);
-		        $(".object__contact-form").animate({left: '-61vw'}, 600);
-		        slideForm = false;
-		        slideMenu = false;
-		    } else {
-		    	$(this).toggleClass('open');
-		        $(".object__menu-slide-box").animate({right: '0vw'}, 600);
-		        $(".face-page__title, .object__background-image, .footer__contacts").toggleClass('open');
-		        $(".logo, .fb, .vk").toggleClass('coverup');
-		        $(".logo-dark, .fb-dark, .vk-dark").removeClass('coverup');
-		        slideMenu = true;
-		    }
-		});
-	});
-
-	/*window.onload = function() {
-		var a = screen.availHeight;
-		var b = document.getElementById('frame').clientHeight;
-		console.log(a + b);
-	};*/
-
-	/*if (screen.availHeight == 775) {
-		document.body.style.background="red";
-	} 
-	else {
-		document.body.style.background="green"; 
-	}*/
-
-</script>
 
 </html>
