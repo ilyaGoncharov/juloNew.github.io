@@ -2,7 +2,7 @@
 <html lang="ru" class="no-js">
 <head>
 	<title>Julo - Главная</title>
-	<!-- meta -->
+		<!-- meta -->
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -21,10 +21,10 @@
 	<meta name="og:site_name" content="Julo - digital-agency">
 	<meta name="og:locale" content="ru_RU">
 	<meta name="og:type" content="website">
-	<!-- icons -->
+		<!-- icons -->
 	<link rel="icon" type="image/png" href="files/png/logo.png" sizes="16x16"/>
     <link rel="icon" type="image/png" href="files/png/logo.png" sizes="32x32"/>
-	<!-- styles -->
+		<!-- styles -->
 	<link rel="stylesheet" type="text/css" href="stylesheets/button.css" media="screen">
 	<link rel="stylesheet" type="text/css" href="stylesheets/bootstrap.min.css" media="screen">
 	<link rel="stylesheet" type="text/css" href="stylesheets/global.css" media="screen">
@@ -38,9 +38,6 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
-    <!-- head scripts -->
-    <script type="text/javascript" src="js/modernizr-custom.js"></script>
-
 </head>
 <body> 
 	<div class="object__background-image"></div>
@@ -55,13 +52,13 @@
 	</div>
 	<div class="object__contact-form">
 		<img class="object__contact-form_logo coverup" src="files/png/logo.png" alt="">
-		<form id="form" class="object__contact-form_box" action="//formspree.io/karnebero@gmail.com"  method="POST">
-			<input type="text" id="name" placeholder="Имя" required/>
-			<input type="text" id="company" placeholder="Компания" required/>
-			<textarea cols="30" rows="6" id="message" placeholder="Сообщение" required></textarea>
-			<input type="text" id="email" placeholder="Email" required/>	
-			<input class="object__contact-form_box-button" type="submit" value="Отправить" />
-			<input class="object__contact-form_box-hidden" type="text" name="_gotcha">
+		<form id="form" class="object__contact-form_box" method="post" action="php/mailer.php">
+			<input type="text" id="name" placeholder="Имя"/>
+			<input type="text" id="company" placeholder="Компания"/>
+			<textarea  id="message"  maxlength="220" placeholder="Сообщение"></textarea>
+			<input type="text" id="email" placeholder="Email"/>	
+			<input type="submit" id="submitForm" class="object__contact-form_box-button" value="Отправить"/>
+			<div id="form-messages"></div>
 		</form>
 	</div>
 	<div class="face-page container-fluid">
@@ -117,6 +114,8 @@
   crossorigin="anonymous">
 </script>
 
+<script type="text/javascript" src="js/contact-form.js"></script>
+
 <script type="text/javascript">
 	$(document).ready(function(){
 		var slideMenu = false;
@@ -135,10 +134,10 @@
 		$(".header__menu-button_icon").click(function(){
 			if(slideMenu) {
 				$(this).removeClass('open');
-		        $(".object__menu-slide-box").animate({right: '-39vw'}, 600);
 		        $(".face-page__title, .object__background-image, .footer__contacts").removeClass('open');
 		        $(".logo-dark, .fb-dark, .vk-dark, .object__contact-form_logo").toggleClass('coverup');
 		        $(".logo, .fb, .vk").removeClass('coverup');
+		        $(".object__menu-slide-box").animate({right: '-39vw'}, 600);
 		        $(".object__contact-form").animate({left: '-61vw'}, 600);
 		        slideForm = false;
 		        slideMenu = false;
@@ -152,29 +151,6 @@
 		    }
 		});
 	});
-
-	var contactForm = $("#form");
-	contactForm.submit(function(e) {
-		e.preventDefault();
-		$.ajax({
-			url: '//formspree.io/karnebero@gmail.com',
-			method: 'POST',
-			data: $(this).serialize(),
-			dataType: 'json',
-			beforeSend: function() {
-				contactForm.append('<div class="alert alert--loading">Отправляю...</div>');
-			},
-			success: function(data) {
-				contactForm.find('.alert--loading').hide();
-				contactForm.append('<div class="alert alert--success">Отправлено!</div>');
-			},
-			error: function(err) {
-				contactForm.find('.alert--loading').hide();
-				contactForm.append('<div class="alert alert--error">Упс, возникли какие-то проблемы...</div>');
-			}
-		});
-	});
-
 	/*window.onload = function() {
 		var a = screen.availHeight;
 		var b = document.getElementById('frame').clientHeight;
@@ -188,4 +164,5 @@
 		document.body.style.background="green"; 
 	}*/
 </script>
+
 </html>

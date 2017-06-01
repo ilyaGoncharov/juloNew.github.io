@@ -149,6 +149,7 @@ body {
 .object__contact-form_box input,
 .object__contact-form_box textarea  {
 	display: block;
+	resize: none;
 	/* background-color: #191A26; */
 	background-color: #1F212F;
 	border: none;
@@ -168,8 +169,8 @@ body {
 	height: 160px;
 }
 
-.object__contact-form_box input:nth-child(5) {
-	background-color: #E94E53;
+.object__contact-form_box-button {
+	background-color: #E94E53 !important;
 }
 
 .object__contact-form_box-hidden {
