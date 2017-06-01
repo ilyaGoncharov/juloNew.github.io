@@ -1,60 +1,62 @@
-$(document).ready(function() {
-	/*$("#submitForm").click(function() {
-		console.log("пппп");
-	});*/
+jQuery.validator.addMethod('answercheck', function (value, element) {
+        return this.optional(element) || /^\bcat\b$/.test(value);
+    }, "type the correct answer -_-");
 
-	// Get the messages div.
-    /*Эти блоки можно будет потом наделить способностью показывать галочки/крестики*/
-    var formMessages = $('#form-messages');
-
-	// Get the form.
-    var form = $('#form');
-    
-	// Set up an event listener for the contact form.
-    $(form).submit(function(e) {
-
-        // Stop the browser from submitting the form.
-        e.preventDefault();    
-
-		// Serialize the form data.
-        var formData = $(form).serialize();
-
-        console.log($(this).serialize());
-
-        // Submit the form using AJAX.
-        $.ajax({
-            type: 'POST',
-            url: $(form).attr('action'),
-            data: formData
-        })
-
-        .done(function(response) {
-            // Make sure that the formMessages div has the 'success' class.
-            $(formMessages).removeClass('error');
-            $(formMessages).addClass('success');
-
-            // Set the message text.
-            $(formMessages).text(response);
-
-            // Clear the form.
-            $('#name').val('');
-            $('#email').val('');
-            $('#message').val('');
-            $('#contact').val('');
-        })
-
-        .fail(function(data) {
-            // Make sure that the formMessages div has the 'error' class.
-            $(formMessages).removeClass('success');
-            $(formMessages).addClass('error');
-
-            // Set the message text.
-            if (data.responseText !== '') {
-                $(formMessages).text(data.responseText);
-            } else {
-                $(formMessages).text('Oops! An error occured and your message could not be sent.');
+// validate contact form
+$(function() {
+    $('#form').validate({
+        rules: {
+            name: {
+                required: true,
+                minlength: 2
+            },
+            email: {
+                required: true,
+                email: true
+            },
+            message: {
+                required: true
+            },
+            answer: {
+                required: true,
+                answercheck: true
             }
-        });
-    }); 
+        },
+        messages: {
+            name: {
+                required: "come on, you have a name don't you?",
+                minlength: "your name must consist of at least 2 characters"
+            },
+            email: {
+                required: "no email, no message"
+            },
+            message: {
+                required: "um...yea, you have to write something to send this form.",
+                minlength: "thats all? really?"
+            },
+            answer: {
+                required: "sorry, wrong answer!"
+            }
+        },
+        submitHandler: function(form) {
+            $(form).ajaxSubmit({
+                type:"POST",
+                data: $(form).serialize(),
+                url:"php/sender.php",
+                success: function() {
+                    $('#form :input').attr('disabled', 'disabled');
+                    $('#form').fadeTo( "slow", 0.15, function() {
+                        $(this).find(':input').attr('disabled', 'disabled');
+                        $(this).find('label').css('cursor','default');
+                        $('#success').fadeIn();
+                    });
+                },
+                error: function() {
+                    $('#form').fadeTo( "slow", 0.15, function() {
+                        $('#error').fadeIn();
+                    });
+                }
+            });
+        }
+    });
 });
-
