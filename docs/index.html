@@ -28,6 +28,7 @@
 	<link rel="stylesheet" type="text/css" href="stylesheets/button.css" media="screen">
 	<link rel="stylesheet" type="text/css" href="stylesheets/bootstrap.min.css" media="screen">
 	<link rel="stylesheet" type="text/css" href="stylesheets/global.css" media="screen">
+	<link rel="stylesheet" type="text/css" href="stylesheets/queries.css" media="screen">
 	<!--[if lt IE 7]>
         <p class="browsehappy">Вы используете <strong> очень устаревшую </strong> версию браузера. Пожалуйста <a href="http://browsehappy.com/"> обновите его</a>, чтобы улучшить свою производительность в сети</p>
     <![endif]-->
@@ -53,36 +54,15 @@
 	</div>
 	<div class="object__contact-form">
 		<img class="object__contact-form_logo coverup" src="files/png/logo.png" alt="">
-
-		<form id="ajax-contact" method="post" action="sender.php">
-		    <div class="field">
-		        <label for="name">Name:</label>
-		        <input type="text" id="name" name="name" required>
-		    </div>
-
-		    <div class="field">
-		        <label for="email">Email:</label>
-		        <input type="email" id="email" name="email" required>
-		    </div>
-
-		    <div class="field">
-		        <label for="message">Message:</label>
-		        <textarea id="message" name="message" required></textarea>
-		    </div>
-
-		    <div class="field">
-		        <button type="submit">Send</button>
-		    </div>
-		</form>
-<!-- 
-		<form id="form" class="object__contact-form_box" method="post" action="php/sender.php">
-			<input type="text" id="name" placeholder="Имя"/>
-			<input type="text" id="company" placeholder="Компания"/>
-			<textarea  id="message"  maxlength="220" placeholder="Сообщение"></textarea>
-			<input type="text" id="email" placeholder="Email"/>	
+	
+		<form id="form" class="object__contact-form_box" action="https://formspree.io/karnebero@gmail.com"
+      method="POST">
+			<input type="text" id="name" name="name" placeholder="Имя"/>
+			<input type="text" id="company" name="company" placeholder="Компания"/>
+			<textarea  id="message"  maxlength="220" name="message" placeholder="Сообщение"></textarea>
+			<input type="text" id="email" name="email" placeholder="Email"/>	
 			<input type="submit" id="submitForm" class="object__contact-form_box-button" value="Отправить"/>
-			<div id="form-messages"></div>
-		</form> -->
+		</form>
 	</div>
 	<div class="face-page container-fluid">
 		<div class="header row">
@@ -129,17 +109,12 @@
 			</div>
 		</div>
 	</div>
-
+</body>
 	<script
-	  src="https://code.jquery.com/jquery-3.2.1.min.js"
-	  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-	  crossorigin="anonymous">
-	</script>
-
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.form/4.2.1/jquery.form.js">
-	</script>
-
-	<script type="text/javascript" src="js/contact-form.js"></script>
+		  src="https://code.jquery.com/jquery-2.2.4.js"
+		  integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="
+		  crossorigin="anonymous">
+    </script>
 
 	<script type="text/javascript">
 		$(document).ready(function(){
@@ -156,6 +131,7 @@
 			        slideForm = true;
 			    }	
 			});
+
 			$(".header__menu-button_icon").click(function(){
 				if(slideMenu) {
 					$(this).removeClass('open');
@@ -190,5 +166,4 @@
 			document.body.style.background="green"; 
 		}*/
 	</script>
-</body>
 </html>
