@@ -1,7 +1,7 @@
 .header__menu-button_icon {
   width: 30px;
   height: 45px;
-  position: fixed;
+  position: absolute;
   right: 40px;
   -webkit-transform: rotate(0deg);
   -moz-transform: rotate(0deg);

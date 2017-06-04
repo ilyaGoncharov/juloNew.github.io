@@ -5,11 +5,47 @@
   and (min-device-width: 320px) 
   and (max-device-width: 480px)
   and (-webkit-min-device-pixel-ratio: 2) {
+  	body {
+		font-size: 16px;
+	}
+
+	.object__menu-slide-box li {
+		font-size: 9.492rem;
+	}
+
   	.object__menu-slide-box {
   		position: fixed;
 		width: 100vw;
 	    left: 100vh;
 	}
+
+	.header {
+		padding: 10px;
+		padding-top: 25px;
+	}
+
+	.header__menu-button_icon {
+	}
+
+	.face-page__title {
+		position: initial;
+		padding: 15px;
+		padding-top: 60px;
+		padding-bottom: 50px;
+	}	
+
+	.face-page__title h1 {
+		font-size: 109.656px;
+	}
+
+	.face-page__title h2 {
+		font-size: 25.888px;
+	}
+
+	.footer {
+		position: initial;
+	}
+
 }
 
 /* Portrait */
@@ -36,6 +72,13 @@
   and (min-device-width: 320px) 
   and (max-device-width: 568px)
   and (-webkit-min-device-pixel-ratio: 2) {
+  	body {
+		font-size: 16px;
+	}
+
+	.object__menu-slide-box li {
+		font-size: 9.492rem;
+	}
 
 }
 
