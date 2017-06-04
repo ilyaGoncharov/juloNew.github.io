@@ -6,9 +6,9 @@
   and (max-device-width: 480px)
   and (-webkit-min-device-pixel-ratio: 2) {
   	.object__menu-slide-box {
+  		position: fixed;
 		width: 100vw;
-	    position: fixed;
-	    left: 0;
+	    left: 100vh;
 	}
 }
 

@@ -59,7 +59,7 @@ $(document).ready(function(){
 		        slideMenu = false;
 		    } else {
 		    	$(this).toggleClass('open');
-		        $(".object__menu-slide-box").animate({right: ''}, 600);
+		        $(".object__menu-slide-box").animate({left: '0'}, 600);
 		        $(".face-page__title, .object__background-image, .footer__contacts").toggleClass('open');
 		        $(".logo, .fb, .vk").toggleClass('coverup');
 		        $(".logo-dark, .fb-dark, .vk-dark").removeClass('coverup');
