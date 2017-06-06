@@ -23,9 +23,12 @@
     	left: 25px;
 	}
 
-	.object__contact-form_box input,
-	.object__contact-form_box textarea  {
+	.object__contact-form_box input {
 		height: 40px;
+	}
+
+	.object__contact-form_box textarea {
+		height: 140px;
 	}
 
 	.object__menu-slide-box li {
@@ -161,6 +164,14 @@
 
 	.object__contact-form {
 		height: 120vh;
+	}
+
+	.object__contact-form_box input  {
+		height: 40px;
+	}
+
+	.object__contact-form_box textarea {
+		height: 140px;
 	}
 
 	.face-page__title {
