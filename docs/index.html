@@ -74,11 +74,233 @@
 			</div>
 			<div class="header__menu-button col-xs-offset-4 col-xs-4 col-md-offset-9 col-md-1">
 				<div class="header__menu-button_icon">
-				  <span></span>
-				  <span></span>
-				  <span></span>
-				  <span></span>
-				</div>
+					<svg version="1.1" id="burger" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="28px" height="28px" viewBox="0 0 70 70" style="enable-background:new 0 0 70 70;" xml:space="preserve">
+					<defs>
+						<style type="text/css">
+							.line{
+								fill:#fff;
+							}
+						</style>
+					</defs>
+
+					<rect id="lt" x="0" y="0" class="line" width="70" height="10">
+						<!-- forward -->
+					<animate
+						attributeName="y"
+						begin="menu.click"
+						fill="freeze" 
+						from="0" 
+						to="30" 
+						dur="0.1s"
+						repeatCount="1"
+						id="lt-anim" />
+
+					<animateTransform
+						attributeName="transform"
+						begin="lt-anim.begin + 0.1s"
+						dur="0.1s"
+						type="rotate"
+						from="0 35 35"
+						to="45 35 35"
+						fill="freeze"
+						repeatCount="1" />
+						<!-- backward -->
+					<animate
+						attributeName="y"
+						begin="lt-b-anim.begin + 0.1s"
+						fill="freeze" 
+						from="30" 
+						to="0" 
+						dur="0.1s"
+						repeatCount="1" />
+
+					<animateTransform
+						attributeName="transform"
+						begin="close.click"
+						dur="0.1s"
+						type="rotate"
+						from="45 35 35"
+						to="0 35 35"
+						fill="freeze"
+						repeatCount="1" 
+						id="lt-b-anim" />
+						</rect>
+
+					<rect id="st" x="35" y="20" class="line" width="35" height="10">
+						<!-- forward -->
+					<animate
+						attributeName="y"
+						begin="menu.click"
+						fill="freeze" 
+						from="20" 
+						to="30" 
+						dur="0.05s" 
+						repeatCount="1"
+						id="st-anim" />
+
+					<animateTransform
+						attributeName="transform"
+						begin="st-anim.begin + 0.1s"
+						dur="0.1s"
+						type="rotate"
+						from="0 35 35"
+						to="45 35 35"
+						fill="freeze"
+						repeatCount="1" />
+						<!-- backward -->
+					<animate
+						attributeName="y"
+						begin="st-b-anim.begin + 0.1s"
+						fill="freeze" 
+						from="30" 
+						to="20" 
+						dur="0.1s" 
+						repeatCount="1" />
+
+					<animateTransform
+						attributeName="transform"
+						begin="close.click"
+						dur="0.1s"
+						type="rotate"
+						from="45 35 35"
+						to="0 35 35"
+						fill="freeze"
+						repeatCount="1" 
+						id="st-b-anim" />
+						</rect>
+
+					<rect id="sb" x="35" y="40" class="line" width="35" height="10">
+						<!-- forward -->
+					<animate
+						attributeName="y"
+						begin="menu.click"
+						fill="freeze" 
+						from="40" 
+						to="30" 
+						dur="0.05s" 
+						repeatCount="1"
+						id="sb-anim" />
+
+					<animateTransform
+						attributeName="transform"
+						begin="sb-anim.begin + 0.1s"
+						dur="0.1s"
+						type="rotate"
+						from="0 35 35"
+						to="-45 35 35"
+						fill="freeze"
+						repeatCount="1" />
+						<!-- backward -->
+					<animate
+						attributeName="y"
+						begin="st-b-anim.begin + 0.1s"
+						fill="freeze" 
+						from="30" 
+						to="40" 
+						dur="0.1s" 
+						repeatCount="1" />
+
+					<animateTransform
+						attributeName="transform"
+						begin="close.click"
+						dur="0.1s"
+						type="rotate"
+						from="-45 35 35"
+						to="0 35 35"
+						fill="freeze"
+						repeatCount="1" 
+						id="st-b-anim" />
+						</rect>
+
+					<rect id="lb" x="0" y="60" class="line" width="70" height="10">
+						<!-- forward -->
+					<animate
+						attributeName="y"
+						begin="menu.click"
+						fill="freeze" 
+						from="60" 
+						to="30" 
+						dur="0.05s" 
+						repeatCount="1"
+						id="lb-anim" />
+
+					<animateTransform
+						attributeName="transform"
+						begin="lb-anim.begin + 0.1s"
+						dur="0.1s"
+						type="rotate"
+						from="0 35 35"
+						to="-45 35 35"
+						fill="freeze"
+						repeatCount="1" />
+						<!-- backward -->
+					<animate
+						attributeName="y"
+						begin="st-b-anim.begin + 0.1s"
+						fill="freeze" 
+						from="30" 
+						to="60" 
+						dur="0.1s" 
+						repeatCount="1" />
+
+					<animateTransform
+						attributeName="transform"
+						begin="close.click"
+						dur="0.1s"
+						type="rotate"
+						from="-45 35 35"
+						to="0 35 35"
+						fill="freeze"
+						repeatCount="1" 
+						id="st-b-anim" />
+						</rect>
+
+					<rect id="menu" x="0" y="0" class="menu" width="70" height="70" fill-opacity="0">
+					<animate
+						attributeName="y"
+						begin="menu.click"
+						fill="freeze" 
+						from="0" 
+						to="70" 
+						dur="0.05s" 
+						repeatCount="1"
+						id="openmenu-anim" />
+
+					<animate
+						attributeName="y"
+						begin="close.click"
+						fill="freeze" 
+						from="70" 
+						to="0" 
+						dur="0.05s" 
+						repeatCount="1"
+						id="closemenu-anim" />
+						</rect>
+
+					<rect id="close" x="0" y="-70" class="close" width="70" height="70" fill-opacity="0">
+					<animate
+						attributeName="y"
+						begin="menu.click"
+						fill="freeze" 
+						from="-70" 
+						to="0" 
+						dur="0.05s" 
+						repeatCount="1"
+						id="openmenu-anim" />
+
+					<animate
+						attributeName="y"
+						begin="close.click"
+						fill="freeze" 
+						from="0" 
+						to="-70" 
+						dur="0.05s" 
+						repeatCount="1"
+						id="closemenu-anim" />
+						</rect>
+
+						</svg>
+					</div>
 			</div>	
 		</div>
 		<div class="face-page__title row">
@@ -90,14 +312,14 @@
 		</div>
 		<div class="footer row">
 			<div class="footer__link-modul col-xs-5">
-				<a class="footer__link-modul-icon" href=""">
+				<a class="footer__link-modul-icon" href="https://www.facebook.com/">
 					<!-- svg для фейда нужно сделать-->
 					<!-- <object type="image/svg+xml" data="files/svg/FB.svg" class="logo">
 					</object> -->
 					<img class="fb" src="files/png/FB.png" alt="">
 					<img class="fb-dark coverup" src="files/png/FB-dark.png" alt="">
 				</a>
-				<a class="footer__link-modul-icon" href=""">
+				<a class="footer__link-modul-icon" href="https://vk.com/startjulo"">
 					<img class="vk" src="files/png/VK.png" alt=""> 
 					<img class="vk-dark coverup" src="files/png/VK-dark.png" alt="">
 				</a>

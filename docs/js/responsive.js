@@ -8,8 +8,6 @@ $(document).ready(function(){
 				$(this).removeClass('open');
 		        $(".object__menu-slide-box").animate({left: '161vw'}, 600);
 		        $(".object__contact-form").animate({left: '-100vw'}, 600);
-		        $(".object__contact-form_logo").toggleClass('coverup');
-		        $(".header__menu-button_icon").removeClass('fixed');
 		        slideForm = false;
 		        slideMenu = false;
 		    } else {
@@ -22,7 +20,6 @@ $(document).ready(function(){
 		$( ".object__contact-form_activator" ).click(function(e) {
 			e.preventDefault();
 	    	$(".object__contact-form").animate({left: '0vw'}, 600);
-	    	$(".object__contact-form_logo").removeClass('coverup');
 	        slideForm = true;
 		});
 	} else if ( $(window).width() > 375 && $(window).width() < 414) {
@@ -32,8 +29,6 @@ $(document).ready(function(){
 				$(this).removeClass('open');
 		        $(".object__menu-slide-box").animate({left: '161vw'}, 600);
 		        $(".object__contact-form").animate({left: '-100vw'}, 600);
-		        $(".object__contact-form_logo").toggleClass('coverup');
-		        $(".header__menu-button_icon").removeClass('fixed');
 		        slideForm = false;
 		        slideMenu = false;
 		    } else {
@@ -57,7 +52,6 @@ $(document).ready(function(){
 		        $(".face-page__title, .object__background-image, .footer__contacts").removeClass('open');
 		        $(".logo-dark, .fb-dark, .vk-dark").toggleClass('coverup');
 		        $(".logo, .fb, .vk").removeClass('coverup');
-		        $(".header__menu-button_icon").removeClass('fixed');
 		        $(".object__menu-slide-box").animate({left: '161vw'}, 600);
 		        $(".object__contact-form").animate({left: '-61vw'}, 600);
 		        slideForm = false;
@@ -78,7 +72,6 @@ $(document).ready(function(){
 		        slideForm = false;
 		    } else {
 		    	$(".object__contact-form").animate({left: '0vw'}, 600);
-		    	$(".header__menu-button_icon").toggleClass('fixed');
 		        slideForm = true;
 		    }	
 		});

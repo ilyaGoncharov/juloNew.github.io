@@ -1,4 +1,7 @@
-/* ----------- iPhone 4 and 4S ----------- */
+
+
+/* --------------------------------------------------------------------------------------------------- 	iPhone 4 and 4S
+--------------------------------------------------------------------------------------------------- */
 
 /* Portrait and Landscape */
 @media only screen 
@@ -7,28 +10,6 @@
   and (-webkit-min-device-pixel-ratio: 2) {
   	body {
 		font-size: 16px;
-	}
-
-	.object__contact-form {
-		height: 120vh;
-	}
-
-	.object__contact-form_box {
-		width: 100%;
-		margin-left: 0%;
-	}
-
-	.object__contact-form_logo {
-		position: absolute;
-    	left: 25px;
-	}
-
-	.object__contact-form_box input {
-		height: 40px;
-	}
-
-	.object__contact-form_box textarea {
-		height: 140px;
 	}
 
 	.object__menu-slide-box li {
@@ -45,24 +26,36 @@
 	.object__contact-form {
 		width: 100vw;
 		left: -100vw;
+		padding-top: 8vh;
+	}
+
+	.object__contact-form_box {
+		width: 100%;
+		margin-left: 0%;
+	}
+
+	.object__contact-form_logo {
+    	left: 25px;
+	}
+
+	.object__contact-form_box input {
+		height: 45px;
+		padding: 8px;
+	}
+
+	.object__contact-form_box textarea {
+		height: 150px;
+		padding: 8px;
+	}
+
+	.object__contact-form_box-button {
+		padding: 0px !important;
 	}
 
 	.header {
 		padding: 10px;
 		padding-top: 25px;
 	}
-
-	.header__menu-button_icon {
-		position: absolute;
-	}
-
-	.face-page__title {
-		position: initial;
-		padding: 15px;
-		padding-left: 0px;
-		padding-top: 50px;
-		padding-bottom: 50px;
-	}	
 
 	.face-page__title h1 {
 		font-size: 109.656px;
@@ -79,7 +72,6 @@
 
 	.footer {
 		font-size: 10px;
-		position: initial;
 		width: 100vw;
 		padding-top: 0px;
 	}
@@ -109,8 +101,6 @@
 	.object__contact-form_box {
 		padding-top: 10vh;
 	}
-
-
 }
 
 /* Landscape */
@@ -119,14 +109,8 @@
   and (max-device-width: 480px)
   and (-webkit-min-device-pixel-ratio: 2)
   and (orientation: landscape) {
-
-  	.object__contact-form {
-  		height: auto;
-  	}
-
   	.object__menu-slide-box {
-  		position: fixed;
-		width: 100vw;
+  		width: 100vw;
 	    left: 150vh;
 	}
 
@@ -145,24 +129,16 @@
 		padding-top: 0px;
 		padding-bottom: 50px;
 	}	
-
-	.face-page__title h1 {
-		line-height: 80px;
-	}
-
 }
 
-/* ----------- iPhone 5 and 5S ----------- */
+/* --------------------------------------------------------------------------------------------------- 		iPhone 5 and 5S 
+--------------------------------------------------------------------------------------------------- */
 
 /* Portrait and Landscape */
 @media only screen 
   and (min-device-width: 320px) 
   and (max-device-width: 568px)
   and (-webkit-min-device-pixel-ratio: 2) {
-  	body {
-		font-size: 16px;
-	}
-
 	.object__contact-form {
 		height: 120vh;
 	}
@@ -193,26 +169,12 @@
 		padding-bottom: 50px;
 	}	
 
-	.face-page__title h1 {
-		font-size: 109.656px;
-		line-height: 80px;
-	}
-
-	.face-page__title h2 {
-		font-size: 25.888px;
-	}
-
 	.footer {
 		font-size: 10px;
 		position: initial;
 		width: 100vw;
 		padding-top: 0px;
 	}
-
-	.footer img {
-		margin-right: 5px;
-	}
-
 
 }
 
@@ -230,59 +192,30 @@
   and (max-device-width: 568px)
   and (-webkit-min-device-pixel-ratio: 2)
   and (orientation: landscape) {
-
+ 
 }
 
-/* ----------- iPhone 6 ----------- */
+
+/* --------------------------------------------------------------------------------------------------- 		iPhone 6
+--------------------------------------------------------------------------------------------------- */
 
 /* Portrait and Landscape */
 @media only screen 
   and (min-device-width: 375px) 
   and (max-device-width: 667px) 
   and (-webkit-min-device-pixel-ratio: 2) {
-  	body {
-		font-size: 16px;
+	.object__contact-form_box input  {
+		height: 50px;
 	}
 
-	.object__contact-form_box {
-		width: 100%;
-		margin-left: 0%;
-	}
-
-	.object__contact-form_logo {
-		position: absolute;
-    	left: 25px;
+	.object__contact-form_box textarea {
+		height: 220px;
 	}
 
   	.face-page__title {
-		position: initial;
-		width: 80vw;
-		padding: 15px;
-		padding-top: 300px;
-		padding-bottom: 50px;
+		width: 90vw;
+		padding-top: 150px;
 	}	
-
-	.face-page__title h1 {
-		font-size: 109.656px;
-		line-height: 80px;
-	}
-
-	.face-page__title h2 {
-		font-size: 25.888px;
-	}
-
-	.footer {
-		font-size: 10px;
-		position: initial;
-		width: 100vw;
-		padding-top: 0px;
-	}
-
-	.footer img {
-		margin-right: 5px;
-	}
-
-
 }
 
 /* Portrait */
@@ -299,11 +232,6 @@
   and (max-device-width: 667px) 
   and (-webkit-min-device-pixel-ratio: 2)
   and (orientation: landscape) { 
-
-  	body {
-		font-size: 16px;
-	}
-
 	.object__menu-slide-box {
   		position: fixed;
 		width: 100vw;
@@ -336,28 +264,28 @@
 	.face-page__title h2 {
 		font-size: 25.888px;
 	}
-
-	.footer {
-		font-size: 10px;
-		position: initial;
-		width: 100vw;
-		padding-top: 0px;
-	}
-
-	.footer img {
-		margin-right: 5px;
-	}
-
-
 }
 
-/* ----------- iPhone 6+ ----------- */
+
+/* --------------------------------------------------------------------------------------------------- 		iPhone 6+
+--------------------------------------------------------------------------------------------------- */
 
 /* Portrait and Landscape */
 @media only screen 
   and (min-device-width: 414px) 
   and (max-device-width: 736px) 
   and (-webkit-min-device-pixel-ratio: 3) { 
+  	.object__contact-form_box input  {
+		height: 50px;
+	}
+
+	.object__contact-form_box textarea {
+		height: 220px;
+	}
+
+  	.face-page__title {
+		padding-top: 250px;
+	}	
 
 }
 
@@ -399,105 +327,130 @@
 	.object__menu-slide-box li {
 		line-height: 70px;
 	}
+}
 
-	.object__menu-slide-box li a {
-		font-size: 41.8px;
-		vertical-align: bottom;
+
+/* --------------------------------------------------------------------------------------------------- 		iPad mini
+--------------------------------------------------------------------------------------------------- */
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+
+}
+
+/* Portrait */
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (orientation: portrait) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+
+}
+
+/* Landscape */
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (orientation: landscape) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+
+}
+
+/* --------------------------------------------------------------------------------------------------- 		iPad 1 and 2 
+--------------------------------------------------------------------------------------------------- */
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+	.object__menu-slide-box {
+  		position: fixed;
+		width: 100vw;
+	    left: 180vh;
+	}
+
+	.object__menu-slide-box ul {
+		height: 60vh;
+		width: 60vw;
+    	margin-left: 20vw;
+	}
+
+	.object__menu-slide-box li {
+		width: 100vw;
+	}
+
+	.object__contact-form {
+		height: 100vh;
+		width: 100vw;
+		left: -100vw;
 	}
 
   	.face-page__title {
-		position: initial;
-		width: 60vw;
-		padding: 15px;
-		padding-top: 80px;
-		padding-bottom: 50px;
+		padding-top: 250px;
 	}	
 
-	.face-page__title h1 {
-		font-size: 109.656px;
-		line-height: 80px;
-	}
+}
 
-	.face-page__title h2 {
-		font-size: 25.888px;
-	}
+/* Portrait */
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (orientation: portrait) 
+  and (-webkit-min-device-pixel-ratio: 1) {
 
-	.footer {
-		font-size: 10px;
-		position: initial;
+}
+
+/* Landscape */
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (orientation: landscape) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+
+}
+
+
+
+/* --------------------------------------------------------------------------------------------------- 
+	iPad 3 and 4
+--------------------------------------------------------------------------------------------------- */
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+  	.object__menu-slide-box {
+  		position: fixed;
 		width: 100vw;
-		padding-top: 0px;
+	    left: 180vh;
 	}
 
-	.footer img {
-		margin-right: 5px;
+	.object__menu-slide-box ul {
+		height: 60vh;
+		width: 60vw;
+    	margin-left: 20vw;
 	}
-}
 
+	.object__menu-slide-box li {
+		width: 100vw;
+	}
 
+	.object__contact-form {
+		height: 100vh;
+		width: 100vw;
+		left: -100vw;
+	}
 
+  	.face-page__title {
+		padding-top: 250px;
+	}	
 
-/* ----------- iPad mini ----------- */
-
-/* Portrait and Landscape */
-@media only screen 
-  and (min-device-width: 768px) 
-  and (max-device-width: 1024px) 
-  and (-webkit-min-device-pixel-ratio: 1) {
-
-}
-
-/* Portrait */
-@media only screen 
-  and (min-device-width: 768px) 
-  and (max-device-width: 1024px) 
-  and (orientation: portrait) 
-  and (-webkit-min-device-pixel-ratio: 1) {
-
-}
-
-/* Landscape */
-@media only screen 
-  and (min-device-width: 768px) 
-  and (max-device-width: 1024px) 
-  and (orientation: landscape) 
-  and (-webkit-min-device-pixel-ratio: 1) {
-
-}
-
-/* ----------- iPad 1 and 2 ----------- */
-/* Portrait and Landscape */
-@media only screen 
-  and (min-device-width: 768px) 
-  and (max-device-width: 1024px) 
-  and (-webkit-min-device-pixel-ratio: 1) {
-
-}
-
-/* Portrait */
-@media only screen 
-  and (min-device-width: 768px) 
-  and (max-device-width: 1024px) 
-  and (orientation: portrait) 
-  and (-webkit-min-device-pixel-ratio: 1) {
-
-}
-
-/* Landscape */
-@media only screen 
-  and (min-device-width: 768px) 
-  and (max-device-width: 1024px) 
-  and (orientation: landscape) 
-  and (-webkit-min-device-pixel-ratio: 1) {
-
-}
-
-/* ----------- iPad 3 and 4 ----------- */
-/* Portrait and Landscape */
-@media only screen 
-  and (min-device-width: 768px) 
-  and (max-device-width: 1024px) 
-  and (-webkit-min-device-pixel-ratio: 2) {
 
 }
 
@@ -519,16 +472,21 @@
 
 }
 
+/* --------------------------------------------------------------------------------------------------- 
+	Non-Retina Screens
+--------------------------------------------------------------------------------------------------- */
 
-
-/* ----------- Non-Retina Screens ----------- */
 @media screen 
   and (min-device-width: 1200px) 
   and (max-device-width: 1600px) 
   and (-webkit-min-device-pixel-ratio: 1) { 
 }
 
-/* ----------- Retina Screens ----------- */
+
+/* --------------------------------------------------------------------------------------------------- 
+	Retina Screens
+--------------------------------------------------------------------------------------------------- */
+
 @media screen 
   and (min-device-width: 1200px) 
   and (max-device-width: 1600px) 
