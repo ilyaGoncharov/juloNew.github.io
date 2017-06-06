@@ -18,7 +18,7 @@
 .header__menu-button_icon.fixed {
   position: fixed;
   right: 12px;
-
+  cursor: pointer;
 }
 
 .header__menu-button_icon span {

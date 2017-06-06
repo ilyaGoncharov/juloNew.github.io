@@ -1,8 +1,8 @@
 $(document).ready(function(){
 	var slideMenu = false;
 	var slideForm = false;
-	if ( $(window).width() > 320 &&  $(window).width() < 479) {
-		$( ".object__contact-form_activator" ).bind( "touchstart", function(e){
+	if ( $(window).width() >= 320 &  $(window).width() < 479) {
+		$( ".object__contact-form_activator" ).click(function() {
 			if(slideForm) {
 				$(".object__contact-form").animate({left: '-100vw'}, 600);
 				$(".object__contact-form_logo").toggleClass('coverup');
