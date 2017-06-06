@@ -2,23 +2,14 @@ $(document).ready(function(){
 	var slideMenu = false;
 	var slideForm = false;
 	if ( $(window).width() >= 320 &  $(window).width() < 479) {
-		$( ".object__contact-form_activator" ).click(function() {
-			if(slideForm) {
-				$(".object__contact-form").animate({left: '-100vw'}, 600);
-				$(".object__contact-form_logo").toggleClass('coverup');
-		        slideForm = false;
-		    } else {
-		    	$(".object__contact-form").animate({left: '0vw'}, 600);
-		    	$(".object__contact-form_logo").removeClass('coverup');
-		        slideForm = true;
-		    }	
-		});
-		$(".header__menu-button_icon").click(function() {
+		$(".header__menu-button_icon").click(function(e) {
+			e.preventDefault(e);
 			if(slideMenu) {
 				$(this).removeClass('open');
 		        $(".object__menu-slide-box").animate({left: '161vw'}, 600);
 		        $(".object__contact-form").animate({left: '-100vw'}, 600);
 		        $(".object__contact-form_logo").toggleClass('coverup');
+		        $(".header__menu-button_icon").removeClass('fixed');
 		        slideForm = false;
 		        slideMenu = false;
 		    } else {
@@ -27,7 +18,6 @@ $(document).ready(function(){
 		        slideMenu = true;
 		    }
 		});
-	} else if ( $(window).width() > 375 && $(window).width() < 414) {
 		$( ".object__contact-form_activator" ).click(function(e) {
 			e.preventDefault();
 	    	$(".object__contact-form").animate({left: '0vw'}, 600);
@@ -35,7 +25,7 @@ $(document).ready(function(){
 	    	$(".header__menu-button_icon").toggleClass('fixed');
 	        slideForm = true;
 		});
-
+	} else if ( $(window).width() > 375 && $(window).width() < 414) {
 		$(".header__menu-button_icon").click(function(e) {
 			e.preventDefault();
 			if(slideMenu) {
@@ -51,6 +41,13 @@ $(document).ready(function(){
 		        $(".object__menu-slide-box").animate({left: '0'}, 600);
 		        slideMenu = true;
 		    }
+		});
+		$( ".object__contact-form_activator" ).click(function(e) {
+			e.preventDefault();
+	    	$(".object__contact-form").animate({left: '0vw'}, 600);
+	    	$(".object__contact-form_logo").removeClass('coverup');
+	    	$(".header__menu-button_icon").toggleClass('fixed');
+	        slideForm = true;
 		});
 	} else if ( $(window).width() > 1200) {      
 		$(".header__menu-button_icon").click(function(e) {
