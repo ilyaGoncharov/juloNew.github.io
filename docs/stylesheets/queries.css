@@ -33,6 +33,7 @@
 
 	.object__menu-slide-box li {
 		width: 100vw;
+		height: 80px;
 		padding: 0px;
 		padding-left: 5vw;
 	}
@@ -174,6 +175,14 @@
 		height: 140px;
 	}
 
+	.object__menu-slide-box li {
+		height: 80px;
+	}
+
+	.object__menu-slide-box li:hover a {
+		line-height: 0.3;
+	}
+	   
 	.face-page__title {
 		position: initial;
 		padding: 15px;

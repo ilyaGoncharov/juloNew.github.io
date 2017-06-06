@@ -15,6 +15,7 @@ $(document).ready(function(){
 		    } else {
 		    	$(this).toggleClass('open');
 		        $(".object__menu-slide-box").animate({left: '0'}, 600);
+		        $(".header__menu-button_icon").toggleClass('fixed');
 		        slideMenu = true;
 		    }
 		});
@@ -22,7 +23,6 @@ $(document).ready(function(){
 			e.preventDefault();
 	    	$(".object__contact-form").animate({left: '0vw'}, 600);
 	    	$(".object__contact-form_logo").removeClass('coverup');
-	    	$(".header__menu-button_icon").toggleClass('fixed');
 	        slideForm = true;
 		});
 	} else if ( $(window).width() > 375 && $(window).width() < 414) {
