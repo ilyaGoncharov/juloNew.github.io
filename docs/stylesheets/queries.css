@@ -60,7 +60,7 @@
 		position: initial;
 		padding: 15px;
 		padding-left: 0px;
-		padding-top: 80px;
+		padding-top: 50px;
 		padding-bottom: 50px;
 	}	
 
@@ -179,7 +179,6 @@
 	.object__menu-slide-box li a {
 		height: 80px;
 		line-height: 0.4;
-
 	}
 
 	.object__menu-slide-box li:hover, 
@@ -190,7 +189,7 @@
 	.face-page__title {
 		position: initial;
 		padding: 15px;
-		padding-top: 80px;
+		padding-top: 50px;
 		padding-bottom: 50px;
 	}	
 
