@@ -23,6 +23,11 @@
     	left: 25px;
 	}
 
+	.object__contact-form_box input,
+	.object__contact-form_box textarea  {
+		height: 40px;
+	}
+
 	.object__menu-slide-box li {
 		width: 100vw;
 		padding: 0px;
@@ -157,7 +162,6 @@
 	.object__contact-form {
 		height: 120vh;
 	}
-
 
 	.face-page__title {
 		position: initial;
