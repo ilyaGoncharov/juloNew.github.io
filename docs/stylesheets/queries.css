@@ -175,12 +175,16 @@
 		height: 140px;
 	}
 
-	.object__menu-slide-box li {
+	.object__menu-slide-box li,
+	.object__menu-slide-box li a {
 		height: 80px;
+		line-height: 0.4;
+
 	}
 
+	.object__menu-slide-box li:hover, 
 	.object__menu-slide-box li:hover a {
-		line-height: 0.3;
+		line-height: 0.4;
 	}
 	   
 	.face-page__title {
