@@ -9,6 +9,10 @@
 		font-size: 16px;
 	}
 
+	.object__contact-form {
+		height: 120vh;
+	}
+
 	.object__contact-form_box {
 		width: 100%;
 		margin-left: 0%;
@@ -149,6 +153,11 @@
   	body {
 		font-size: 16px;
 	}
+
+	.object__contact-form {
+		height: 120vh;
+	}
+
 
 	.face-page__title {
 		position: initial;
