@@ -281,6 +281,16 @@ img.coverup {
 	padding-top: 2px;
 }
 
+.footer__contacts a {
+	color: white;
+}
+
+.footer__contacts a:hover,
+.footer__contacts a:focus,
+.footer__contacts a:active {
+	text-decoration: none;
+}
+
 .footer__contacts.open {
 	color: #313A54;
 	-webkit-transition: .5s ease-in-out;
