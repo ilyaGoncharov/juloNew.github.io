@@ -1,8 +1,8 @@
 .header__menu-button_icon {
-  width: 30px;
-  height: 45px;
+  width: 40px;
+  height: 40px;
   position: absolute;
-  right: 40px;
+  right: 2px;
   -webkit-transform: rotate(0deg);
   -moz-transform: rotate(0deg);
   -o-transform: rotate(0deg);
@@ -13,6 +13,12 @@
   transition: .5s ease-in-out;
   cursor: pointer;
   z-index: 15;
+}
+
+.header__menu-button_icon.fixed {
+  position: fixed;
+  right: 12px;
+
 }
 
 .header__menu-button_icon span {
@@ -39,7 +45,7 @@
 
 .header__menu-button_icon span:nth-child(2) {
   top: 8px;
-  width: 50%;
+  width: 15px;
   left: 15px;
   /* -webkit-transition: .9s ease-in; */   
   /* -moz-transition: .9s ease-in; */  
@@ -49,7 +55,7 @@
 
 .header__menu-button_icon span:nth-child(3) {
   top: 16px;
-  width: 50%;
+  width: 15px;
   left: 15px;
   /* -webkit-transition: .9s ease-in; */  
   /* -moz-transition: .9s ease-in; */  

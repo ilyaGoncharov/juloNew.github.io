@@ -131,7 +131,7 @@ body {
 	width: 29px;
 	position: fixed;
 	left: 40px;
-	top: 25px;
+	top: 28px;
 }
 
 .object__contact-form_logo.coverup {
@@ -144,7 +144,6 @@ body {
 	margin-left: 20%;
 	padding-top: 17vh;
 }
-
 
 .object__contact-form_box input,
 .object__contact-form_box textarea  {
