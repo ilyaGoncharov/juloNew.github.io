@@ -1,0 +1,20 @@
+body {
+	height: 3000px;
+}
+
+.face-page__title {
+	color: white;
+	position: initial;
+	margin: 0px;
+	padding: 25px;
+}
+
+.face-page__title h1 {
+	margin-top: 350px;
+	color: white;
+	line-height: initial;
+}
+
+.face-page__title h2 {
+	color: white;
+}
