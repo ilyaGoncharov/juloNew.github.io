@@ -10,7 +10,6 @@
   and (-webkit-min-device-pixel-ratio: 2) {
   	body {
 		font-size: 16px;
-		overflow-x: hidden;
 	}
 
 	.object__menu-slide-box li {
@@ -23,6 +22,7 @@
 	.object__menu-slide-box li a {
 		font-size: 52.3px;
 		line-height: 80px;
+		margin-left: 15px;
 	}
 
 	.object__contact-form {
@@ -55,8 +55,18 @@
 	}
 
 	.header {
-		padding: 10px;
+		height: 60px;
+		width: 100vw;
 		padding-top: 25px;
+	}
+
+	.header__logo img {
+		left: 32px;
+	}
+
+	.header__menu-button_icon {
+		width: initial;
+		right: 32px;
 	}
 
 	.face-page__title h1 {
@@ -69,34 +79,72 @@
 		font-size: 20px;
 	}
 
-	.face-page__title p:nth-child(odd) {
+	.cases-body__block h4 {
+		margin-bottom: 20px;
+	}
 
-	} 
+	.development {
+		background-color: #242938;
+		display: none;
+	}
+
+	.development.open {
+		background-color: #242938;
+		display: block;
+	}
+
+	.design {
+		background-color: #242938;
+		display: none;
+	}
+
+	.design.open {
+		background-color: #242938;
+		display: block;
+	}
+
+	.marketing {
+		background-color: #242938;
+		display: none;
+	}
+
+	.marketing.open {
+		background-color: #242938;
+		display: block;
+	}
 
 	.cases-body {
-	position: absolute;
-	top: 100vh;
-	padding: 0px;
-	margin: 0px;
-	width: 100vw;
-	left: 0;
+		position: static;
 	}
 
 	.cases-body__block {
-		height: auto;
+		height: 800px;
 		padding: 0px;
 		margin: 0px;
 	}
 
-	.cases-body__block-textblock-img {
-	height: 100%;
-	background-color: #313A54;
+	.cases-body__block-textblock {
+		height: 600px;
+		padding: 25px;
+		/* background-color: #242938;
+		color: #313A54; */
+		background-color: white;
+		color: #242938;
+	}
+
+	.cases-body__block-textblock-name {
+		padding-left: 5px;
+	}
+
+	.cases-body__block-textblock-text {
+		padding-left: 5px;
 	}
 
 	.cases-body__block-textblock-img {
+		position: static;
 		padding: 0px;
 		margin: 0px;
-		height: 120%;
+		height: 200px;
 		cursor: pointer;
 		background-size: cover;
 	    background-repeat: no-repeat;
@@ -105,8 +153,41 @@
 	}
 
 	.footer {
-		display: none;
+		position: relative;
+		font-size: 12.361px;
+		padding-left: 20px;
+		bottom: 0px;
+		background-color: #E94E53;
+		height: 480px;
 	}
+
+	.footer__slogan {
+		padding-top: 180px;
+		margin-bottom: 250px;
+	}
+
+	.footer__slogan h1 {
+		font-family: "Bebas Bold";
+		color: white;
+		font-size: 52.358px;
+		text-transform: uppercase;
+		margin-bottom: 0px;
+	}
+
+	.footer__slogan h1.open {
+		color: #313A54;
+	}
+
+	.footer__link-modul,
+	.footer__contacts {
+		padding: 0px;
+		margin-top: 50px;
+	}
+
+	.footer img {
+		margin-right: initial;
+	}
+
 }
 
 /* Portrait */
@@ -189,16 +270,15 @@
 		position: initial;
 		padding: 15px;
 		padding-top: 50px;
-		padding-bottom: 50px;
 	}	
 
 	.footer {
-		font-size: 10px;
-		position: initial;
-		width: 100vw;
-		padding-top: 0px;
+		position: relative;
+		padding-left: 30px;
+		bottom: 0px;
+		background-color: #E94E53;
+		height: 568px;
 	}
-
 }
 
 /* Portrait */
@@ -284,8 +364,8 @@
 		line-height: 80px;
 	}
 
-	.face-page__title h2 {
-		font-size: 25.888px;
+	.footer {
+		height: 667px;
 	}
 }
 
@@ -327,10 +407,6 @@
   and (max-device-width: 736px) 
   and (-webkit-min-device-pixel-ratio: 3)
   and (orientation: landscape) { 
-  	body {
-		font-size: 16px;
-	}
-
 	.object__contact-form {
 		width: 100vw;
 		margin-left: 0%;
@@ -390,7 +466,8 @@
   and (min-device-width: 768px) 
   and (max-device-width: 1024px) 
   and (-webkit-min-device-pixel-ratio: 1) {
-	.object__menu-slide-box {
+
+  	.object__menu-slide-box {
   		position: fixed;
 		width: 100vw;
 	    left: 180vh;
@@ -415,6 +492,103 @@
   	.face-page__title {
 		padding-top: 250px;
 	}	
+  	
+  	.development {
+		background-color: #242938;
+		display: none;
+	}
+
+	.development.open {
+		background-color: #242938;
+		display: block;
+	}
+
+	.design {
+		background-color: #242938;
+		display: none;
+	}
+
+	.design.open {
+		background-color: #242938;
+		display: block;
+	}
+
+	.marketing {
+		background-color: #242938;
+		display: none;
+	}
+
+	.marketing.open {
+		background-color: #242938;
+		display: block;
+	}
+
+	.cases-body {
+		position: static;
+	}
+
+	.cases-body__block {
+		height: 800px;
+		padding: 0px;
+		margin: 0px;
+	}
+
+
+	.cases-body__block-textblock-name {
+		padding-left: 5px;
+	}
+
+	.cases-body__block-textblock-text {
+		padding-left: 5px;
+	}
+
+	.cases-body__block-textblock-img {
+		position: static;
+		padding: 0px;
+		margin: 0px;
+		height: 200px;
+		cursor: pointer;
+		background-size: cover;
+	    background-repeat: no-repeat;
+	    background-position: 50% 50%;
+	    z-index: 10;
+	}
+
+	.footer {
+		position: relative;
+		font-size: 12.361px;
+		padding-left: 20px;
+		bottom: 0px;
+		background-color: #E94E53;
+		height: 480px;
+	}
+
+	.footer__slogan {
+		padding-top: 180px;
+		margin-bottom: 250px;
+	}
+
+	.footer__slogan h1 {
+		font-family: "Bebas Bold";
+		color: white;
+		font-size: 52.358px;
+		text-transform: uppercase;
+		margin-bottom: 0px;
+	}
+
+	.footer__slogan h1.open {
+		color: #313A54;
+	}
+
+	.footer__link-modul,
+	.footer__contacts {
+		padding: 0px;
+		margin-top: 50px;
+	}
+
+	.footer img {
+		margin-right: initial;
+	}
 
 }
 
@@ -447,8 +621,7 @@
   and (min-device-width: 768px) 
   and (max-device-width: 1024px) 
   and (-webkit-min-device-pixel-ratio: 2) {
-
-  	.object__menu-slide-box {
+/*   	.object__menu-slide-box {
   		position: fixed;
 		width: 100vw;
 	    left: 180vh;
@@ -472,7 +645,7 @@
 
   	.face-page__title {
 		padding-top: 250px;
-	}	
+	}	 */
 
 
 }

@@ -110,19 +110,15 @@ body {
 }
 
 .cases-body__block-textblock-img {
-	height: 100%;
-	background-color: #313A54;
-}
-
-.cases-body__block-textblock-img {
 	padding: 0px;
 	margin: 0px;
-	height: 120%;
+	height: 100%;
 	cursor: pointer;
 	background-size: cover;
     background-repeat: no-repeat;
-    background-position: 50% 50%;
-    z-index: 10;
+    /* background-position: 50% 50%; */
+    background-position: 30%;
+    z-index: 5;
 }
 
 .cases-body__block-textblock-img.open {
@@ -149,12 +145,16 @@ body {
 	bottom: 0px;
 	background-color: #E94E53;
 	height: 500px;
-	padding-top: 0px;
+	padding-top: 30px;
+}
+
+.footer.open {
+	background-color: #242938;
 }
 
 .footer__slogan {
 	height: 100px;
-	margin-bottom: 150px;
+	margin-bottom: 120px;
 }
 
 .footer__slogan h1 {

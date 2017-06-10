@@ -1,3 +1,7 @@
+body {
+	background-color: #191A26;
+}
+
 .face-page__title {
 	color: white;
 	position: initial;
@@ -26,16 +30,56 @@
 }
 
 .team__text-block {
-	height: 500px;
+	padding: 25px;
 	background-color: #E94E53;
-	margin-bottom: 5px;
+}
+
+.team__photo-block {
+	margin: 0px;
+	padding: 10px;
+	padding-top: 50px;
+}
+
+.team__photo-block h3 {
+	padding: 0px;
+	margin: 0px;
+	font-family: "Bebas Bold";
+	font-size: 32.36px;
+	text-transform: uppercase;
+	margin-bottom: 0px;
+	-webkit-transition: .5s ease-in-out;
+	-moz-transition: .5s ease-in-out;
+	-o-transition: .5s ease-in-out;
+	transition: .5s ease-in-out;
+}
+
+.team__photo-block h4 {
+	color: #313A54;
+	padding: 0px;
+	margin: 0px;
+	font-size: 20px;
+	-webkit-transition: .5s ease-in-out;
+	-moz-transition: .5s ease-in-out;
+	-o-transition: .5s ease-in-out;
+	transition: .5s ease-in-out;	
+}
+
+.team__photo-block div {
+	margin: 0px;
+}
+
+.team__photo-block .row {
+	margin-bottom: 50px;
+}
+
+.team__photo-block img {
+	width: 100%;
 }
 
 .footer {
-	position: initial;
+	position: relative;
 	background-color: #E94E53;
 	height: 500px;
-	bottom: 0px;
 	padding-top: 0px;
 }
 
