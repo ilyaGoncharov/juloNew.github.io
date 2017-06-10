@@ -29,7 +29,7 @@
 	<link rel="stylesheet" type="text/css" href="stylesheets/bootstrap.min.css" media="screen">
 	<link rel="stylesheet" type="text/css" href="stylesheets/global.css" media="screen">
 	<link rel="stylesheet" type="text/css" href="stylesheets/cases.css" media="screen">
-	<link rel="stylesheet" type="text/css" href="stylesheets/queries.css" media="screen">
+	<link rel="stylesheet" type="text/css" href="stylesheets/cases_q.css" media="screen">
 	<!--[if lt IE 7]>
         <p class="browsehappy">Вы используете <strong> очень устаревшую </strong> версию браузера. Пожалуйста <a href="http://browsehappy.com/"> обновите его</a>, чтобы улучшить свою производительность в сети</p>
     <![endif]-->
@@ -42,450 +42,503 @@
     <![endif]-->
 </head>
 <body> 
-	<div class="object__background-image"></div>
-	<div class="object__menu-slide-box">
-		<ul>
-            <li class="object__menu-slide-box_menu-element"><a href="cases.html">Портфолио</a></li>
-            <li class="object__menu-slide-box_menu-element"><a href="team.html">Команда</a></li>
-            <li class="object__menu-slide-box_menu-element"> 
-            	<a href="#" class="object__contact-form_activator">Связь</a>
-            </li> 
-        </ul>
-	</div>
-	<div class="object__contact-form">
-		<img class="object__contact-form_logo coverup" src="files/png/logo.png" alt="">
-		<form id="form" class="object__contact-form_box" action="https://formspree.io/info@startjulo.ru"
-      method="POST">
-			<input type="text" id="name" name="name" placeholder="Имя"/>
-			<input type="text" id="company" name="company" placeholder="Компания"/>
-			<textarea  id="message"  maxlength="220" name="message" placeholder="Сообщение"></textarea>
-			<input type="text" id="email" name="email" placeholder="Email"/>	
-			<input type="submit" id="submitForm" class="object__contact-form_box-button" value="Отправить"/>
-		</form>
-	</div>
-	
-	<div class="face-page container-fluid">
-		<div class="header row">
-			<div class="header__logo col-xs-4 col-md-2">
-				<!-- svg для фейда нужно сделать-->
-				<!-- <object type="image/svg+xml" data="files/svg/logo.svg" class="logo">
-				</object> -->
-				<a href="index.html"><img class="logo" src="files/png/logo.png" alt=""></a>
-				<img class="logo-dark coverup" src="files/png/logo-dark.png" alt="">
+	<div class="wrapper">
+
+		<div class="object__background-image"></div>
+
+		<div class="object__menu-slide-box">
+			<ul>
+	            <li class="object__menu-slide-box_menu-element"><a href="cases.html">Портфолио</a></li>
+	            <li class="object__menu-slide-box_menu-element"><a href="team.html">Команда</a></li>
+	            <li class="object__menu-slide-box_menu-element"> 
+	            	<a href="#" class="object__contact-form_activator">Связь</a>
+	            </li> 
+	        </ul>
+		</div>
+
+		<div class="object__contact-form">
+			<img class="object__contact-form_logo coverup" src="files/png/logo.png" alt="">
+			<form id="form" class="object__contact-form_box" action="https://formspree.io/info@startjulo.ru"
+	      method="POST">
+				<input type="text" id="name" name="name" placeholder="Имя"/>
+				<input type="text" id="company" name="company" placeholder="Компания"/>
+				<textarea  id="message"  maxlength="220" name="message" placeholder="Сообщение"></textarea>
+				<input type="text" id="email" name="email" placeholder="Email"/>	
+				<input type="submit" id="submitForm" class="object__contact-form_box-button" value="Отправить"/>
+			</form>
+		</div>
+
+		<div class="face-page container-fluid">
+
+			<div class="header row">
+				<div class="header__logo col-xs-4 col-md-2">
+					<!-- svg для фейда нужно сделать-->
+					<!-- <object type="image/svg+xml" data="files/svg/logo.svg" class="logo">
+					</object> -->
+					<a href="index.html"><img class="logo" src="files/png/logo.png" alt=""></a>
+					<img class="logo-dark coverup" src="files/png/logo-dark.png" alt="">
+				</div>
+				<div class="header__menu-button col-xs-offset-4 col-xs-4 col-md-offset-9 col-md-1">
+					<div class="header__menu-button_icon">
+						<svg version="1.1" id="burger" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="28px" height="28px" viewBox="0 0 70 70" style="enable-background:new 0 0 70 70;" xml:space="preserve">
+						<defs>
+							<style type="text/css">
+								.line{
+									fill:#fff;
+								}
+							</style>
+						</defs>
+							<rect id="lt" x="0" y="0" class="line" width="70" height="10">
+							<animate
+								attributeName="y"
+								begin="menu.click"
+								fill="freeze" 
+								from="0" 
+								to="30" 
+								dur="0.1s"
+								repeatCount="1"
+								id="lt-anim" />
+							<animateTransform
+								attributeName="transform"
+								begin="lt-anim.begin + 0.1s"
+								dur="0.1s"
+								type="rotate"
+								from="0 35 35"
+								to="45 35 35"
+								fill="freeze"
+								repeatCount="1" />
+							<animate
+								attributeName="y"
+								begin="lt-b-anim.begin + 0.1s"
+								fill="freeze" 
+								from="30" 
+								to="0" 
+								dur="0.1s"
+								repeatCount="1" />
+							<animateTransform
+								attributeName="transform"
+								begin="close.click"
+								dur="0.1s"
+								type="rotate"
+								from="45 35 35"
+								to="0 35 35"
+								fill="freeze"
+								repeatCount="1" 
+								id="lt-b-anim" />
+								</rect>
+							<rect id="st" x="35" y="20" class="line" width="35" height="10">
+							<animate
+								attributeName="y"
+								begin="menu.click"
+								fill="freeze" 
+								from="20" 
+								to="30" 
+								dur="0.05s" 
+								repeatCount="1"
+								id="st-anim" />
+							<animateTransform
+								attributeName="transform"
+								begin="st-anim.begin + 0.1s"
+								dur="0.1s"
+								type="rotate"
+								from="0 35 35"
+								to="45 35 35"
+								fill="freeze"
+								repeatCount="1" />
+							<animate
+								attributeName="y"
+								begin="st-b-anim.begin + 0.1s"
+								fill="freeze" 
+								from="30" 
+								to="20" 
+								dur="0.1s" 
+								repeatCount="1" />
+							<animateTransform
+								attributeName="transform"
+								begin="close.click"
+								dur="0.1s"
+								type="rotate"
+								from="45 35 35"
+								to="0 35 35"
+								fill="freeze"
+								repeatCount="1" 
+								id="st-b-anim" />
+								</rect>
+							<rect id="sb" x="35" y="40" class="line" width="35" height="10">
+							<animate
+								attributeName="y"
+								begin="menu.click"
+								fill="freeze" 
+								from="40" 
+								to="30" 
+								dur="0.05s" 
+								repeatCount="1"
+								id="sb-anim" />
+							<animateTransform
+								attributeName="transform"
+								begin="sb-anim.begin + 0.1s"
+								dur="0.1s"
+								type="rotate"
+								from="0 35 35"
+								to="-45 35 35"
+								fill="freeze"
+								repeatCount="1" />
+							<animate
+								attributeName="y"
+								begin="st-b-anim.begin + 0.1s"
+								fill="freeze" 
+								from="30" 
+								to="40" 
+								dur="0.1s" 
+								repeatCount="1" />
+							<animateTransform
+								attributeName="transform"
+								begin="close.click"
+								dur="0.1s"
+								type="rotate"
+								from="-45 35 35"
+								to="0 35 35"
+								fill="freeze"
+								repeatCount="1" 
+								id="st-b-anim" />
+								</rect>
+							<rect id="lb" x="0" y="60" class="line" width="70" height="10">
+							<animate
+								attributeName="y"
+								begin="menu.click"
+								fill="freeze" 
+								from="60" 
+								to="30" 
+								dur="0.05s" 
+								repeatCount="1"
+								id="lb-anim" />
+							<animateTransform
+								attributeName="transform"
+								begin="lb-anim.begin + 0.1s"
+								dur="0.1s"
+								type="rotate"
+								from="0 35 35"
+								to="-45 35 35"
+								fill="freeze"
+								repeatCount="1" />
+							<animate
+								attributeName="y"
+								begin="st-b-anim.begin + 0.1s"
+								fill="freeze" 
+								from="30" 
+								to="60" 
+								dur="0.1s" 
+								repeatCount="1" />
+							<animateTransform
+								attributeName="transform"
+								begin="close.click"
+								dur="0.1s"
+								type="rotate"
+								from="-45 35 35"
+								to="0 35 35"
+								fill="freeze"
+								repeatCount="1" 
+								id="st-b-anim" />
+								</rect>
+							<rect id="menu" x="0" y="0" class="menu" width="70" height="70" fill-opacity="0">
+							<animate
+								attributeName="y"
+								begin="menu.click"
+								fill="freeze" 
+								from="0" 
+								to="70" 
+								dur="0.05s" 
+								repeatCount="1"
+								id="openmenu-anim" />
+							<animate
+								attributeName="y"
+								begin="close.click"
+								fill="freeze" 
+								from="70" 
+								to="0" 
+								dur="0.05s" 
+								repeatCount="1"
+								id="closemenu-anim" />
+								</rect>
+							<rect id="close" x="0" y="-70" class="close" width="70" height="70" fill-opacity="0">
+							<animate
+								attributeName="y"
+								begin="menu.click"
+								fill="freeze" 
+								from="-70" 
+								to="0" 
+								dur="0.05s" 
+								repeatCount="1"
+								id="openmenu-anim" />
+							<animate
+								attributeName="y"
+								begin="close.click"
+								fill="freeze" 
+								from="0" 
+								to="-70" 
+								dur="0.05s" 
+								repeatCount="1"
+								id="closemenu-anim" />
+								</rect>
+							</svg>
+						</div>
+					</div>	
+				</div>
 			</div>
-			<div class="header__menu-button col-xs-offset-4 col-xs-4 col-md-offset-9 col-md-1">
-				<div class="header__menu-button_icon">
-					<svg version="1.1" id="burger" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="28px" height="28px" viewBox="0 0 70 70" style="enable-background:new 0 0 70 70;" xml:space="preserve">
-					<defs>
-						<style type="text/css">
-							.line{
-								fill:#fff;
-							}
-						</style>
-					</defs>
-						<rect id="lt" x="0" y="0" class="line" width="70" height="10">
-						<animate
-							attributeName="y"
-							begin="menu.click"
-							fill="freeze" 
-							from="0" 
-							to="30" 
-							dur="0.1s"
-							repeatCount="1"
-							id="lt-anim" />
-						<animateTransform
-							attributeName="transform"
-							begin="lt-anim.begin + 0.1s"
-							dur="0.1s"
-							type="rotate"
-							from="0 35 35"
-							to="45 35 35"
-							fill="freeze"
-							repeatCount="1" />
-						<animate
-							attributeName="y"
-							begin="lt-b-anim.begin + 0.1s"
-							fill="freeze" 
-							from="30" 
-							to="0" 
-							dur="0.1s"
-							repeatCount="1" />
-						<animateTransform
-							attributeName="transform"
-							begin="close.click"
-							dur="0.1s"
-							type="rotate"
-							from="45 35 35"
-							to="0 35 35"
-							fill="freeze"
-							repeatCount="1" 
-							id="lt-b-anim" />
-							</rect>
-						<rect id="st" x="35" y="20" class="line" width="35" height="10">
-						<animate
-							attributeName="y"
-							begin="menu.click"
-							fill="freeze" 
-							from="20" 
-							to="30" 
-							dur="0.05s" 
-							repeatCount="1"
-							id="st-anim" />
-						<animateTransform
-							attributeName="transform"
-							begin="st-anim.begin + 0.1s"
-							dur="0.1s"
-							type="rotate"
-							from="0 35 35"
-							to="45 35 35"
-							fill="freeze"
-							repeatCount="1" />
-						<animate
-							attributeName="y"
-							begin="st-b-anim.begin + 0.1s"
-							fill="freeze" 
-							from="30" 
-							to="20" 
-							dur="0.1s" 
-							repeatCount="1" />
-						<animateTransform
-							attributeName="transform"
-							begin="close.click"
-							dur="0.1s"
-							type="rotate"
-							from="45 35 35"
-							to="0 35 35"
-							fill="freeze"
-							repeatCount="1" 
-							id="st-b-anim" />
-							</rect>
-						<rect id="sb" x="35" y="40" class="line" width="35" height="10">
-						<animate
-							attributeName="y"
-							begin="menu.click"
-							fill="freeze" 
-							from="40" 
-							to="30" 
-							dur="0.05s" 
-							repeatCount="1"
-							id="sb-anim" />
-						<animateTransform
-							attributeName="transform"
-							begin="sb-anim.begin + 0.1s"
-							dur="0.1s"
-							type="rotate"
-							from="0 35 35"
-							to="-45 35 35"
-							fill="freeze"
-							repeatCount="1" />
-						<animate
-							attributeName="y"
-							begin="st-b-anim.begin + 0.1s"
-							fill="freeze" 
-							from="30" 
-							to="40" 
-							dur="0.1s" 
-							repeatCount="1" />
-						<animateTransform
-							attributeName="transform"
-							begin="close.click"
-							dur="0.1s"
-							type="rotate"
-							from="-45 35 35"
-							to="0 35 35"
-							fill="freeze"
-							repeatCount="1" 
-							id="st-b-anim" />
-							</rect>
-						<rect id="lb" x="0" y="60" class="line" width="70" height="10">
-						<animate
-							attributeName="y"
-							begin="menu.click"
-							fill="freeze" 
-							from="60" 
-							to="30" 
-							dur="0.05s" 
-							repeatCount="1"
-							id="lb-anim" />
-						<animateTransform
-							attributeName="transform"
-							begin="lb-anim.begin + 0.1s"
-							dur="0.1s"
-							type="rotate"
-							from="0 35 35"
-							to="-45 35 35"
-							fill="freeze"
-							repeatCount="1" />
-						<animate
-							attributeName="y"
-							begin="st-b-anim.begin + 0.1s"
-							fill="freeze" 
-							from="30" 
-							to="60" 
-							dur="0.1s" 
-							repeatCount="1" />
-						<animateTransform
-							attributeName="transform"
-							begin="close.click"
-							dur="0.1s"
-							type="rotate"
-							from="-45 35 35"
-							to="0 35 35"
-							fill="freeze"
-							repeatCount="1" 
-							id="st-b-anim" />
-							</rect>
-						<rect id="menu" x="0" y="0" class="menu" width="70" height="70" fill-opacity="0">
-						<animate
-							attributeName="y"
-							begin="menu.click"
-							fill="freeze" 
-							from="0" 
-							to="70" 
-							dur="0.05s" 
-							repeatCount="1"
-							id="openmenu-anim" />
-						<animate
-							attributeName="y"
-							begin="close.click"
-							fill="freeze" 
-							from="70" 
-							to="0" 
-							dur="0.05s" 
-							repeatCount="1"
-							id="closemenu-anim" />
-							</rect>
-						<rect id="close" x="0" y="-70" class="close" width="70" height="70" fill-opacity="0">
-						<animate
-							attributeName="y"
-							begin="menu.click"
-							fill="freeze" 
-							from="-70" 
-							to="0" 
-							dur="0.05s" 
-							repeatCount="1"
-							id="openmenu-anim" />
-						<animate
-							attributeName="y"
-							begin="close.click"
-							fill="freeze" 
-							from="0" 
-							to="-70" 
-							dur="0.05s" 
-							repeatCount="1"
-							id="closemenu-anim" />
-							</rect>
-						</svg>
+
+			<div class="face-page__title row">
+				<div class="col-xs-12 col-md-8">
+					<h1>Портфолио:</h1>
+					<p class="face-page__title_development-button">РАЗРАБОТКА</p>
+					<p class="face-page__title_slash">/</p>
+					<p class="face-page__title_design-button">ДИЗАЙН</p>
+					<p class="face-page__title_slash">/</p>
+					<p class="face-page__title_marketing-button">МАРКЕТИНГ</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="cases-body development">
+			<div class="col-xs-12 cases-body__block cases-body__block-1">
+				<div class="col-lg-7 cases-body__block-textblock">
+					<div class="col-lg-4 cases-body__block-textblock-name">
+					<h3>
+					снабсервис
+					</h3>
+					<h4>
+					Дизайн, разработка	
+					</h4>
 					</div>
-				</div>	
+					<div class="col-lg-8 cases-body__block-textblock-text">
+					Перед нами стояла задача – современный  корпоративный сайт.  Заказчик – металлоторговая компания, занимающаяся поставкой сырья на Абинский ЭМЗ и сбытом металлопроката его производства.
+					<br>
+					<br>
+					Работая над проектом, мы старались следовать пожеланиям заказчика: «мы хотим сайт, жизайн которого не завязан на ассоциации с металлом, и одновременно создавал бы надежный, сильный образ компании, как партнера , так и конкурента».
+					<br>
+					<br>
+					Предлагаем вам  посмотреть, чего мы добились.</div>
+				</div>
+				<a href="http://www.snab-service.com/">
+					<div class="col-lg-5 cases-body__block-textblock-img snabservice-img"></div>
+				</a>
+			</div>
+			<div class="col-xs-12 cases-body__block cases-body__block-2">
+				<div class="col-lg-7 cases-body__block-textblock">
+					<div class="col-lg-4 cases-body__block-textblock-name">
+					<h3> 
+						Технокор
+					</h3>
+					<h4>
+						Дизайн, разработка	
+					</h4>
+					</div>
+					<div class="col-lg-8 cases-body__block-textblock-text">
+						Исследуя деятельность компании, мы решили, что подчеркнуть уникальность производимой ею техники - ключевой момент. Поэтому для страниц продукции мы специально разработали 3D-модели (в стиле WireFrame) каждого аппарата производства 
+						<br>
+						<br>
+						АО «Технокор».
+						<br>
+						<br>
+						Компания работает уже много лет, поэтому с цветовой схемой проблем было не так много. (а с чем было много? нужно добавить дельного текста, очень коротко, текст обрывается, на мой взгялд)
+					</div>
+				</div>
+				<a href="http://texnokor.com/">
+					<div class="col-lg-5 cases-body__block-textblock-img tehnocor-img"></div>
+				</a>
+			</div>
+			<div class="col-xs-12 cases-body__block cases-body__block-3">
+				<div class="col-lg-7 cases-body__block-textblock">
+					<div class="col-lg-4 cases-body__block-textblock-name">
+					<h3>
+						ТСМ
+					</h3>
+					<h4>
+						Дизайн, разработка	
+					</h4>
+					</div>
+					<div class="col-lg-8 cases-body__block-textblock-text">
+						Просто, лаконично, чисто - три прилагательных, полностью характеризующие этот корпоративный сайт. 
+						<br>
+						<br>
+						Деятельность компании ООО «ТСМ» узкая и довольно специфичная.  Поэтому мы решили не мудрить с ненужными отвлекающими элементами на сайте и сделали его максимально понятным для любого пользователя.  
+						<br>
+						<br>
+						P.S. Разве что, использовали немного ништяков с partical-js. 
+					</div>
+				</div>
+				<a href="http://tcm-llc.ru/">
+					<div class="col-lg-5 cases-body__block-textblock-img tcm-img"></div>
+				</a>
+			</div>
+			<div class="col-xs-12 footer">
+				<div class="row">
+					<div class="col-xs-12 footer__slogan">
+						<h1>придумаем, <br> сделаем, <br> продадим</h1>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-xs-5 footer__link-modul">
+						<a class="footer__link-modul-icon" href="https://www.facebook.com/">
+							<img class="fb" src="files/png/FB.png" alt="">
+							<img class="fb-dark coverup" src="files/png/FB-dark.png" alt="">
+						</a>
+						<a class="footer__link-modul-icon" href="https://vk.com/startjulo"">
+							<img class="vk" src="files/png/VK.png" alt=""> 
+							<img class="vk-dark coverup" src="files/png/VK-dark.png" alt="">
+						</a>
+					</div>
+					<div class="footer__contacts col-xs-7">
+						<div class="col-xs-12 col-md-offset-4 col-md-4"><a href="tel:+74993906061">+7 (499) 390 60 61</a></div>
+						<div class="col-xs-12 col-md-4"><a href="mailto:info@startjulo.ru?subject=Добрый день, у меня есть вопрос!">info@startjulo.ru</a></div>
+					</div>
+				</div>
 			</div>
 		</div>
-		<div class="face-page__title row">
-			<div class="col-xs-12 col-md-6">
-				<h1>Портфолио</h1>
-				<p class="face-page__title_design-button">ДИЗАЙН</p>
-				<p class="face-page__title_slash">/</p>
-				<p class="face-page__title_development-button">РАЗРАБОТКА</p>
-				<p class="face-page__title_slash">/</p>
-				<p class="face-page__title_marketing-button">МАРКЕТИНГ</p>
-			</div>
-		</div>
-	</div>
-	
-	<div class="cases-body development">
-		<div class="col-xs-12 cases-body__block cases-body__block-1 active">
-			<div class="col-lg-7 cases-body__block-textblock">
-				<div class="col-lg-4 cases-body__block-textblock-name">
-				<h3>
-				снабсервис
-				</h3>
-				<h4>
-				Дизайн, разработка	
-				</h4>
-				</div>
-				<div class="col-lg-8 cases-body__block-textblock-text">
-				Перед нами стояла задача – современный  корпоративный сайт.  Заказчик – металлоторговая компания, занимающаяся поставкой сырья на Абинский ЭМЗ и сбытом металлопроката его производства.
-				<br>
-				<br>
-				Работая над проектом, мы старались следовать пожеланиям заказчика: «мы хотим сайт, жизайн которого не завязан на ассоциации с металлом, и одновременно создавал бы надежный, сильный образ компании, как партнера , так и конкурента».
-				<br>
-				<br>
-				Предлагаем вам  посмотреть, чего мы добились.</div>
-			</div>
-			<div class="col-lg-5 cases-body__block-textblock-img snabservice-img"></div>
-		</div>
-		<div class="col-xs-12 cases-body__block cases-body__block-3">
-			<div class="col-lg-7 cases-body__block-textblock">
-				<div class="col-lg-4 cases-body__block-textblock-name">
-				<h3>
-					Технокор
-				</h3>
-				<h4>
-					Дизайн, разработка	
-				</h4>
-				</div>
-				<div class="col-lg-8 cases-body__block-textblock-text">
-					Исследуя деятельность компании, мы решили, что подчеркнуть уникальность производимой ею техники - ключевой момент. Поэтому для страниц продукции мы специально разработали 3D-модели (в стиле WireFrame) каждого аппарата производства 
-					<br>
-					<br>
-					АО «Технокор».
-					<br>
-					<br>
-					Компания работает уже много лет, поэтому с цветовой схемой проблем было не так много. (а с чем было много? нужно добавить дельного текста, очень коротко, текст обрывается, на мой взгялд)
-				</div>
-			</div>
-			<div class="col-lg-5 cases-body__block-textblock-img tehnocor-img"></div>
-		</div>
-		<div class="col-xs-12 cases-body__block cases-body__block-4">
-			<div class="col-lg-7 cases-body__block-textblock">
-				<div class="col-lg-4 cases-body__block-textblock-name">
-				<h3>
-					ТСМ
-				</h3>
-				<h4>
-					Дизайн, разработка	
-				</h4>
-				</div>
-				<div class="col-lg-8 cases-body__block-textblock-text">
-					Просто, лаконично, чисто - три прилагательных, полностью характеризующие этот корпоративный сайт. 
-					<br>
-					<br>
-					Деятельность компании ООО «ТСМ» узкая и довольно специфичная.  Поэтому мы решили избежать всех возможных отвлекающих элементов и постарались сделать его максимально понятным для любого пользователя. Ну, Разве что, использовали добавили ништяков с partical-js.
-				</div>
-			</div>
-			<div class="col-lg-5 cases-body__block-textblock-img tcm-img"></div>
-		</div>
-	</div>
 
-	<div class="cases-body  design">
-		<div class="col-xs-12 cases-body__block cases-body__block-1 active">
-			<div class="col-lg-7 cases-body__block-textblock">
-				<div class="col-lg-4 cases-body__block-textblock-name">
-				<h3>
-				снабсервис
-				</h3>
-				<h4>
-				Дизайн, разработка	
-				</h4>
-				</div>
-				<div class="col-lg-8 cases-body__block-textblock-text">
-				Перед нами стояла задача – современный  корпоративный сайт.  Заказчик – металлоторговая компания, занимающаяся поставкой сырья на Абинский ЭМЗ и сбытом металлопроката его производства.
-				<br>
-				<br>
-				Работая над проектом, мы старались следовать пожеланиям заказчика: «мы хотим сайт, жизайн которого не завязан на ассоциации с металлом, и одновременно создавал бы надежный, сильный образ компании, как партнера , так и конкурента».
-				<br>
-				<br>
-				Предлагаем вам  посмотреть, чего мы добились.</div>
-			</div>
-			<div class="col-lg-5 cases-body__block-textblock-img snabservice-img"></div>
-		</div>
-		<div class="col-xs-12 cases-body__block cases-body__block-3">
-			<div class="col-lg-7 cases-body__block-textblock">
-				<div class="col-lg-4 cases-body__block-textblock-name">
-				<h3>
-					Технокор
-				</h3>
-				<h4>
+		<div class="cases-body design">
+			<div class="col-xs-12 cases-body__block cases-body__block-1">
+				<div class="col-lg-7 cases-body__block-textblock">
+					<div class="col-lg-4 cases-body__block-textblock-name">
+					<h3>
+					снабсервис
+					</h3>
+					<h4>
 					Дизайн, разработка	
-				</h4>
+					</h4>
+					</div>
+					<div class="col-lg-8 cases-body__block-textblock-text">
+					Перед нами стояла задача – современный  корпоративный сайт.  Заказчик – металлоторговая компания, занимающаяся поставкой сырья на Абинский ЭМЗ и сбытом металлопроката его производства.
+					<br>
+					<br>
+					Работая над проектом, мы старались следовать пожеланиям заказчика: «мы хотим сайт, жизайн которого не завязан на ассоциации с металлом, и одновременно создавал бы надежный, сильный образ компании, как партнера , так и конкурента».
+					<br>
+					<br>
+					Предлагаем вам  посмотреть, чего мы добились.</div>
 				</div>
-				<div class="col-lg-8 cases-body__block-textblock-text">
-					Исследуя деятельность компании, мы решили, что подчеркнуть уникальность производимой ею техники - ключевой момент. Поэтому для страниц продукции мы специально разработали 3D-модели (в стиле WireFrame) каждого аппарата производства 
-					<br>
-					<br>
-					АО «Технокор».
-					<br>
-					<br>
-					Компания работает уже много лет, поэтому с цветовой схемой проблем было не так много. (а с чем было много? нужно добавить дельного текста, очень коротко, текст обрывается, на мой взгялд)
+				<a href="http://www.snab-service.com/">
+					<div class="col-lg-5 cases-body__block-textblock-img snabservice-img"></div>
+				</a>
+			</div>
+			<div class="col-xs-12 cases-body__block cases-body__block-2">
+				<div class="col-lg-7 cases-body__block-textblock">
+					<div class="col-lg-4 cases-body__block-textblock-name">
+					<h3>
+						Технокор
+					</h3>
+					<h4>
+						Дизайн, разработка	
+					</h4>
+					</div>
+					<div class="col-lg-8 cases-body__block-textblock-text">
+						Исследуя деятельность компании, мы решили, что подчеркнуть уникальность производимой ею техники - ключевой момент. Поэтому для страниц продукции мы специально разработали 3D-модели (в стиле WireFrame) каждого аппарата производства 
+						<br>
+						<br>
+						АО «Технокор».
+						<br>
+						<br>
+						Компания работает уже много лет, поэтому с цветовой схемой проблем было не так много. (а с чем было много? нужно добавить дельного текста, очень коротко, текст обрывается, на мой взгялд)
+					</div>
+				</div>
+				<a href="http://texnokor.com/">
+					<div class="col-lg-5 cases-body__block-textblock-img tehnocor-img"></div>
+				</a>
+			</div>
+			<div class="col-xs-12 cases-body__block cases-body__block-3">
+				<div class="col-lg-7 cases-body__block-textblock">
+					<div class="col-lg-4 cases-body__block-textblock-name">
+					<h3>
+						ТСМ
+					</h3>
+					<h4>
+						Дизайн, разработка	
+					</h4>
+					</div>
+					<div class="col-lg-8 cases-body__block-textblock-text">
+						Просто, лаконично, чисто - три прилагательных, полностью характеризующие этот корпоративный сайт. 
+						<br>
+						<br>
+						Деятельность компании ООО «ТСМ» узкая и довольно специфичная.  Поэтому мы решили не мудрить с ненужными отвлекающими элементами на сайте и сделали его максимально понятным для любого пользователя.  
+						<br>
+						<br>
+						P.S. Разве что, использовали немного ништяков с partical-js. 
+					</div>
+				</div>
+				<a href="http://tcm-llc.ru/">
+					<div class="col-lg-5 cases-body__block-textblock-img tcm-img"></div>
+				</a>
+			</div>
+			<div class="col-xs-12 footer">
+				<div class="row">
+					<div class="col-xs-12 footer__slogan">
+						<h1>придумаем, <br> сделаем, <br> продадим</h1>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-xs-5 footer__link-modul">
+						<a class="footer__link-modul-icon" href="https://www.facebook.com/">
+							<img class="fb" src="files/png/FB.png" alt="">
+							<img class="fb-dark coverup" src="files/png/FB-dark.png" alt="">
+						</a>
+						<a class="footer__link-modul-icon" href="https://vk.com/startjulo"">
+							<img class="vk" src="files/png/VK.png" alt=""> 
+							<img class="vk-dark coverup" src="files/png/VK-dark.png" alt="">
+						</a>
+					</div>
+					<div class="footer__contacts col-xs-7">
+						<div class="col-xs-12 col-md-offset-4 col-md-4"><a href="tel:+74993906061">+7 (499) 390 60 61</a></div>
+						<div class="col-xs-12 col-md-4"><a href="mailto:info@startjulo.ru?subject=Добрый день, у меня есть вопрос!">info@startjulo.ru</a></div>
+					</div>
 				</div>
 			</div>
-			<div class="col-lg-5 cases-body__block-textblock-img tehnocor-img"></div>
 		</div>
-		<div class="col-xs-12 cases-body__block cases-body__block-4">
-			<div class="col-lg-7 cases-body__block-textblock">
-				<div class="col-lg-4 cases-body__block-textblock-name">
-				<h3>
-					ТСМ
-				</h3>
-				<h4>
-					Дизайн, разработка	
-				</h4>
-				</div>
-				<div class="col-lg-8 cases-body__block-textblock-text">
-					Просто, лаконично, чисто - три прилагательных, полностью характеризующие этот корпоративный сайт. 
-					<br>
-					<br>
-					Деятельность компании ООО «ТСМ» узкая и довольно специфичная.  Поэтому мы решили избежать всех возможных отвлекающих элементов и постарались сделать его максимально понятным для любого пользователя. Ну, Разве что, использовали добавили ништяков с partical-js.
-				</div>
-			</div>
-			<div class="col-lg-5 cases-body__block-textblock-img tcm-img"></div>
-		</div>
-	</div>
 
-	<div class="cases-body  marketing">
-		<div class="col-xs-12 cases-body__block cases-body__block-1 active">
-			<div class="col-lg-7 cases-body__block-textblock">
-				<div class="col-lg-4 cases-body__block-textblock-name">
-				<h3>
-				снабсервис
-				</h3>
-				<h4>
-				Дизайн, разработка	
-				</h4>
+		<div class="cases-body marketing">
+			<div class="col-xs-12 cases-body__block cases-body__block-2">
+				<div class="col-lg-7 cases-body__block-textblock">
+					<div class="col-lg-4 cases-body__block-textblock-name">
+					<h3>
+						сантермик
+					</h3>
+					<h4>
+						Продвижение, контекстная реклама	
+					</h4>
+					</div>
+					<div class="col-lg-8 cases-body__block-textblock-text">
+					Небольшой интернет-магазин инженерной сантехники, имеющий одну точку продаж в Москве. Казалось, что будет тяжело привести к ним новый поток клиентов, так как как на этом рынке есть свои гиганты?  
+					<br>
+					<br>
+					Мы представляем вам кейс по SEO-продвижению  и Контекстной рекламе. Этот интернет-магазин сейчас занимает сильные позиции в поисковой выдаче.
+					</div>
 				</div>
-				<div class="col-lg-8 cases-body__block-textblock-text">
-				Перед нами стояла задача – современный  корпоративный сайт.  Заказчик – металлоторговая компания, занимающаяся поставкой сырья на Абинский ЭМЗ и сбытом металлопроката его производства.
-				<br>
-				<br>
-				Работая над проектом, мы старались следовать пожеланиям заказчика: «мы хотим сайт, жизайн которого не завязан на ассоциации с металлом, и одновременно создавал бы надежный, сильный образ компании, как партнера , так и конкурента».
-				<br>
-				<br>
-				Предлагаем вам  посмотреть, чего мы добились.</div>
+				<a href="http://san-termik.ru/">
+					<div class="col-lg-5 cases-body__block-textblock-img santermic-img"></div>
+				</a>
 			</div>
-			<div class="col-lg-5 snabservice-img cases-body__block-textblock-img"></div>
-		</div>
-		<div class="col-xs-12 cases-body__block cases-body__block-3">
-			<div class="col-lg-7 cases-body__block-textblock">
-				<div class="col-lg-4 cases-body__block-textblock-name">
-				<h3>
-					Технокор
-				</h3>
-				<h4>
-					Дизайн, разработка	
-				</h4>
+			<div class="col-xs-12 footer">
+				<div class="row">
+					<div class="col-xs-12 footer__slogan">
+						<h1>придумаем, <br> сделаем, <br> продадим</h1>
+					</div>
 				</div>
-				<div class="col-lg-8 cases-body__block-textblock-text">
-					Исследуя деятельность компании, мы решили, что подчеркнуть уникальность производимой ею техники - ключевой момент. Поэтому для страниц продукции мы специально разработали 3D-модели (в стиле WireFrame) каждого аппарата производства 
-					<br>
-					<br>
-					АО «Технокор».
-					<br>
-					<br>
-					Компания работает уже много лет, поэтому с цветовой схемой проблем было не так много. (а с чем было много? нужно добавить дельного текста, очень коротко, текст обрывается, на мой взгялд)
-				</div>
-			</div>
-			<div class="col-lg-5 tehnocor-img cases-body__block-textblock-img"></div>
-		</div>
-		<div class="col-xs-12 cases-body__block cases-body__block-4">
-			<div class="col-lg-7 cases-body__block-textblock">
-				<div class="col-lg-4 cases-body__block-textblock-name">
-				<h3>
-					ТСМ
-				</h3>
-				<h4>
-					Дизайн, разработка	
-				</h4>
-				</div>
-				<div class="col-lg-8 cases-body__block-textblock-text">
-					Просто, лаконично, чисто - три прилагательных, полностью характеризующие этот корпоративный сайт. 
-					<br>
-					<br>
-					Деятельность компании ООО «ТСМ» узкая и довольно специфичная.  Поэтому мы решили избежать всех возможных отвлекающих элементов и постарались сделать его максимально понятным для любого пользователя. Ну, Разве что, использовали добавили ништяков с partical-js.
+				<div class="row">
+					<div class="col-xs-5 footer__link-modul">
+						<a class="footer__link-modul-icon" href="https://www.facebook.com/">
+							<img class="fb" src="files/png/FB.png" alt="">
+							<img class="fb-dark coverup" src="files/png/FB-dark.png" alt="">
+						</a>
+						<a class="footer__link-modul-icon" href="https://vk.com/startjulo"">
+							<img class="vk" src="files/png/VK.png" alt=""> 
+							<img class="vk-dark coverup" src="files/png/VK-dark.png" alt="">
+						</a>
+					</div>
+					<div class="footer__contacts col-xs-7">
+						<div class="col-xs-12 col-md-offset-4 col-md-4"><a href="tel:+74993906061">+7 (499) 390 60 61</a></div>
+						<div class="col-xs-12 col-md-4"><a href="mailto:info@startjulo.ru?subject=Добрый день, у меня есть вопрос!">info@startjulo.ru</a></div>
+					</div>
 				</div>
 			</div>
-			<div class="col-lg-5 tcm-img cases-body__block-textblock-img"></div>
-		</div>
-	</div>
+		</div>	
+	</div>	
 </body>
 	<script
 		  src="https://code.jquery.com/jquery-2.2.4.js"

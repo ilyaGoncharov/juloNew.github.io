@@ -10,6 +10,7 @@
   and (-webkit-min-device-pixel-ratio: 2) {
   	body {
 		font-size: 16px;
+		overflow-x: hidden;
 	}
 
 	.object__menu-slide-box li {
@@ -59,28 +60,53 @@
 	}
 
 	.face-page__title h1 {
-		font-size: 109.656px;
-		line-height: 80px;
+		margin-top: 230px;
+		font-size: 52.358px;
+		line-height: 50px;
 	}
 
-	.face-page__title h2 {
-		font-size: 25.888px;
+	.face-page__title p {
+		font-size: 20px;
 	}
 
-	.face-page__title div {
-		padding-left: 10px;
+	.face-page__title p:nth-child(odd) {
+
+	} 
+
+	.cases-body {
+	position: absolute;
+	top: 100vh;
+	padding: 0px;
+	margin: 0px;
+	width: 100vw;
+	left: 0;
+	}
+
+	.cases-body__block {
+		height: auto;
+		padding: 0px;
+		margin: 0px;
+	}
+
+	.cases-body__block-textblock-img {
+	height: 100%;
+	background-color: #313A54;
+	}
+
+	.cases-body__block-textblock-img {
+		padding: 0px;
+		margin: 0px;
+		height: 120%;
+		cursor: pointer;
+		background-size: cover;
+	    background-repeat: no-repeat;
+	    background-position: 50% 50%;
+	    z-index: 10;
 	}
 
 	.footer {
 		display: none;
 	}
-
-	.footer img {
-	}
-
-	.footer div {
-	}
-
 }
 
 /* Portrait */

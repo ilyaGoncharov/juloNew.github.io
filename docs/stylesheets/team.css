@@ -1,0 +1,59 @@
+.face-page__title {
+	color: white;
+	position: initial;
+	margin: 0px;
+	padding: 25px;
+}
+
+.face-page__title h1 {
+	margin-top: 50vh;
+	color: white;
+	line-height: initial;
+	-webkit-transition: .5s ease-in-out;
+	-moz-transition: .5s ease-in-out;
+	-o-transition: .5s ease-in-out;
+	transition: .5s ease-in-out;
+	line-height: 0.9;
+}
+
+.face-page__title p  {
+	font-family: "Attractive-Regular";
+	font-size: 20px;
+	-webkit-transition: .5s ease-in-out;
+	-moz-transition: .5s ease-in-out;
+	-o-transition: .5s ease-in-out;
+	transition: .5s ease-in-out;
+}
+
+.team__text-block {
+	height: 500px;
+	background-color: #E94E53;
+	margin-bottom: 5px;
+}
+
+.footer {
+	position: initial;
+	background-color: #E94E53;
+	height: 500px;
+	bottom: 0px;
+	padding-top: 0px;
+}
+
+.footer__slogan {
+	height: 100px;
+	margin-bottom: 150px;
+}
+
+.footer__slogan h1 {
+	font-family: "Bebas Bold";
+	color: white;
+	font-size: 9.492rem;
+	text-transform: uppercase;
+	margin-bottom: 0px;
+}
+
+.footer__link-modul,
+.footer__contacts {
+	margin-top: 200px;
+}
+

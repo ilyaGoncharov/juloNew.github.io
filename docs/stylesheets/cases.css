@@ -1,5 +1,4 @@
 body {
-	height: 3000px;
 	overflow-x: hidden;
 }
 
@@ -25,7 +24,7 @@ body {
 	display: inline-block;
 	font-family: "Bebas Bold";
 	color: white;
-	font-size: 4.2rem;
+	font-size: 52.3px;
 	text-transform: uppercase;
 	line-height: 0px;
 	-webkit-transition: .5s ease-in-out;
@@ -36,8 +35,15 @@ body {
 
 .face-page__title p:nth-child(even) {
 	cursor: pointer;
-	border-bottom: 4px solid #fff;
     line-height: 0.9;
+} 
+
+.face-page__title p:nth-child(even).active {
+	color: #E94E53;
+}
+
+.face-page__title p:nth-child(even).active.open {
+	color: #313A54;
 }
 
 .cases-body {
@@ -47,18 +53,12 @@ body {
 	margin: 0px;
 	width: 100vw;
 	left: 0;
-	color: #1F212F;
 }
 
 .cases-body__block {
 	height: 500px;
 	padding: 0px;
 	margin: 0px;
-	margin-top: 5px;
-}
-
-.cases-body__block.active {
-
 }
 
 .cases-body__block h3 {
@@ -77,6 +77,13 @@ body {
 .cases-body__block-textblock {
 	height: 500px;
 	padding: 25px;
+	/* background-color: #242938;
+	color: #313A54; */
+	background-color: white;
+	color: #242938;
+}
+
+.cases-body__block-textblock.open {
 	background-color: #242938;
 	color: #313A54;
 }
@@ -86,7 +93,7 @@ body {
 	padding-left: 15px;
 }
 
-/* .snabservice-img {
+.snabservice-img {
 	background-image: url("../files/png/snabservice.png");
 }
 
@@ -96,35 +103,73 @@ body {
 
 .tcm-img {
 	background-image: url("../files/png/tcm.png");
-} */
+}
+
+.santermic-img {
+	background-image: url("../files/png/santermic.png");
+}
 
 .cases-body__block-textblock-img {
 	height: 100%;
 	background-color: #313A54;
 }
 
-.cases-body__block-textblock-img.active {
+.cases-body__block-textblock-img {
 	padding: 0px;
 	margin: 0px;
-	height: 100%;
+	height: 120%;
 	cursor: pointer;
 	background-size: cover;
     background-repeat: no-repeat;
     background-position: 50% 50%;
+    z-index: 10;
 }
 
+.cases-body__block-textblock-img.open {
+	opacity: 0;
+}
 
 .development {
 	background-color: #242938;
-	left: 0;
+	left: 0vw;
 }
 
 .design {
 	background-color: #242938;
-	left: -100vw;
+	left: 100vw;
 }
 
 .marketing {
 	background-color: #242938;
-	left: 100vw;
+	left: 200vw;
+}
+
+.footer {
+	position: relative;
+	bottom: 0px;
+	background-color: #E94E53;
+	height: 500px;
+	padding-top: 0px;
+}
+
+.footer__slogan {
+	height: 100px;
+	margin-bottom: 150px;
+}
+
+.footer__slogan h1 {
+	font-family: "Bebas Bold";
+	color: white;
+	font-size: 9.492rem;
+	text-transform: uppercase;
+	margin-bottom: 0px;
+}
+
+.footer__slogan h1.open {
+	color: #313A54;
+}
+
+.footer__link-modul,
+.footer__contacts {
+	margin-top: 200px;
 }
