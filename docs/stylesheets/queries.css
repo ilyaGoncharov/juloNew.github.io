@@ -7,7 +7,7 @@
   and (max-device-width: 480px)
   and (-webkit-min-device-pixel-ratio: 2) {
   	body {
-		font-size: 16px;
+		font-size: 12.361px;
 	}
 
 	.object__menu-slide-box li {
@@ -62,7 +62,7 @@
 
 	.face-page__title h1 {
 		font-size: 109.656px;
-		line-height: 80px;
+		line-height: 65px;
 	}
 
 	.face-page__title h2 {
@@ -74,12 +74,10 @@
 	}
 
 	.footer {
-		padding-left: 5px;
+		padding-left: 20px;
+		padding-right: 0px;
 	}
-
-	.footer a img {
-		width: 28px;
-    	display: inline-block;
+	.footer a {
 	}
 }
 
@@ -201,6 +199,10 @@
   and (min-device-width: 375px) 
   and (max-device-width: 667px) 
   and (-webkit-min-device-pixel-ratio: 2) {
+	body {
+  		font-size: 20px;
+  	}
+
 	.object__contact-form_box input  {
 		height: 50px;
 	}
@@ -272,6 +274,11 @@
   and (min-device-width: 414px) 
   and (max-device-width: 736px) 
   and (-webkit-min-device-pixel-ratio: 3) { 
+
+  	body {
+  		font-size: 20px;
+  	}
+
   	.object__contact-form_box input  {
 		height: 50px;
 	}
@@ -301,10 +308,6 @@
   and (max-device-width: 736px) 
   and (-webkit-min-device-pixel-ratio: 3)
   and (orientation: landscape) { 
-  	body {
-		font-size: 16px;
-	}
-
 	.object__contact-form {
 		width: 100vw;
 		margin-left: 0%;
@@ -364,6 +367,10 @@
   and (min-device-width: 768px) 
   and (max-device-width: 1024px) 
   and (-webkit-min-device-pixel-ratio: 1) {
+  	body {
+  		font-size: 20px;
+  	}
+
 	.object__menu-slide-box {
   		position: fixed;
 		width: 100vw;
@@ -421,6 +428,9 @@
   and (min-device-width: 768px) 
   and (max-device-width: 1024px) 
   and (-webkit-min-device-pixel-ratio: 2) {
+  	body {
+  		font-size: 20px;
+  	}
 
   	.object__menu-slide-box {
   		position: fixed;

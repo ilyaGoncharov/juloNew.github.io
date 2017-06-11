@@ -1,5 +1,5 @@
 body {
-	background-color: #191A26;
+	
 }
 
 .face-page__title {
@@ -10,7 +10,7 @@ body {
 }
 
 .face-page__title h1 {
-	margin-top: 50vh;
+	margin-top: 10vh;
 	color: white;
 	line-height: initial;
 	-webkit-transition: .5s ease-in-out;
@@ -35,6 +35,7 @@ body {
 }
 
 .team__photo-block {
+	background-color: #191A26;
 	margin: 0px;
 	padding: 10px;
 	padding-top: 50px;

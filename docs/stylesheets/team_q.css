@@ -70,7 +70,7 @@
 	}
 
 	.face-page__title h1 {
-		margin-top: 230px;
+		margin-top: 15vh;
 		font-size: 52.358px;
 		line-height: 50px;
 	}
@@ -79,90 +79,23 @@
 		font-size: 12.361px;
 	}
 
-	.cases-body__block h4 {
-		margin-bottom: 20px;
+	.team__photo-block,
+	.team__text-block-element {
+		padding: 1px;
 	}
-
-	.development {
-		background-color: #242938;
-		display: none;
-	}
-
-	.development.open {
-		background-color: #242938;
-		display: block;
-	}
-
-	.design {
-		background-color: #242938;
-		display: none;
-	}
-
-	.design.open {
-		background-color: #242938;
-		display: block;
-	}
-
-	.marketing {
-		background-color: #242938;
-		display: none;
-	}
-
-	.marketing.open {
-		background-color: #242938;
-		display: block;
-	}
-
-	.cases-body {
-		position: static;
-	}
-
-	.cases-body__block {
-		height: 800px;
-		padding: 0px;
-		margin: 0px;
-	}
-
-	.cases-body__block-textblock {
-		height: 600px;
-		padding: 25px;
-		/* background-color: #242938;
-		color: #313A54; */
-		background-color: white;
-		color: #242938;
-	}
-
-	.cases-body__block-textblock-name {
-		padding-left: 5px;
-	}
-
-	.cases-body__block-textblock-text {
-		padding-left: 5px;
-	}
-
-	.cases-body__block-textblock-img {
-		position: static;
-		padding: 0px;
-		margin: 0px;
-		height: 200px;
-		cursor: pointer;
-		background-size: cover;
-	    background-repeat: no-repeat;
-	    background-position: 50% 50%;
-	    z-index: 10;
-	}
-
 
 	.footer {
+		position: relative;
 		font-size: 12.361px;
+		padding-left: 20px;
 		bottom: 0px;
 		background-color: #E94E53;
 		height: 480px;
 	}
 
 	.footer__slogan {
-		padding-top: 180px;
-		margin-bottom: 250px;
+		padding-top: 250px;
+		margin-bottom: 210px;
 	}
 
 	.footer__slogan h1 {
@@ -179,9 +112,13 @@
 
 	.footer__link-modul,
 	.footer__contacts {
-		margin-left: 0px;
+		padding: 0px;
 		margin-top: 50px;
 	}
+
+	.footer img {
+	}
+
 }
 
 /* Portrait */
@@ -376,7 +313,7 @@
   and (min-device-width: 414px) 
   and (max-device-width: 736px) 
   and (-webkit-min-device-pixel-ratio: 3) { 
-	body {
+  	body {
   		font-size: 20px;
   	}
 
