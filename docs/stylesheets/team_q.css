@@ -275,6 +275,19 @@
 		width: 90vw;
 		padding-top: 150px;
 	}	
+
+	.face-page__title p {
+		font-size: 20px;
+	}
+
+	.footer {
+		height: 667px;
+	}
+
+	.footer__slogan {
+		padding-top: 180px;
+		margin-bottom: 360px;
+	}
 }
 
 /* Portrait */
@@ -349,6 +362,15 @@
   	.face-page__title {
 		padding-top: 250px;
 	}	
+
+	.footer {
+		height: 667px;
+	}
+
+	.footer__slogan {
+		padding-top: 180px;
+		margin-bottom: 350px;
+	}
 
 }
 
@@ -461,10 +483,10 @@
 		padding: 25px;
 	}
 
-	
 	.team__photo-block {
 		padding-top: 30px !important;
 	}
+
 	.team__photo-block-element_text {
 		margin-top: 15px !important;
 		margin-bottom: 30px !important;

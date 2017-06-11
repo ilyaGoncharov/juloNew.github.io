@@ -1,7 +1,3 @@
-body {
-	
-}
-
 .face-page__title {
 	color: white;
 	position: initial;
@@ -30,9 +26,14 @@ body {
 }
 
 .team__text-block {
+	background-color: #E94E53;
 	position: relative;
 	padding: 30px;
-	background-color: #E94E53;
+}
+
+.team__text-block.open {
+	background-color: #242938;
+	color: #313A54;
 }
 
 .team__photo-block {
@@ -55,6 +56,14 @@ body {
 	transition: .5s ease-in-out;
 }
 
+.team__photo-block.open {
+	color: #313A54 !important;
+	-webkit-transition: .5s ease-in-out;
+	-moz-transition: .5s ease-in-out;
+	-o-transition: .5s ease-in-out;
+	transition: .5s ease-in-out;	
+}
+
 .team__photo-block h4 {
 	color: #313A54;
 	padding: 0px;
@@ -75,14 +84,6 @@ body {
 	margin-bottom: 20px !important;
 }
 
-.team__photo-block .row {
-	margin-bottom: 50px;
-}
-
-.team__photo-block img {
-	width: 100%;
-}
-
 .team__photo-block {
 	padding-top: 30px;
 }
@@ -92,6 +93,18 @@ body {
 	margin-bottom: 30px;
 }
 
+.team__photo-block-element_img img {
+	width: 100%;
+}
+
+.team__photo-block-element_img.open {
+	opacity: 0;
+	-webkit-transition: .5s ease-in-out;
+	-moz-transition: .5s ease-in-out;
+	-o-transition: .5s ease-in-out;
+	transition: .5s ease-in-out;
+}
+
 .footer {
 	padding-left: 20px;
 	position: relative;
@@ -99,6 +112,10 @@ body {
 	height: 500px;
 	padding-top: 0px;
 	margin: 0px;
+}
+
+.footer.open {
+	background-color: #242938;
 }
 
 .footer__slogan {
@@ -112,6 +129,10 @@ body {
 	font-size: 9.492rem;
 	text-transform: uppercase;
 	margin-bottom: 0px;
+}
+
+.footer__slogan h1.open {
+	color: #313A54;
 }
 
 .footer__link-modul,

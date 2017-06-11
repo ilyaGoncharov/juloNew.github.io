@@ -71,6 +71,7 @@
 		margin-top: 230px;
 		font-size: 52.358px;
 		line-height: 50px;
+		margin-left: 0px;
 	}
 
 	.face-page__title p {
@@ -322,6 +323,27 @@
 		width: 90vw;
 		padding-top: 150px;
 	}	
+
+	.cases-body__block {
+		height: 1000px;
+	}
+
+	.cases-body__block-textblock {
+		height: 750px;
+	}
+
+	.cases-body__block-textblock-img {
+		height: 250px;
+	}
+
+	.footer {
+		height: 667px;
+	}
+
+	.footer__slogan {
+		padding-top: 180px;
+		margin-bottom: 350px;
+	}
 }
 
 /* Portrait */
@@ -396,6 +418,15 @@
   	.face-page__title {
 		padding-top: 250px;
 	}	
+
+	.cases-body__block {
+		height: 1000px;
+	}
+
+	.cases-body__block-textblock-img {
+		height: 400px;
+	}
+
 
 }
 
@@ -603,7 +634,7 @@
 
 	.footer__link-modul {
 	    padding-left: 10px;
-	    padding-left: 25px;
+
 	}
 
 	.footer img {

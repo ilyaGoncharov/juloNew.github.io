@@ -11,6 +11,7 @@ body {
 
 .face-page__title h1 {
 	margin-top: 50vh;
+	margin-left: -5px;
 	color: white;
 	line-height: initial;
 	-webkit-transition: .5s ease-in-out;
@@ -181,7 +182,6 @@ body {
 .footer__link-modul .row {
 	margin: 0px;
 }
-
 
 .footer img {
 	height: 28px;
