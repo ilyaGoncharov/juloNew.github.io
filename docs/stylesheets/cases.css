@@ -53,12 +53,14 @@ body {
 	margin: 0px;
 	width: 100vw;
 	left: 0;
+
 }
 
 .cases-body__block {
 	height: 500px;
 	padding: 0px;
 	margin: 0px;
+	margin-bottom: 30px;
 }
 
 .cases-body__block h3 {
@@ -146,6 +148,8 @@ body {
 	background-color: #E94E53;
 	height: 500px;
 	padding-top: 30px;
+	padding-left: 30px;
+	padding-right: 30px;
 }
 
 .footer.open {
@@ -172,4 +176,8 @@ body {
 .footer__link-modul,
 .footer__contacts {
 	margin-top: 200px;
+}
+
+.footer__link-modul .row {
+	margin: 0px;
 }

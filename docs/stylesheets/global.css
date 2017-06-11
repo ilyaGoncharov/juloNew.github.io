@@ -262,6 +262,9 @@ body {
 	bottom: 0;
 }
 
+.footer {
+	margin: 0px;
+}
 
 .footer img {
 	display: inline-block;

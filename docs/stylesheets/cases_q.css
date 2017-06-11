@@ -1,5 +1,3 @@
-
-
 /* --------------------------------------------------------------------------------------------------- 	iPhone 4 and 4S
 --------------------------------------------------------------------------------------------------- */
 
@@ -76,7 +74,7 @@
 	}
 
 	.face-page__title p {
-		font-size: 12.361px;
+		font-size: 20px;
 	}
 
 	.cases-body__block h4 {
@@ -118,13 +116,13 @@
 	}
 
 	.cases-body__block {
-		height: 800px;
+		height: 600px;
 		padding: 0px;
 		margin: 0px;
 	}
 
 	.cases-body__block-textblock {
-		height: 600px;
+		height: 400px;
 		padding: 25px;
 		/* background-color: #242938;
 		color: #313A54; */
@@ -151,7 +149,6 @@
 	    background-position: 50% 50%;
 	    z-index: 10;
 	}
-
 
 	.footer {
 		font-size: 12.361px;
@@ -181,6 +178,12 @@
 	.footer__contacts {
 		margin-left: 0px;
 		margin-top: 50px;
+		padding-left: 30px;
+	}
+
+	.footer img {
+		margin-left: 0px;
+		margin-right: 20px;
 	}
 }
 
