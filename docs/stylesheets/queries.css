@@ -401,6 +401,16 @@
 		padding-top: 250px;
 	}	
 
+	.header {
+		height: 100px;
+		padding: 25px;
+	}
+
+	.footer__link-modul {
+		margin-top: 10px;
+   		padding-left: 25px;
+	}
+
 }
 
 /* Portrait */

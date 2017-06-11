@@ -455,66 +455,19 @@
   	.face-page__title {
 		padding-top: 250px;
 	}	
-  	
-  	.development {
-		background-color: #242938;
-		display: none;
+ 
+	.header {
+		height: 100px;
+		padding: 25px;
 	}
 
-	.development.open {
-		background-color: #242938;
-		display: block;
+	
+	.team__photo-block {
+		padding-top: 30px !important;
 	}
-
-	.design {
-		background-color: #242938;
-		display: none;
-	}
-
-	.design.open {
-		background-color: #242938;
-		display: block;
-	}
-
-	.marketing {
-		background-color: #242938;
-		display: none;
-	}
-
-	.marketing.open {
-		background-color: #242938;
-		display: block;
-	}
-
-	.cases-body {
-		position: static;
-	}
-
-	.cases-body__block {
-		height: 800px;
-		padding: 0px;
-		margin: 0px;
-	}
-
-
-	.cases-body__block-textblock-name {
-		padding-left: 5px;
-	}
-
-	.cases-body__block-textblock-text {
-		padding-left: 5px;
-	}
-
-	.cases-body__block-textblock-img {
-		position: static;
-		padding: 0px;
-		margin: 0px;
-		height: 200px;
-		cursor: pointer;
-		background-size: cover;
-	    background-repeat: no-repeat;
-	    background-position: 50% 50%;
-	    z-index: 10;
+	.team__photo-block-element_text {
+		margin-top: 15px !important;
+		margin-bottom: 30px !important;
 	}
 
 	.footer {
@@ -527,7 +480,7 @@
 	}
 
 	.footer__slogan {
-		padding-top: 180px;
+		padding-top: 150px;
 		margin-bottom: 250px;
 	}
 
@@ -546,13 +499,16 @@
 	.footer__link-modul,
 	.footer__contacts {
 		padding: 0px;
-		margin-top: 50px;
+		margin-top: 30px;
+	}
+
+	.footer__link-modul {
+		padding-left: 25px;
 	}
 
 	.footer img {
 		margin-right: initial;
 	}
-
 }
 
 /* Portrait */

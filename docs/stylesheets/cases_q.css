@@ -119,6 +119,7 @@
 		height: 600px;
 		padding: 0px;
 		margin: 0px;
+		margin-top: 20px;
 	}
 
 	.cases-body__block-textblock {
@@ -178,12 +179,13 @@
 	.footer__contacts {
 		margin-left: 0px;
 		margin-top: 50px;
-		padding-left: 30px;
+		padding-right: 0px;
 	}
 
 	.footer img {
 		margin-left: 0px;
-		margin-right: 20px;
+		margin-right: 15px;
+		margin-top: 5px;
 	}
 }
 
@@ -500,6 +502,12 @@
   	.face-page__title {
 		padding-top: 250px;
 	}	
+
+
+	.header {
+		height: 100px;
+		padding: 25px;
+	}
   	
   	.development {
 		background-color: #242938;
@@ -536,11 +544,10 @@
 	}
 
 	.cases-body__block {
-		height: 800px;
+		height: 820px;
 		padding: 0px;
 		margin: 0px;
 	}
-
 
 	.cases-body__block-textblock-name {
 		padding-left: 5px;
@@ -554,7 +561,7 @@
 		position: static;
 		padding: 0px;
 		margin: 0px;
-		height: 200px;
+		height: 300px;
 		cursor: pointer;
 		background-size: cover;
 	    background-repeat: no-repeat;
@@ -572,7 +579,7 @@
 	}
 
 	.footer__slogan {
-		padding-top: 180px;
+		padding-top: 150px;
 		margin-bottom: 250px;
 	}
 
@@ -591,13 +598,17 @@
 	.footer__link-modul,
 	.footer__contacts {
 		padding: 0px;
-		margin-top: 50px;
+		margin-top: 0px;
+	}
+
+	.footer__link-modul {
+	    padding-left: 10px;
+	    padding-left: 25px;
 	}
 
 	.footer img {
 		margin-right: initial;
 	}
-
 }
 
 /* Portrait */

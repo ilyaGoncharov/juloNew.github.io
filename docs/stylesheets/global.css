@@ -262,15 +262,11 @@ body {
 	bottom: 0;
 }
 
-.footer {
-	margin: 0px;
-}
-
 .footer img {
 	display: inline-block;
 	height: 28px;
 	width: 28px;
-	margin-left: 5px;
+	margin-left: 20px;
 	margin-right: 25px;
 	opacity: .9;
 }
