@@ -184,10 +184,9 @@ body {
 }
 
 .header.scroll {
-	background-color: #242938;
+	background-color:rgba(36, 41, 56, 0.8);
 	position: fixed;
 	width: 100vw;
-	opacity: 0.8;
 	z-index: 20;
 }
 
