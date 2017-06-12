@@ -45,7 +45,7 @@ $(document).ready(function(){
 	    	$(".object__contact-form").animate({left: '0vw'}, 600);
 	        slideForm = true;
 		});
-	} else if ( $(window).width() > 416 & $(window).width() < 1024) {
+	} else if ( $(window).width() > 416 & $(window).width() < 1199) {
 		$(".header__menu-button_icon").click(function(e) {
 			e.preventDefault();
 			if(slideMenu) {

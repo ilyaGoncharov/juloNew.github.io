@@ -519,14 +519,9 @@
 	    left: 180vh;
 	}
 
-	.object__menu-slide-box ul {
-		height: 60vh;
-		width: 60vw;
-    	margin-left: 20vw;
-	}
-
 	.object__menu-slide-box li {
 		width: 100vw;
+		text-align: center;
 	}
 
 	.object__contact-form {
@@ -685,14 +680,9 @@
 	    left: 180vh;
 	}
 
-	.object__menu-slide-box ul {
-		height: 60vh;
-		width: 60vw;
-    	margin-left: 20vw;
-	}
-
 	.object__menu-slide-box li {
 		width: 100vw;
+		text-align: center;
 	}
 
 	.object__contact-form {
