@@ -21,7 +21,6 @@
 		font-size: 52.3px;
 		line-height: 80px;
 		margin-left: 5px;
-
 	}
 
 	.object__contact-form {
@@ -58,8 +57,7 @@
 		padding-top: 25px;
 	}
 
-	.header__menu-button_icon {
-		width: initial;
+	.header__menu-button_icon 
 	}
 
 	.face-page__title h1 {
