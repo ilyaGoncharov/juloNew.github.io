@@ -27,6 +27,7 @@ $(document).ready(function() {
 			$(".marketing").removeClass('open');
 			$('.wrapper').height($(window).height() + 2000);			
 		});
+
 		$(window).scroll(function() {
 		    var height = $(window).scrollTop();
 		    if (height > 200) {
@@ -66,6 +67,7 @@ $(document).ready(function() {
 			$(".marketing").removeClass('open');
 			$('.wrapper').height($(window).height() + 2000);			
 		});
+		
 		$(window).scroll(function() {
 		    var height = $(window).scrollTop();
 		    if (height > 200) {
