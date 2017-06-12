@@ -67,6 +67,10 @@
 		right: 32px;
 	}
 
+	.face-page__title {
+		margin-top: 50px;
+	}
+
 	.face-page__title h1 {
 		margin-top: 230px;
 		font-size: 52.358px;
@@ -120,7 +124,8 @@
 		height: 600px;
 		padding: 0px;
 		margin: 0px;
-		margin-top: 20px;
+		margin-bottom: 20px;
+		padding: 1px;
 	}
 
 	.cases-body__block-textblock {
@@ -160,8 +165,8 @@
 	}
 
 	.footer__slogan {
-		padding-top: 180px;
-		margin-bottom: 250px;
+	    padding-top: 150px;
+	    margin-bottom: 280px;
 	}
 
 	.footer__slogan h1 {
