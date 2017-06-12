@@ -28,6 +28,8 @@ body {
 	font-family: "Attractive-Regular";
 	font-size: 20px;
 	color: white;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 }
 
 ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
@@ -185,12 +187,12 @@ body {
 	background-color: #242938;
 	position: fixed;
 	width: 100vw;
+	opacity: 0.8;
 	z-index: 20;
 }
 
 .header.scroll.open {
 	background-color: transparent;
-	color: white;
 }
 
 .header__logo img {

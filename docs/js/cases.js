@@ -88,6 +88,17 @@ $(document).ready(function() {
 			$('.wrapper').height($(window).height() + 2000);
 		});
 	}	else if ( $(window).width() > 1200) {   
+		$(window).scroll(function() {
+		    var height = $(window).scrollTop();
+		    if (height > 600) {
+		    	$(".face-page__title_cases-menu").addClass('fixed');
+		    	$(".header").addClass('scroll');
+		    }
+		    else if (height < 600) {
+		    	$(".face-page__title_cases-menu").removeClass('fixed');
+		    	$(".header").removeClass('scroll');
+		    }
+		});
 		$(".wrapper").height($(window).height() + 1000);
 		$(".face-page__title_design-button").click(function() {
 			$(".face-page__title_development-button").removeClass('active');
@@ -121,14 +132,3 @@ $(document).ready(function() {
 	} 
 });
 
-$(window).scroll(function() {
-    var height = $(window).scrollTop();
-    if (height > 600) {
-    	$(".face-page__title_cases-menu").addClass('fixed');
-    	$(".header").addClass('scroll');
-    }
-    else if (height < 600) {
-    	$(".face-page__title_cases-menu").removeClass('fixed');
-    	$(".header").removeClass('scroll');
-    }
-});
