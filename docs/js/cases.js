@@ -2,10 +2,10 @@ $(document).ready(function() {
 	if ( $(window).width() >= 320 &  $(window).width() < 479) {
 		$(window).scroll(function() {
 		    var height = $(window).scrollTop();
-		    if (height > 600) {
+		    if (height > 300) {
 		    	$(".header").addClass('scroll');
 		    }
-		    else if (height < 600) {
+		    else if (height < 300) {
 		    	$(".header").removeClass('scroll');
 		    }
 		});
@@ -39,10 +39,10 @@ $(document).ready(function() {
 	}	else if ( $(window).width() > 375 & $(window).width() < 415) {
 		$(window).scroll(function() {
 		    var height = $(window).scrollTop();
-		    if (height > 600) {
+		    if (height > 300) {
 		    	$(".header").addClass('scroll');
 		    }
-		    else if (height < 600) {
+		    else if (height < 300) {
 		    	$(".header").removeClass('scroll');
 		    }
 		});
