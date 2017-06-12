@@ -55,7 +55,7 @@
 	}
 
 	.header {
-		height: 60px;
+		height: 80px;
 		width: 100vw;
 		padding-top: 25px;
 	}
@@ -82,7 +82,7 @@
 
 	.team__text-block {
 		position: relative;
-		padding: 30px;
+		padding: 35px;
 	}
 
 	.team__photo-block {
