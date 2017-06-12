@@ -539,7 +539,6 @@
 		padding-top: 250px;
 	}	
 
-
 	.header {
 		height: 100px;
 		padding: 25px;
@@ -586,11 +585,11 @@
 	}
 
 	.cases-body__block-textblock-name {
-		padding-left: 5px;
+		padding-left: 10px;
 	}
 
 	.cases-body__block-textblock-text {
-		padding-left: 5px;
+		padding-left: 10px;
 	}
 
 	.cases-body__block-textblock-img {

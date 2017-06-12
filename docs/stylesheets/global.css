@@ -82,7 +82,7 @@ body {
 	position: fixed; 
 	right: -39vw;
 	padding-top: 20vh;
-	z-index: 10;
+	z-index: 15;
 }
 
 .object__menu-slide-box ul {
@@ -177,8 +177,20 @@ body {
 }
 
 .header {
-	height: 100px;
+	height: 80px;
 	padding: 25px;
+}
+
+.header.scroll {
+	background-color: #242938;
+	position: fixed;
+	width: 100vw;
+	z-index: 20;
+}
+
+.header.scroll.open {
+	background-color: transparent;
+	color: white;
 }
 
 .header__logo img {
