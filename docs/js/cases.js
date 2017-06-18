@@ -1,4 +1,5 @@
 $(document).ready(function() {
+	/*$("#test").html('<object data="http://milyakov.com/"/>');*/
 	if ( $(window).width() >= 320 &  $(window).width() < 479) {
 		$(".face-page__title_design-button").click(function() {
 			$(".face-page__title_development-button").removeClass('active');
@@ -147,15 +148,18 @@ $(document).ready(function() {
 		});
 		$(window).scroll(function() {
 		    var height = $(window).scrollTop();
-		    if (height > 600) {
+		    if (height > 450) {
 		    	$(".face-page__title_cases-menu").addClass('fixed');
-		    	$(".header").addClass('scroll');
-		    }
-		    else if (height < 600) {
+		    	$(".header, .cases-body__block-1, .snabservice-img").addClass('scroll');
+		    } else if (height < 550) {
 		    	$(".face-page__title_cases-menu").removeClass('fixed');
-		    	$(".header").removeClass('scroll');
+		    	$(".header, .cases-body__block-1, .snabservice-img").removeClass('scroll');
+		    } else if (height === 750) {
+		    	$(".header, .cases-body__block-1, .snabservice-img").removeClass('scroll');
+		    	$(".header, .cases-body__block-2, .tehnocor-img").addClass('scroll');
 		    }
 		});
 	} 
 });
+
 

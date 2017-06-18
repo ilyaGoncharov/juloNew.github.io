@@ -11,7 +11,7 @@ body {
 
 .face-page__title h1 {
 	margin-top: 60vh;
-	margin-left: -5px;
+	margin-left: 0px;
 	color: white;
 	line-height: initial;
 	-webkit-transition: .5s ease-in-out;
@@ -63,17 +63,30 @@ body {
 
 .cases-body {
 	position: absolute;
-	top: 100vh;
-	padding: 0px;
-	margin: 0px;
-	width: 100vw;
 	left: 0;
+	top: 100vh;
+	width: 100vw;
+	margin: 0px;
+	padding: 0px;
+}
+
+.cases-body img {
+	width: 100%;
 }
 
 .cases-body__block {
+	position: relative;
 	height: 500px;
-	padding: 0px;
 	margin: 0px;
+	padding: 0px;
+	padding-right: 15px;
+}
+
+.cases-body__block-textblock {
+	height: inherit;
+	padding: 25px;
+	
+	color: #313A54;
 }
 
 .cases-body__block h3 {
@@ -89,55 +102,41 @@ body {
 	padding: 0px;
 }
 
-.cases-body__block-textblock {
-	height: 500px;
-	padding: 25px;
-	/* background-color: #242938;
-	color: #313A54; */
-	background-color: white;
-	color: #242938;
-}
-
-.cases-body__block-textblock.open {
-	background-color: #242938;
-	color: #313A54;
-}
-
 .cases-body__block-textblock-name {
 	padding: 6px;
 	padding-left: 15px;
 }
 
-.snabservice-img {
-	background-image: url("../files/png/snabservice.png");
+.cases-body__block-textblock-img {
+	border: 5px solid #E94E53;
+	background-size: cover;
+    /* background-position: 50% 50%; */
+	height: 500px;
+	max-height: 500px;
+	padding: 0px;
+	cursor: pointer;
+	z-index: 5;
+	overflow-y: scroll;
+	opacity: 0;
 }
 
+.snabservice-img {
+	/* background-image: url("../files/png/snabservice.png"); */
+	/* background-image: url("../files/png/milyakov.png"); */
+}
+
+.snabservice-img img {}
+
 .tehnocor-img {
-	background-image: url("../files/png/tehnocor.png");
+	/* background-image: url("../files/png/tehnocor.png"); */
 }
 
 .tcm-img {
-	background-image: url("../files/png/tcm.png");
+	/* background-image: url("../files/png/tcm.png"); */
 }
 
 .santermic-img {
-	background-image: url("../files/png/santermic.png");
-}
-
-.cases-body__block-textblock-img {
-	padding: 0px;
-	margin: 0px;
-	height: 100%;
-	cursor: pointer;
-	background-size: cover;
-    background-repeat: no-repeat;
-    /* background-position: 50% 50%; */
-    background-position: 50%;
-    z-index: 5;
-}
-
-.cases-body__block-textblock-img.open {
-	opacity: 0;
+	/* background-image: url("../files/png/santermic.png"); */
 }
 
 .development {
@@ -153,6 +152,16 @@ body {
 .marketing {
 	background-color: #242938;
 	left: 200vw;
+}
+
+.cases-body__block-1.scroll,
+.cases-body__block-1.scroll {
+	background-color: white;
+}
+
+.snabservice-img.scroll,
+.tehnocor-img.scroll {
+	opacity: 1 !important;
 }
 
 .footer {

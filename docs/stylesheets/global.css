@@ -181,6 +181,7 @@ body {
 .header {
 	height: 80px;
 	padding: 25px;
+	padding-left: 10px;
 }
 
 .header.scroll {
@@ -220,6 +221,7 @@ body {
 	padding: 25px;
 	position: fixed;
 	bottom: 70px;
+	padding-left: 20px;
 }
 
 .face-page__title p {
@@ -266,7 +268,7 @@ body {
 }
 
 .footer {
-	padding: 21px;
+	padding: 20px;
 	font-size: 1.5rem;
 	/* background-color: #313A54; */
 	/* background-color: #E94E53; */
@@ -279,7 +281,6 @@ body {
 	display: inline-block;
 	height: 28px;
 	width: 28px;
-	margin-left: 35px;
 	margin-right: 5px;
 }
 

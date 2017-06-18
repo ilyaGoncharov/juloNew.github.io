@@ -1,11 +1,9 @@
 /* --------------------------------------------------------------------------------------------------- 	iPhone 4 and 4S
 --------------------------------------------------------------------------------------------------- */
-
 /* Portrait and Landscape */
 @media only screen 
-  and (min-device-width: 320px) 
-  and (max-device-width: 480px)
-  and (-webkit-min-device-pixel-ratio: 2) {
+  and (min-width: 320px) 
+  and (max-width: 480px) {
   	body {
 		font-size: 12.361px;
 	}
@@ -197,9 +195,8 @@
 
 /* Portrait */
 @media only screen 
-  and (min-device-width: 320px) 
-  and (max-device-width: 480px)
-  and (-webkit-min-device-pixel-ratio: 2)
+  and (min-width: 320px) 
+  and (max-width: 480px)
   and (orientation: portrait) {
   	.object__menu-slide-box {
   		position: fixed;
@@ -214,9 +211,8 @@
 
 /* Landscape */
 @media only screen 
-  and (min-device-width: 320px) 
-  and (max-device-width: 480px)
-  and (-webkit-min-device-pixel-ratio: 2)
+  and (min-width: 320px) 
+  and (max-width: 480px)
   and (orientation: landscape) {
   	.object__menu-slide-box {
   		width: 100vw;
@@ -245,9 +241,8 @@
 
 /* Portrait and Landscape */
 @media only screen 
-  and (min-device-width: 320px) 
-  and (max-device-width: 568px)
-  and (-webkit-min-device-pixel-ratio: 2) {
+  and (min-width: 320px) 
+  and (max-width: 568px) {
 	.object__contact-form {
 		height: 120vh;
 	}
@@ -288,17 +283,15 @@
 
 /* Portrait */
 @media only screen 
-  and (min-device-width: 320px) 
-  and (max-device-width: 568px)
-  and (-webkit-min-device-pixel-ratio: 2)
+  and (min-width: 320px) 
+  and (max-width: 568px)
   and (orientation: portrait) {  	
 }
 
 /* Landscape */
 @media only screen 
-  and (min-device-width: 320px) 
-  and (max-device-width: 568px)
-  and (-webkit-min-device-pixel-ratio: 2)
+  and (min-width: 320px) 
+  and (max-width: 568px)
   and (orientation: landscape) {
  
 }
@@ -309,9 +302,8 @@
 
 /* Portrait and Landscape */
 @media only screen 
-  and (min-device-width: 375px) 
-  and (max-device-width: 667px) 
-  and (-webkit-min-device-pixel-ratio: 2) {
+  and (min-width: 375px) 
+  and (max-width: 667px)  {
   	body {
   		font-size: 20px;
   	}
@@ -353,17 +345,15 @@
 
 /* Portrait */
 @media only screen 
-  and (min-device-width: 375px) 
-  and (max-device-width: 667px) 
-  and (-webkit-min-device-pixel-ratio: 2)
+  and (min-width: 375px) 
+  and (max-width: 667px) 
   and (orientation: portrait) { 
 }
 
 /* Landscape */
 @media only screen 
-  and (min-device-width: 375px) 
-  and (max-device-width: 667px) 
-  and (-webkit-min-device-pixel-ratio: 2)
+  and (min-width: 375px) 
+  and (max-width: 667px) 
   and (orientation: landscape) { 
 	.object__menu-slide-box {
   		position: fixed;
@@ -405,9 +395,8 @@
 
 /* Portrait and Landscape */
 @media only screen 
-  and (min-device-width: 414px) 
-  and (max-device-width: 736px) 
-  and (-webkit-min-device-pixel-ratio: 3) { 
+  and (min-width: 414px) 
+  and (max-width: 736px)  { 
 	body {
   		font-size: 20px;
   	}
@@ -437,18 +426,16 @@
 
 /* Portrait */
 @media only screen 
-  and (min-device-width: 414px) 
-  and (max-device-width: 736px) 
-  and (-webkit-min-device-pixel-ratio: 3)
+  and (min-width: 414px) 
+  and (max-width: 736px) 
   and (orientation: portrait) { 
 
 }
 
 /* Landscape */
 @media only screen 
-  and (min-device-width: 414px) 
-  and (max-device-width: 736px) 
-  and (-webkit-min-device-pixel-ratio: 3)
+  and (min-width: 414px) 
+  and (max-width: 736px) 
   and (orientation: landscape) { 
 	.object__contact-form {
 		width: 100vw;
@@ -477,27 +464,24 @@
 
 /* Portrait and Landscape */
 @media only screen 
-  and (min-device-width: 768px) 
-  and (max-device-width: 1024px) 
-  and (-webkit-min-device-pixel-ratio: 1) {
+  and (min-width: 768px) 
+  and (max-width: 1024px)  {
 
 }
 
 /* Portrait */
 @media only screen 
-  and (min-device-width: 768px) 
-  and (max-device-width: 1024px) 
-  and (orientation: portrait) 
-  and (-webkit-min-device-pixel-ratio: 1) {
+  and (min-width: 768px) 
+  and (max-width: 1024px) 
+  and (orientation: portrait)  {
 
 }
 
 /* Landscape */
 @media only screen 
-  and (min-device-width: 768px) 
-  and (max-device-width: 1024px) 
-  and (orientation: landscape) 
-  and (-webkit-min-device-pixel-ratio: 1) {
+  and (min-width: 768px) 
+  and (max-width: 1024px) 
+  and (orientation: landscape)  {
 
 }
 
@@ -506,9 +490,8 @@
 
 /* Portrait and Landscape */
 @media only screen 
-  and (min-device-width: 768px) 
-  and (max-device-width: 1024px) 
-  and (-webkit-min-device-pixel-ratio: 1) {
+  and (min-width: 768px) 
+  and (max-width: 1024px)  {
   	body {
   		font-size: 20px;
   	}
@@ -643,19 +626,17 @@
 
 /* Portrait */
 @media only screen 
-  and (min-device-width: 768px) 
-  and (max-device-width: 1024px) 
-  and (orientation: portrait) 
-  and (-webkit-min-device-pixel-ratio: 1) {
+  and (min-width: 768px) 
+  and (max-width: 1024px) 
+  and (orientation: portrait)  {
 
 }
 
 /* Landscape */
 @media only screen 
-  and (min-device-width: 768px) 
-  and (max-device-width: 1024px) 
-  and (orientation: landscape) 
-  and (-webkit-min-device-pixel-ratio: 1) {
+  and (min-width: 768px) 
+  and (max-width: 1024px) 
+  and (orientation: landscape)  {
 
 }
 
@@ -667,9 +648,8 @@
 
 /* Portrait and Landscape */
 @media only screen 
-  and (min-device-width: 768px) 
-  and (max-device-width: 1024px) 
-  and (-webkit-min-device-pixel-ratio: 2) {
+  and (min-width: 768px) 
+  and (max-width: 1024px)  {
   	body {
   		font-size: 20px;
   	}
@@ -700,19 +680,17 @@
 
 /* Portrait */
 @media only screen 
-  and (min-device-width: 768px) 
-  and (max-device-width: 1024px) 
-  and (orientation: portrait) 
-  and (-webkit-min-device-pixel-ratio: 2) {
+  and (min-width: 768px) 
+  and (max-width: 1024px) 
+  and (orientation: portrait)  {
 
 }
 
 /* Landscape */
 @media only screen 
-  and (min-device-width: 768px) 
-  and (max-device-width: 1024px) 
-  and (orientation: landscape) 
-  and (-webkit-min-device-pixel-ratio: 2) {
+  and (min-width: 768px) 
+  and (max-width: 1024px) 
+  and (orientation: landscape)  {
 
 }
 
@@ -721,9 +699,8 @@
 --------------------------------------------------------------------------------------------------- */
 
 @media screen 
-  and (min-device-width: 1200px) 
-  and (max-device-width: 1600px) 
-  and (-webkit-min-device-pixel-ratio: 1) { 
+  and (min-width: 1200px) 
+  and (max-width: 1600px)  { 
 }
 
 
@@ -732,8 +709,7 @@
 --------------------------------------------------------------------------------------------------- */
 
 @media screen 
-  and (min-device-width: 1200px) 
-  and (max-device-width: 1600px) 
-  and (-webkit-min-device-pixel-ratio: 2)
+  and (min-width: 1200px) 
+  and (max-width: 1600px) 
   and (min-resolution: 192dpi) { 
 }
