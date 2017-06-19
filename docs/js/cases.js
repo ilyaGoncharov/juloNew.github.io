@@ -119,6 +119,7 @@ $(document).ready(function() {
 		});*/
 	}	else if ( $(window).width() > 1200) {   
 		$(".wrapper").height($(window).height() + 1000);
+		var pagePosition = "development";
 		$(".face-page__title_design-button").click(function() {
 			$(".face-page__title_development-button").removeClass('active');
 			$(".face-page__title_marketing-button").removeClass('active');
@@ -127,6 +128,11 @@ $(document).ready(function() {
 			$(".design").animate({left: '0vw'}, 400);
 			$(".marketing").animate({left: '100vw'}, 400);
 			$('.wrapper').height($(window).height() + 1500);
+			pagePosition = "design";
+			console.log(pagePosition);
+			$(".cases-body__block-1, .cases-body__block-2, .cases-body__block-3, .tehnocor-img, .tc-img, .tehnocor-img-2, .tc-img-2").removeClass('scrolled');
+			$.scrollify.instantMove(1);
+			$(".cases-body__block-1, .tehnocor-img-2").addClass('scrolled');
 		});
 		$(".face-page__title_marketing-button").click(function() {
 			$(".face-page__title_development-button").removeClass('active');
@@ -136,6 +142,12 @@ $(document).ready(function() {
 			$(".design").animate({left: '-100vw'}, 400);
 			$(".marketing").animate({left: '0vw'}, 400);
 		    $('.wrapper').height($(window).height() + 1000);
+		    pagePosition = "marketing";
+		    console.log(pagePosition);
+		    $.scrollify.instantMove(1);
+		    $(".cases-body__block-1, .cases-body__block-2, .cases-body__block-3, .tehnocor-img, .tc-img, .tehnocor-img-2, .tc-img-2").removeClass('scrolled');
+			$.scrollify.instantMove(1);
+			$(".cases-body__block-1, .st-img").addClass('scrolled');
 		});
 		$(".face-page__title_development-button").click(function() {
 			$(".face-page__title_development-button").toggleClass('active');
@@ -145,19 +157,82 @@ $(document).ready(function() {
 			$(".design").animate({left: '100vw'}, 400);
 			$(".marketing").animate({left: '200vw'}, 400);
 			$('.wrapper').height($(window).height() + 2000);
+			pagePosition = "development";
+			console.log(pagePosition);
+			$(".cases-body__block-1, .cases-body__block-2, .cases-body__block-3, .tehnocor-img, .tc-img, .tehnocor-img-2, .tc-img-2").removeClass('scrolled');
+			$.scrollify.instantMove(1);
+			$(".cases-body__block-1, .snabservice-img").addClass('scrolled');
 		});
-		$(window).scroll(function() {
-		    var height = $(window).scrollTop();
-		    if (height > 450) {
-		    	$(".face-page__title_cases-menu").addClass('fixed');
-		    	$(".header, .cases-body__block-1, .snabservice-img").addClass('scroll');
-		    } else if (height < 550) {
-		    	$(".face-page__title_cases-menu").removeClass('fixed');
-		    	$(".header, .cases-body__block-1, .snabservice-img").removeClass('scroll');
-		    } else if (height === 750) {
-		    	$(".header, .cases-body__block-1, .snabservice-img").removeClass('scroll');
-		    	$(".header, .cases-body__block-2, .tehnocor-img").addClass('scroll');
-		    }
+    	$(function() {
+			$.scrollify({
+				section : ".scroll",
+				sectionName : "",
+				interstitialSection : ".face-page",
+				easing: "easeOutExpo",
+				scrollSpeed: 600,
+				offset : -130,
+				scrollbars: true,
+				standardScrollElements: ".face-page",
+				setHeights: false,
+				overflowScroll: true,
+				updateHash: true,
+				touchScroll: true,
+				before:function(section) {
+				},
+				after:function(section) {
+					if (pagePosition === "development") {
+						console.log(section);
+						if (section === 1) {
+							$(".face-page__title_cases-menu").addClass('fixed');
+			    			$(".header, .cases-body__block-1, .snabservice-img").addClass('scrolled');
+			    			$(".cases-body__block-2, .tehnocor-img, .cases-body__block-3, .tc-img ").removeClass('scrolled');
+						} else if (section === 2) {
+			    			$(".cases-body__block-1, .snabservice-img").removeClass('scrolled');
+			    			$(".header, .cases-body__block-2, .tehnocor-img").addClass('scrolled');
+			    			$(".cases-body__block-3, .tcm-img").removeClass('scrolled');
+						} else if (section === 3) {
+			    			$(".cases-body__block-2, .tehnocor-img").removeClass('scrolled');
+			    			$(".cases-body__block-3, .tcm-img").addClass('scrolled');
+						} else if (section === 0) {
+			    			$(".face-page__title_cases-menu").removeClass('fixed');
+			    			$(".header").removeClass('scrolled');
+						} else {
+							$(".cases-body__block-3, .tcm-img").removeClass('scrolled');
+						}
+					} else if (pagePosition === "design") {
+						if (section === 1) {
+							$(".face-page__title_cases-menu").addClass('fixed');
+			    			$(".header, .cases-body__block-1, .tehnocor-img-2").addClass('scrolled');
+			    			$(".cases-body__block-2, .tcm-img-2").removeClass('scrolled');
+			    			console.log(section);
+						} else if (section === 2) {
+			    			$(".cases-body__block-1, .tehnocor-img-2").removeClass('scrolled');
+			    			$(".cases-body__block-2, .tcm-img-2").addClass('scrolled');
+			    			console.log(section);
+						} else if (section === 0) {
+			    			$(".face-page__title_cases-menu").removeClass('fixed');
+			    			$(".header").removeClass('scrolled');
+			    			console.log(section);
+						} else {
+							$(".cases-body__block-1, .tehnocor-img-2").removeClass('scrolled');
+							$(".cases-body__block-3, .tcm-img-2").removeClass('scrolled');
+							console.log(section);
+						}
+					} else if (pagePosition === "marketing") {
+						if (section === 1) {
+							$(".face-page__title_cases-menu").addClass('fixed');
+			    			$(".header, .cases-body__block-1, .snabservice-img").addClass('scrolled');
+			    			console.log(section);
+						} else {
+							$(".face-page__title_cases-menu").removeClass('fixed');
+							$(".header, .cases-body__block-1, .snabservice-img").removeClass('scrolled');
+							console.log(section);
+						}
+					}
+				},
+				afterResize:function() {},
+				afterRender:function() {}
+			});
 		});
 	} 
 });

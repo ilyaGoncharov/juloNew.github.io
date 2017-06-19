@@ -85,7 +85,6 @@ body {
 .cases-body__block-textblock {
 	height: inherit;
 	padding: 25px;
-	
 	color: #313A54;
 }
 
@@ -108,9 +107,8 @@ body {
 }
 
 .cases-body__block-textblock-img {
-	border: 5px solid #E94E53;
+	border: 0px solid #E94E53;
 	background-size: cover;
-    /* background-position: 50% 50%; */
 	height: 500px;
 	max-height: 500px;
 	padding: 0px;
@@ -154,13 +152,18 @@ body {
 	left: 200vw;
 }
 
-.cases-body__block-1.scroll,
-.cases-body__block-1.scroll {
+.cases-body__block-1.scrolled,
+.cases-body__block-2.scrolled,
+.cases-body__block-3.scrolled {
 	background-color: white;
 }
 
-.snabservice-img.scroll,
-.tehnocor-img.scroll {
+.snabservice-img.scrolled,
+.tehnocor-img.scrolled,
+.tcm-img.scrolled,
+.st-img.scrolled,
+.tehnocor-img-2.scrolled,
+.tcm-img-2.scrolled  {
 	opacity: 1 !important;
 }
 
