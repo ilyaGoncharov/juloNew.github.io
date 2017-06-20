@@ -6,8 +6,6 @@
 	box-sizing: border-box;
 }	
 
-/* add font formats  */
-
 @font-face {
     font-family: "Bebas Bold";
 	src: url('../files/fonts/BebasNeue Bold.otf');
@@ -131,11 +129,13 @@ body {
 }
 
 .object__contact-form_logo {
+	position: fixed;
 	display: block;
 	width: 29px;
 	position: fixed;
 	left: 40px;
 	top: 28px;
+	z-index: 50;
 }
 
 .object__contact-form_logo.coverup {
