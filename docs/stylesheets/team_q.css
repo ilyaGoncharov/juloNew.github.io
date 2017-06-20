@@ -1,8 +1,7 @@
 /* --------------------------------------------------------------------------------------------------- 	iPhone 4 and 4S
 --------------------------------------------------------------------------------------------------- */
 /* Portrait and Landscape */
-@media only screen 
-  and (min-width: 320px) 
+@media only screen  
   and (max-width: 480px) {
   	 body {
 		font-size: 12.361px;
@@ -14,15 +13,16 @@
 	}
 
 	.object__menu-slide-box li {
-		height: 70px;
+		line-height: 80px;
 		width: 100vw;
+		height: 80px;
 		margin-top: 0px;
+		padding-top: 0px;
 	}
 
 	.object__menu-slide-box li a {
 		font-size: 52.358px;
 		width: 100vw;
-		height: 65px;
 	}
 
 	.object__contact-form {
@@ -127,15 +127,7 @@
   and (min-width: 320px) 
   and (max-width: 480px)
   and (orientation: portrait) {
-  	/* .object__menu-slide-box {
-  		position: fixed;
-		width: 100vw;
-	    left: 100vh;
-	}
 
-	.object__contact-form_box {
-		padding-top: 10vh;
-	} */
 }
 
 /* Landscape */
@@ -143,70 +135,15 @@
   and (min-width: 320px) 
   and (max-width: 480px)
   and (orientation: landscape) {
-  	/* .object__menu-slide-box {
-  		width: 100vw;
-	    left: 150vh;
-	}
-
-	.object__menu-slide-box li {
-		line-height: 70px;
-	}
-
-	.object__menu-slide-box li a {
-		font-size: 41.8px;
-		vertical-align: bottom;
-	}
-
-	.face-page__title {
-		position: initial;
-		padding: 15px;
-		padding-top: 0px;
-		padding-bottom: 50px;
-	}	 */
+  
 }
 
 /* --------------------------------------------------------------------------------------------------- 		iPhone 5 and 5S 
 --------------------------------------------------------------------------------------------------- */
 /* Portrait and Landscape */
 @media only screen 
-  and (min-width: 320px) 
   and (max-width: 568px) {
-	/* .object__contact-form {
-		height: 120vh;
-	}
-
-	.object__contact-form_box input  {
-		height: 40px;
-	}
-
-	.object__contact-form_box textarea {
-		height: 140px;
-	}
-
-	.object__menu-slide-box li,
-	.object__menu-slide-box li a {
-		height: 80px;
-		line-height: 0.4;
-	}
-
-	.object__menu-slide-box li:hover, 
-	.object__menu-slide-box li:hover a {
-		line-height: 0.4;
-	}
-	   
-	.face-page__title {
-		position: initial;
-		padding: 15px;
-		padding-top: 50px;
-	}	
-
-	.footer {
-		position: relative;
-		padding-left: 30px;
-		bottom: 0px;
-		background-color: #E94E53;
-		height: 568px;
-	} */
+	
 }
 
 /* Portrait */
@@ -231,40 +168,7 @@
 @media only screen 
   and (min-width: 375px) 
   and (max-width: 667px)  {
-  /* 	body {
-  		font-size: 20px;
-  	}
-
-	.object__contact-form_box input  {
-		height: 50px;
-	}
-
-	.object__contact-form_box textarea {
-		height: 220px;
-	}
-
-  	.face-page__title {
-		width: 90vw;
-		padding-top: 150px;
-	}	
-
-
-  	.face-page__title h1 {
-		padding-left: 5px;
-	}	
-
-	.face-page__title p {
-		font-size: 20px;
-	}
-
-	.footer {
-		height: 667px;
-	}
-
-	.footer__slogan {
-		padding-top: 180px;
-		margin-bottom: 360px;
-	} */
+  
 }
 
 /* Portrait */
@@ -279,39 +183,7 @@
   and (min-width: 375px) 
   and (max-width: 667px) 
   and (orientation: landscape) { 
-	/* .object__menu-slide-box {
-  		position: fixed;
-		width: 100vw;
-	    left: 180vh;
-	}
-
-	.object__menu-slide-box li {
-		line-height: 40px;
-		width: 100vw;
-	}
-
-	.object__menu-slide-box li a {
-		font-size: 41.8px;
-		vertical-align: bottom;
-	}
-
-  	.face-page__title {
-		position: initial;
-		width: 60vw;
-		padding: 15px;
-		padding-top: 40px;
-		padding-bottom: 50px;
-	}	
-
-	.face-page__title h1 {
-
-		font-size: 109.656px;
-		line-height: 80px;
-	}
-
-	.footer {
-		height: 667px;
-	} */
+	
 }
 
 
@@ -321,34 +193,7 @@
 @media only screen 
   and (min-width: 414px) 
   and (max-width: 736px)  { 
-  	/* body {
-  		font-size: 20px;
-  	}
-
-  	.object__contact-form_box input  {
-		height: 50px;
-	}
-
-	.object__contact-form_box textarea {
-		height: 220px;
-	}
-
-  	.face-page__title {
-		padding-top: 250px;
-	}	
-
-	.face-page__title h1 {
-		padding-left: 5px;
-	}
-
-	.footer {
-		height: 667px;
-	}
-
-	.footer__slogan {
-		padding-top: 180px;
-		margin-bottom: 350px;
-	} */
+  	
 }
 
 /* Portrait */
@@ -364,25 +209,7 @@
   and (min-width: 414px) 
   and (max-width: 736px) 
   and (orientation: landscape) { 
-	/* .object__contact-form {
-		width: 100vw;
-		margin-left: 0%;
-	}
-
-	.object__contact-form_logo {
-		position: absolute;
-    	left: 25px;
-	}
-
-	.object__menu-slide-box {
-  		position: fixed;
-		width: 100vw;
-	    left: 150vh;
-	}
-
-	.object__menu-slide-box li {
-		line-height: 70px;
-	} */
+	
 }
 
 /* --------------------------------------------------------------------------------------------------- 		iPad mini
@@ -417,93 +244,7 @@
 @media only screen 
   and (min-width: 768px) 
   and (max-width: 1024px)  {
-  	/* body {
-  		font-size: 20px;
-  	}
-
-  	.object__menu-slide-box {
-  		position: fixed;
-		width: 100vw;
-	    left: 180vh;
-	}
-
-	.object__menu-slide-box ul {
-		height: 60vh;
-		width: 60vw;
-    	margin-left: 20vw;
-	}
-
-	.object__menu-slide-box li {
-		width: 100vw;
-	}
-
-	.object__contact-form {
-		height: 100vh;
-		width: 100vw;
-		left: -100vw;
-	}
-
-  	.face-page__title {
-		padding-top: 250px;
-	}	
- 
-	.header {
-		height: 100px;
-		padding: 25px;
-	}
-
-	.header__menu-button_icon {
-		right: 35px;
-	}
-
-	.team__photo-block {
-		padding-top: 30px !important;
-	}
-
-	.team__photo-block-element_text {
-		margin-top: 15px !important;
-		margin-bottom: 30px !important;
-	}
-
-	.footer {
-		position: relative;
-		font-size: 12.361px;
-		padding-left: 30px;
-		bottom: 0px;
-		background-color: #E94E53;
-		height: 520px;
-	}
-
-	.footer__slogan {
-		padding-top: 150px;
-		margin-bottom: 250px;
-	}
-
-	.footer__slogan h1 {
-		font-family: "Bebas Bold";
-		color: white;
-		font-size: 52.358px;
-		text-transform: uppercase;
-		margin-bottom: 0px;
-	}
-
-	.footer__slogan h1.open {
-		color: #313A54;
-	}
-
-	.footer__link-modul,
-	.footer__contacts {
-		padding: 0px;
-		margin-top: 30px;
-	}
-
-	.footer__link-modul {
-		padding-left: 25px;
-	}
-
-	.footer img {
-		margin-right: initial;
-	} */
+  	
 }
 
 /* Portrait */
@@ -531,35 +272,7 @@
 @media only screen 
   and (min-width: 768px) 
   and (max-width: 1024px)  {
-  	/* body {
-  		font-size: 20px;
-  	}
-
-  	.object__menu-slide-box {
-  		position: fixed;
-		width: 100vw;
-	    left: 180vh;
-	}
-
-	.object__menu-slide-box ul {
-		height: 60vh;
-		width: 60vw;
-    	margin-left: 20vw;
-	}
-
-	.object__menu-slide-box li {
-		width: 100vw;
-	}
-
-	.object__contact-form {
-		height: 100vh;
-		width: 100vw;
-		left: -100vw;
-	}
-
-  	.face-page__title {
-		padding-top: 250px;
-	}	 */
+  	
 }
 
 /* Portrait */

@@ -1,5 +1,4 @@
 $(document).ready(function() {
-	/*$("#test").html('<object data="http://milyakov.com/"/>');*/
 	if ( $(window).width() >= 320 &  $(window).width() < 479) {
 		$(".face-page__title_design-button").click(function() {
 			$(".face-page__title_development-button").removeClass('active');
@@ -28,19 +27,7 @@ $(document).ready(function() {
 			$(".marketing").removeClass('open');
 			$('.wrapper').height($(window).height() + 2000);			
 		});
-
-		$(".header").addClass('scroll');
-
-		$(window).scroll(function() {
-		    var height = $(window).scrollTop();
-		    if (height >= 200) {
-		    	$(".header").addClass('scrolled');
-		    }
-		    else if (height < 300) {
-		    	$(".header").removeClass('scrolled');
-		    }
-		});
-
+		$(".header").addClass('scrolled');
 	}	else if ( $(window).width() > 375 & $(window).width() < 415) {
 		$(".face-page__title_design-button").click(function() {
 			$(".face-page__title_development-button").removeClass('active');
@@ -50,7 +37,6 @@ $(document).ready(function() {
 			$(".design").toggleClass('open');
 			$(".marketing").removeClass('open');
 			$('.wrapper').height($(window).height() + 1500);
-			
 		});
 		$(".face-page__title_marketing-button").click(function() {
 			$(".face-page__title_development-button").removeClass('active');
@@ -60,7 +46,6 @@ $(document).ready(function() {
 			$(".design").removeClass('open');
 			$(".marketing").toggleClass('open');
 		    $('.wrapper').height($(window).height() + 1000);
-		   	
 		});
 		$(".face-page__title_development-button").click(function() {
 			$(".face-page__title_development-button").toggleClass('active');
@@ -71,8 +56,8 @@ $(document).ready(function() {
 			$(".marketing").removeClass('open');
 			$('.wrapper').height($(window).height() + 2000);			
 		});
-
-		$(window).scroll(function() {
+		$(".header").addClass('scrolled');
+		/*$(window).scroll(function() {
 		    var height = $(window).scrollTop();
 		    if (height >= 200) {
 		    	$(".header").addClass('scrolled');
@@ -80,7 +65,7 @@ $(document).ready(function() {
 		    else if (height < 300) {
 		    	$(".header").removeClass('scrolled');
 		    }
-		});
+		});*/
 	}	else if ( $(window).width() > 416 & $(window).width() < 1199) {
 		$(".face-page__title_design-button").click(function() {
 			$(".face-page__title_development-button").removeClass('active');
@@ -109,15 +94,7 @@ $(document).ready(function() {
 			$(".marketing").removeClass('open');
 			$('.wrapper').height($(window).height() + 2000);
 		});
-		/*$(window).scroll(function() {
-		    var height = $(window).scrollTop();
-		    if (height > 600) {
-		    	$(".header").addClass('scroll');
-		    }
-		    else if (height < 400) {
-		    	$(".header").removeClass('scroll');
-		    }
-		});*/
+		$(".header").addClass('scrolled');
 	}	else if ( $(window).width() > 1200) {   
 		$(".wrapper").height($(window).height() + 1000);
 		var pagePosition = "development";

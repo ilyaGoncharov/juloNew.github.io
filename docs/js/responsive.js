@@ -72,21 +72,23 @@ $(document).ready(function(){
 			e.preventDefault();
 			if(slideMenu) {
 				$(this).removeClass('open');
-		        $(".face-page__title, .object__background-image, .footer__contacts, .face-page__title p:nth-child(even), .cases-body__block-textblock, .cases-body__block-textblock-img, .footer, .footer__slogan h1, .team__text-block, .team__photo-block-element_img, .team__photo-block, .header, .header.scroll").removeClass('open');
+		        $(".face-page__title, .object__background-image, .footer__contacts, .face-page__title p:nth-child(even), .cases-body__block-textblock, .cases-body__block-textblock-img, .footer, .footer__slogan h1, .team__text-block, .team__photo-block-element_img, .team__photo-block, .header, .scrolled").removeClass('open');
 		        $(".face-page__title_cases-menu, .face-page__title_cases-menu.fixed").removeClass('open');
 		        $(".logo-dark, .fb-dark, .vk-dark").toggleClass('coverup');
 		        $(".logo, .fb, .vk").removeClass('coverup');
 		        $(".object__menu-slide-box").animate({left: '161vw'}, 600);
 		        $(".object__contact-form").animate({left: '-61vw'}, 600);
+		        $.scrollify.enable()
 		        slideForm = false;
 		        slideMenu = false;
 		    } else {
 		    	$(this).toggleClass('open');
 		        $(".object__menu-slide-box").animate({left: '61vw'}, 600);
-		        $(".face-page__title, .object__background-image, .footer__contacts, .face-page__title p:nth-child(even), .cases-body__block-textblock, .cases-body__block-textblock-img, .footer, .footer__slogan h1, .team__text-block, .team__photo-block-element_img, .team__photo-block, .header, .header.scroll").toggleClass('open');
+		        $(".face-page__title, .object__background-image, .footer__contacts, .face-page__title p:nth-child(even), .cases-body__block-textblock, .cases-body__block-textblock-img, .footer, .footer__slogan h1, .team__text-block, .team__photo-block-element_img, .team__photo-block, .header, .scrolled").toggleClass('open');
 		        $(".face-page__title_cases-menu, .face-page__title_cases-menu.fixed").addClass('open');
 		        $(".logo, .fb, .vk").toggleClass('coverup');
 		        $(".logo-dark, .fb-dark, .vk-dark").removeClass('coverup');
+		        $.scrollify.disable()
 		        slideMenu = true;
 		    }
 		});

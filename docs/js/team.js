@@ -1,6 +1,6 @@
 $(document).ready(function() {
 	if ( $(window).width() >= 320 &  $(window).width() < 479) {
-		$(".header").addClass('scroll');
+		$(".header").addClass('scrolled');
 		/*$(window).scroll(function() {
 		    var height = $(window).scrollTop();
 		    if (height > 350) {
@@ -11,7 +11,7 @@ $(document).ready(function() {
 		    }
 		});*/
 	}	else if ( $(window).width() > 375 & $(window).width() < 415) {
-		$(".header").addClass('scroll');
+		$(".header").addClass('scrolled');
 		/*$(window).scroll(function() {
 		    var height = $(window).scrollTop();
 		    if (height > 350) {
@@ -22,7 +22,7 @@ $(document).ready(function() {
 		    }
 		});*/
 	}	else if ( $(window).width() > 416 & $(window).width() < 1199) {
-		$(".header").addClass('scroll');
+		$(".header").addClass('scrolled');
 		/*$(window).scroll(function() {
 		    var height = $(window).scrollTop();
 		    if (height > 400) {
@@ -36,10 +36,10 @@ $(document).ready(function() {
 		$(window).scroll(function() {
 		    var height = $(window).scrollTop();
 		    if (height > 600) {
-		    	$(".header").addClass('scroll');
+		    	$(".header").addClass('scrolled');
 		    }
 		    else if (height < 600) {
-		    	$(".header").removeClass('scroll');
+		    	$(".header").removeClass('scrolled');
 		    }
 		});
 	} 

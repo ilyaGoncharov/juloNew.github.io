@@ -24,7 +24,6 @@
 	.object__menu-slide-box li a {
 		font-size: 52.358px;
 		width: 100vw;
-		height: 65px;
 	}
 
 	.object__menu-slide-box li:hover, 
@@ -72,16 +71,16 @@
 	}
 
 	.face-page__title div {
-		padding-left: 10px;
+		padding-left: 5px;
 	}
 
 	.footer {
+		font-size: 12.361px;
 		padding-left: 20px;
 		padding-right: 0px;
 	}
 
 	.footer__contacts {
-		font-size: 12.361px;
 	    margin-top: -7px;
 	    padding-right: 10px;
 	}
@@ -96,15 +95,6 @@
   and (min-width: 320px) 
   and (max-width: 480px)
   and (orientation: portrait) {
-  	.object__menu-slide-box {
-  		position: fixed;
-		width: 100vw;
-	    left: 100vh;
-	}
-
-	.object__contact-form_box {
-		padding-top: 10vh;
-	}
 }
 
 /* Landscape */
@@ -112,26 +102,6 @@
   and (min-width: 320px) 
   and (max-width: 480px)
   and (orientation: landscape) {
-  	.object__menu-slide-box {
-  		width: 100vw;
-	    left: 150vh;
-	}
-
-	.object__menu-slide-box li {
-		line-height: 70px;
-	}
-
-	.object__menu-slide-box li a {
-		font-size: 52.358px;
-		vertical-align: bottom;
-	}
-
-	.face-page__title {
-		position: initial;
-		padding: 15px;
-		padding-top: 0px;
-		padding-bottom: 50px;
-	}	
 }
 
 /* --------------------------------------------------------------------------------------------------- 		iPhone 5 and 5S 
@@ -141,36 +111,6 @@
 @media only screen 
   and (min-width: 320px) 
   and (max-width: 568px) {
-	.object__contact-form {
-		height: 120vh;
-	}
-
-	.object__contact-form_box input  {
-		height: 40px;
-	}
-
-	.object__contact-form_box textarea {
-		height: 140px;
-	}
-
-	.object__menu-slide-box li,
-	.object__menu-slide-box li a {
-	}
-	   
-	.face-page__title {
-		position: initial;
-		padding: 15px;
-		padding-top: 50px;
-		padding-bottom: 50px;
-		margin-top: 80px;
-	}	
-
-	.footer {
-		font-size: 10px;
-		position: initial;
-		width: 100vw;
-		padding-top: 0px;
-	}
 }
 
 /* Portrait */
@@ -194,22 +134,6 @@
 @media only screen 
   and (min-width: 375px) 
   and (max-width: 667px)  {
-	body {
-  		font-size: 20px;
-  	}
-
-	.object__contact-form_box input  {
-		height: 50px;
-	}
-
-	.object__contact-form_box textarea {
-		height: 220px;
-	}
-
-  	.face-page__title {
-		width: 90vw;
-		padding-top: 150px;
-	}	
 }
 
 /* Portrait */
@@ -224,38 +148,6 @@
   and (min-width: 375px) 
   and (max-width: 667px) 
   and (orientation: landscape) { 
-	.object__menu-slide-box {
-  		position: fixed;
-		width: 100vw;
-	    left: 180vh;
-	}
-
-	.object__menu-slide-box li {
-		line-height: 40px;
-		width: 100vw;
-	}
-
-	.object__menu-slide-box li a {
-		font-size: 41.8px;
-		vertical-align: bottom;
-	}
-
-  	.face-page__title {
-		position: initial;
-		width: 60vw;
-		padding: 15px;
-		padding-top: 40px;
-		padding-bottom: 50px;
-	}	
-
-	.face-page__title h1 {
-		font-size: 109.656px;
-		line-height: 80px;
-	}
-
-	.face-page__title h2 {
-		font-size: 25.888px;
-	}
 }
 
 /* --------------------------------------------------------------------------------------------------- 		iPhone 6+
@@ -265,22 +157,6 @@
 @media only screen 
   and (min-width: 414px) 
   and (max-width: 736px)  { 
-  	body {
-  		font-size: 20px;
-  	}
-
-  	.object__contact-form_box input  {
-		height: 50px;
-	}
-
-	.object__contact-form_box textarea {
-		height: 220px;
-	}
-
-  	.face-page__title {
-		padding-top: 250px;
-	}	
-
 }
 
 /* Portrait */
@@ -296,25 +172,6 @@
   and (min-width: 414px) 
   and (max-width: 736px) 
   and (orientation: landscape) { 
-	.object__contact-form {
-		width: 100vw;
-		margin-left: 0%;
-	}
-
-	.object__contact-form_logo {
-		position: absolute;
-    	left: 25px;
-	}
-
-	.object__menu-slide-box {
-  		position: fixed;
-		width: 100vw;
-	    left: 150vh;
-	}
-
-	.object__menu-slide-box li {
-		line-height: 70px;
-	}
 }
 
 
@@ -348,50 +205,6 @@
 @media only screen 
   and (min-width: 768px) 
   and (max-width: 1024px)  {
-  	body {
-  		font-size: 20px;
-  	}
-
-	.object__menu-slide-box {
-  		position: fixed;
-		width: 100vw;
-	    left: 180vh;
-	}
-
-	.object__menu-slide-box ul {
-		height: 60vh;
-		width: 60vw;
-    	margin-left: 20vw;
-	}
-
-	.object__menu-slide-box li {
-		width: 100vw;
-	}
-
-	.object__contact-form {
-		height: 100vh;
-		width: 100vw;
-		left: -100vw;
-	}
-
-  	.face-page__title {
-		padding-top: 250px;
-	}	
-
-	.header {
-		height: 100px;
-		padding: 25px;
-	}
-
-	.footer {
-		padding-left: 20px; 
-		height: 520px;
-	}
-
-	.footer__link-modul {
-		margin-top: 10px;
-   		padding-left: 25px;
-	}
 }
 
 /* Portrait */
@@ -418,31 +231,6 @@
 @media only screen 
   and (min-width: 768px) 
   and (max-width: 1024px)  {
-  	body {
-  		font-size: 20px;
-  	}
-
-  	.object__menu-slide-box {
-  		position: fixed;
-		width: 100vw;
-	    left: 180vh;
-	}
-
-	.object__menu-slide-box ul {
-		height: 60vh;
-		width: 60vw;
-    	margin-left: 20vw;
-	}
-
-	.object__menu-slide-box li {
-		width: 100vw;
-	}
-
-	.object__contact-form {
-		height: 100vh;
-		width: 100vw;
-		left: -100vw;
-	}
 }
 
 /* Portrait */

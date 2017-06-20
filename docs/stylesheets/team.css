@@ -13,8 +13,6 @@
 	-moz-transition: .5s ease-in-out;
 	-o-transition: .5s ease-in-out;
 	transition: .5s ease-in-out;
-	line-height: 0.9;
-	margin-left: -5px;
 }
 
 .face-page__title p  {
@@ -129,7 +127,7 @@
 .footer__slogan h1 {
 	font-family: "Bebas Bold";
 	color: white;
-	font-size: 9.492rem;
+	font-size: 84.716px;
 	text-transform: uppercase;
 	margin-bottom: 0px;
 }
