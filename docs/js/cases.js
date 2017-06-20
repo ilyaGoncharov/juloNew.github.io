@@ -31,15 +31,16 @@ $(document).ready(function() {
 
 		$(".header").addClass('scroll');
 
-		/*$(window).scroll(function() {
+		$(window).scroll(function() {
 		    var height = $(window).scrollTop();
-		    if (height > 200) {
-		    	$(".header").addClass('scroll');
+		    if (height >= 200) {
+		    	$(".header").addClass('scrolled');
 		    }
 		    else if (height < 300) {
-		    	$(".header").removeClass('scroll');
+		    	$(".header").removeClass('scrolled');
 		    }
-		});*/
+		});
+
 	}	else if ( $(window).width() > 375 & $(window).width() < 415) {
 		$(".face-page__title_design-button").click(function() {
 			$(".face-page__title_development-button").removeClass('active');
@@ -170,7 +171,7 @@ $(document).ready(function() {
 				interstitialSection : ".face-page",
 				easing: "easeOutExpo",
 				scrollSpeed: 600,
-				offset : -130,
+				offset : -100,
 				scrollbars: true,
 				standardScrollElements: ".face-page",
 				setHeights: false,
@@ -206,8 +207,12 @@ $(document).ready(function() {
 			    			$(".cases-body__block-2, .tcm-img-2").removeClass('scrolled');
 			    			console.log(section);
 						} else if (section === 2) {
-			    			$(".cases-body__block-1, .tehnocor-img-2").removeClass('scrolled');
+			    			$(".cases-body__block-1, .tehnocor-img-2, .cases-body__block-3, .milyakov-img").removeClass('scrolled');
 			    			$(".cases-body__block-2, .tcm-img-2").addClass('scrolled');
+			    			console.log(section);
+						} else if (section === 3) {
+			    			$(".cases-body__block-2, .tcm-img-2").removeClass('scrolled');
+							$(".cases-body__block-3, .milyakov-img").addClass('scrolled');
 			    			console.log(section);
 						} else if (section === 0) {
 			    			$(".face-page__title_cases-menu").removeClass('fixed');
@@ -215,7 +220,7 @@ $(document).ready(function() {
 			    			console.log(section);
 						} else {
 							$(".cases-body__block-1, .tehnocor-img-2").removeClass('scrolled');
-							$(".cases-body__block-3, .tcm-img-2").removeClass('scrolled');
+							$(".cases-body__block-3, .milyakov-img").removeClass('scrolled');
 							console.log(section);
 						}
 					} else if (pagePosition === "marketing") {

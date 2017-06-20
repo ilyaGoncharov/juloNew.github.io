@@ -4,21 +4,21 @@
 @media only screen 
   and (min-width: 320px) 
   and (max-width: 480px) {
-  	body {
+	/* body {
 		font-size: 12.361px;
 	}
 
 	.object__menu-slide-box li {
+		line-height: 80px;
 		width: 100vw;
 		height: 80px;
-		padding: 0px;
-		padding-left: 5vw;
+		margin-top: 0px;
+		padding-top: 0px;
 	}
 
 	.object__menu-slide-box li a {
-		font-size: 52.3px;
-		line-height: 80px;
-		margin-left: 15px;
+		font-size: 52.358px;
+		width: 100vw;
 	}
 
 	.object__contact-form {
@@ -30,10 +30,6 @@
 	.object__contact-form_box {
 		width: 100%;
 		margin-left: 0%;
-	}
-
-	.object__contact-form_logo {
-    	left: 25px;
 	}
 
 	.object__contact-form_box input {
@@ -51,29 +47,17 @@
 	}
 
 	.header {
-		height: 80px;
-		width: 100vw;
-		padding-top: 25px;
-	}
-
-	.header__logo img {
-		left: 32px;
-	}
-
-	.header__menu-button_icon {
-		width: initial;
-		right: 32px;
 	}
 
 	.face-page__title {
 		margin-top: 50px;
+		margin-left: 0px;
 	}
 
 	.face-page__title h1 {
 		margin-top: 200px;
 		font-size: 52.358px;
 		line-height: 50px;
-		margin-left: 0px;
 	}
 
 	.face-page__title p {
@@ -119,18 +103,13 @@
 	}
 
 	.cases-body__block {
-		height: 600px;
 		padding: 0px;
 		margin: 0px;
 		margin-bottom: 5px;
-		padding: 1px;
+		padding: 0px;
 	}
 
 	.cases-body__block-textblock {
-		height: 400px;
-		padding: 25px;
-		/* background-color: #242938;
-		color: #313A54; */
 		background-color: white;
 		color: #242938;
 	}
@@ -160,6 +139,157 @@
 		bottom: 0px;
 		background-color: #E94E53;
 		height: 480px;
+		padding-left: 20px;
+		padding-right: 0px;
+	}
+
+	.footer__slogan {
+	    padding-top: 150px;
+	    margin-bottom: 280px;
+	}
+
+	.footer__slogan h1 {
+		font-family: "Bebas Bold";
+		color: white;
+		font-size: 52.358px;
+		text-transform: uppercase;
+		margin-bottom: 0px;
+	}
+
+	.footer__slogan h1.open {
+		color: #313A54;
+	}
+
+	.footer__link-modul,
+	.footer__contacts {
+		font-size: 12.361px;
+		margin-left: 0px;
+		margin-top: 50px;
+		padding-right: 0px;
+	}
+
+	.footer img {
+	}  */
+
+	 body {
+		font-size: 12.361px;
+	}
+	
+	.object__menu-slide-box {
+		right: -100vw;
+		width: 100vw;
+	}
+
+	.object__menu-slide-box li {
+		height: 70px;
+		width: 100vw;
+		margin-top: 0px;
+	}
+
+	.object__menu-slide-box li a {
+		font-size: 52.358px;
+		width: 100vw;
+		height: 65px;
+	}
+
+	.object__contact-form {
+		width: 100vw;
+		left: -100vw;
+		padding-top: 8vh;
+	}
+
+	.object__contact-form_box {
+		width: 100%;
+		margin-left: 0%;
+	}
+
+	.object__contact-form_box input {
+		height: 45px;
+		padding: 8px;
+	}
+
+	.object__contact-form_box textarea {
+		height: 150px;
+		padding: 8px;
+	}
+
+	.object__contact-form_box-button {
+		padding: 0px !important;
+	}
+
+	.header {
+		height: 80px;
+		width: 100vw;
+	}
+
+	.face-page__title h1 {
+		margin-top: 280px;
+		font-size: 52.358px;
+		line-height: 50px;
+	}
+
+	.face-page__title_cases-menu {
+		margin-left: -5px;
+	}
+	
+	.face-page__title p {
+		font-size: 20px;
+	}
+
+	.cases-body {
+		position: static;
+	}
+
+	.cases-body__block {
+		padding: 0px;
+		margin: 0px;
+		margin-bottom: 5px;
+	}
+
+	.cases-body__block-textblock {
+		background-color: white;
+		color: #242938;
+	}
+
+	.cases-body__block-textblock-name {
+		padding-left: 10px;
+	}
+
+	.cases-body__block-textblock-text {
+		padding-left: 10px;
+	}
+
+	.cases-body__block-textblock-img {
+		/* position: static;
+		padding: 0px;
+		margin: 0px;
+		height: 200px;
+		cursor: pointer;
+		background-size: cover;
+	    background-repeat: no-repeat;
+	    background-position: 50% 50%;
+	    z-index: 10; */
+	}
+
+	.development,
+	.design,
+	.marketing {
+		background-color: #242938;
+		display: none;
+	}
+
+	.development.open,
+	.design.open,
+	.marketing.open {
+		background-color: #242938;
+		display: block;
+	}
+
+	.footer {
+		font-size: 12.361px;
+		bottom: 0px;
+		background-color: #E94E53;
+		height: 570px;
 	}
 
 	.footer__slogan {
@@ -190,7 +320,8 @@
 		margin-left: 0px;
 		margin-right: 15px;
 		margin-top: 5px;
-	}
+	} 
+
 }
 
 /* Portrait */
@@ -198,7 +329,7 @@
   and (min-width: 320px) 
   and (max-width: 480px)
   and (orientation: portrait) {
-  	.object__menu-slide-box {
+  	/* .object__menu-slide-box {
   		position: fixed;
 		width: 100vw;
 	    left: 100vh;
@@ -206,7 +337,7 @@
 
 	.object__contact-form_box {
 		padding-top: 10vh;
-	}
+	} */
 }
 
 /* Landscape */
@@ -214,7 +345,7 @@
   and (min-width: 320px) 
   and (max-width: 480px)
   and (orientation: landscape) {
-  	.object__menu-slide-box {
+  	/* .object__menu-slide-box {
   		width: 100vw;
 	    left: 150vh;
 	}
@@ -233,7 +364,7 @@
 		padding: 15px;
 		padding-top: 0px;
 		padding-bottom: 50px;
-	}	
+	}	 */
 }
 
 /* --------------------------------------------------------------------------------------------------- 		iPhone 5 and 5S 
@@ -243,7 +374,7 @@
 @media only screen 
   and (min-width: 320px) 
   and (max-width: 568px) {
-	.object__contact-form {
+	/* .object__contact-form {
 		height: 120vh;
 	}
 
@@ -254,17 +385,6 @@
 	.object__contact-form_box textarea {
 		height: 140px;
 	}
-
-	.object__menu-slide-box li,
-	.object__menu-slide-box li a {
-		height: 80px;
-		line-height: 0.4;
-	}
-
-	.object__menu-slide-box li:hover, 
-	.object__menu-slide-box li:hover a {
-		line-height: 0.4;
-	}
 	   
 	.face-page__title {
 		position: initial;
@@ -274,11 +394,10 @@
 
 	.footer {
 		position: relative;
-		padding-left: 30px;
 		bottom: 0px;
 		background-color: #E94E53;
 		height: 568px;
-	}
+	} */
 }
 
 /* Portrait */
@@ -304,7 +423,7 @@
 @media only screen 
   and (min-width: 375px) 
   and (max-width: 667px)  {
-  	body {
+  	/* body {
   		font-size: 20px;
   	}
 
@@ -340,7 +459,7 @@
 	.footer__slogan {
 		padding-top: 180px;
 		margin-bottom: 350px;
-	}
+	} */
 }
 
 /* Portrait */
@@ -355,20 +474,10 @@
   and (min-width: 375px) 
   and (max-width: 667px) 
   and (orientation: landscape) { 
-	.object__menu-slide-box {
+	/* .object__menu-slide-box {
   		position: fixed;
 		width: 100vw;
 	    left: 180vh;
-	}
-
-	.object__menu-slide-box li {
-		line-height: 40px;
-		width: 100vw;
-	}
-
-	.object__menu-slide-box li a {
-		font-size: 41.8px;
-		vertical-align: bottom;
 	}
 
   	.face-page__title {
@@ -386,7 +495,7 @@
 
 	.footer {
 		height: 667px;
-	}
+	} */
 }
 
 
@@ -397,7 +506,7 @@
 @media only screen 
   and (min-width: 414px) 
   and (max-width: 736px)  { 
-	body {
+	/* body {
   		font-size: 20px;
   	}
 
@@ -419,7 +528,7 @@
 
 	.cases-body__block-textblock-img {
 		height: 400px;
-	}
+	} */
 
 
 }
@@ -437,14 +546,9 @@
   and (min-width: 414px) 
   and (max-width: 736px) 
   and (orientation: landscape) { 
-	.object__contact-form {
+	/* .object__contact-form {
 		width: 100vw;
 		margin-left: 0%;
-	}
-
-	.object__contact-form_logo {
-		position: absolute;
-    	left: 25px;
 	}
 
 	.object__menu-slide-box {
@@ -455,7 +559,7 @@
 
 	.object__menu-slide-box li {
 		line-height: 70px;
-	}
+	} */
 }
 
 
@@ -492,7 +596,7 @@
 @media only screen 
   and (min-width: 768px) 
   and (max-width: 1024px)  {
-  	body {
+  /* 	body {
   		font-size: 20px;
   	}
 
@@ -500,11 +604,6 @@
   		position: fixed;
 		width: 100vw;
 	    left: 180vh;
-	}
-
-	.object__menu-slide-box li {
-		width: 100vw;
-		text-align: center;
 	}
 
 	.object__contact-form {
@@ -517,11 +616,6 @@
 		padding-top: 250px;
 	}	
 
-	.header {
-		height: 100px;
-		padding: 25px;
-	}
-  	
   	.development {
 		background-color: #242938;
 		display: none;
@@ -621,7 +715,7 @@
 
 	.footer img {
 		margin-right: initial;
-	}
+	} */
 }
 
 /* Portrait */
@@ -650,7 +744,7 @@
 @media only screen 
   and (min-width: 768px) 
   and (max-width: 1024px)  {
-  	body {
+  /* 	body {
   		font-size: 20px;
   	}
 
@@ -673,7 +767,7 @@
 
   	.face-page__title {
 		padding-top: 250px;
-	}	
+	}	 */
 
 
 }

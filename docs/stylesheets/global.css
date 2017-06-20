@@ -94,17 +94,18 @@ body {
 
 .object__menu-slide-box li {
 	font-family: "Bebas Bold";
-	font-size: 84.7px;
-	line-height: 80px;
+	font-size: 84.716px;
+	line-height: 120px;
+	height: 120px;
 	list-style: none;
-	padding: 15px;
-	padding-left: 5vw;
+	padding: 0;
+	padding-top: 10px;
+	padding-left: 22px;
 }
 
 .object__menu-slide-box li a {
 	color: white;
 	width: inherit;
-	vertical-align: sub;
 }
 
 .object__menu-slide-box li:hover,
@@ -112,6 +113,11 @@ body {
 	text-decoration: none;
 	background-color: white;
 	color: #E94E53;
+}
+
+.object__menu-slide-box li:hover a {
+    background: transparent;
+    vertical-align:baseline;
 }
 
 .object__menu-slide-box li a:focus {
@@ -181,7 +187,7 @@ body {
 .header {
 	height: 80px;
 	padding: 25px;
-	padding-left: 10px;
+	padding-left: 15px;
 }
 
 .header.scrolled {
@@ -269,6 +275,7 @@ body {
 
 .footer {
 	padding: 20px;
+	padding-left: 35px;
 	font-size: 1.5rem;
 	/* background-color: #313A54; */
 	/* background-color: #E94E53; */
@@ -281,7 +288,7 @@ body {
 	display: inline-block;
 	height: 28px;
 	width: 28px;
-	margin-right: 5px;
+	margin-right: 25px;
 }
 
 img.coverup, 
