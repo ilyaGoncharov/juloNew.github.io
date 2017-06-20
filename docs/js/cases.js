@@ -72,15 +72,15 @@ $(document).ready(function() {
 			$('.wrapper').height($(window).height() + 2000);			
 		});
 
-		/*$(window).scroll(function() {
+		$(window).scroll(function() {
 		    var height = $(window).scrollTop();
-		    if (height > 200) {
-		    	$(".header").addClass('scroll');
+		    if (height >= 200) {
+		    	$(".header").addClass('scrolled');
 		    }
 		    else if (height < 300) {
-		    	$(".header").removeClass('scroll');
+		    	$(".header").removeClass('scrolled');
 		    }
-		});*/
+		});
 	}	else if ( $(window).width() > 416 & $(window).width() < 1199) {
 		$(".face-page__title_design-button").click(function() {
 			$(".face-page__title_development-button").removeClass('active');
