@@ -1,5 +1,6 @@
 $(document).ready(function() {
 	if ( $(window).width() >= 320 &  $(window).width() < 479) {
+		/*$(".lg-hidden").toggleClass('.lg-visible');*/
 		$(".face-page__title_design-button").click(function() {
 			$(".face-page__title_development-button").removeClass('active');
 			$(".face-page__title_marketing-button").removeClass('active');
@@ -28,6 +29,21 @@ $(document).ready(function() {
 			$('.wrapper').height($(window).height() + 2000);			
 		});
 		$(".header").addClass('scrolled');
+
+		/*!!!*/
+		/*var status = $(this).animate({left: '-100vw'}, 400);*/
+		/*$(".cases-body__block").click(function() {	
+			$(this).css({"background-color": "yellow", "font-size": "200%"});
+			status = false;
+		});*/
+
+		/* Это уебанство */
+		/*$(".cases-body__block-1").click(function() {
+			$(".ss").toggleClass('tap');
+		});
+		$(".cases-body__block-2").click(function() {
+			$(".tc").toggleClass('tap');
+		});*/
 	}	else if ( $(window).width() > 375 & $(window).width() < 415) {
 		$(".face-page__title_design-button").click(function() {
 			$(".face-page__title_development-button").removeClass('active');
@@ -126,6 +142,13 @@ $(document).ready(function() {
 		    $(".cases-body__block-1, .cases-body__block-2, .cases-body__block-3, .tehnocor-img, .tc-img, .tehnocor-img-2, .tc-img-2").removeClass('scrolled');
 			$.scrollify.instantMove(1);
 			$(".cases-body__block-1, .st-img").addClass('scrolled');
+			/*ADD MOUSE MOVE EVENT listener 
+			.addEventListener("mousemove",
+	        function (event) {
+	          if (event.shiftKey === true) {
+	            console.log("x: " + event.clientX);
+	            console.log("y: " + event.clientY);
+	          }*/
 		});
 		$(".face-page__title_development-button").click(function() {
 			$(".face-page__title_development-button").toggleClass('active');
@@ -159,7 +182,7 @@ $(document).ready(function() {
 				},
 				after:function(section) {
 					if (pagePosition === "development") {
-						console.log(section);
+						/*console.log(section);*/
 						if (section === 1) {
 							$(".face-page__title_cases-menu").addClass('fixed');
 			    			$(".header, .cases-body__block-1, .snabservice-img").addClass('scrolled');
@@ -182,33 +205,33 @@ $(document).ready(function() {
 							$(".face-page__title_cases-menu").addClass('fixed');
 			    			$(".header, .cases-body__block-1, .tehnocor-img-2").addClass('scrolled');
 			    			$(".cases-body__block-2, .tcm-img-2").removeClass('scrolled');
-			    			console.log(section);
+			    			/*console.log(section);*/
 						} else if (section === 2) {
 			    			$(".cases-body__block-1, .tehnocor-img-2, .cases-body__block-3, .milyakov-img").removeClass('scrolled');
 			    			$(".cases-body__block-2, .tcm-img-2").addClass('scrolled');
-			    			console.log(section);
+			    			/*console.log(section);*/
 						} else if (section === 3) {
 			    			$(".cases-body__block-2, .tcm-img-2").removeClass('scrolled');
 							$(".cases-body__block-3, .milyakov-img").addClass('scrolled');
-			    			console.log(section);
+			    			/*console.log(section);*/
 						} else if (section === 0) {
 			    			$(".face-page__title_cases-menu").removeClass('fixed');
 			    			$(".header").removeClass('scrolled');
-			    			console.log(section);
+			    			/*console.log(section);*/
 						} else {
 							$(".cases-body__block-1, .tehnocor-img-2").removeClass('scrolled');
 							$(".cases-body__block-3, .milyakov-img").removeClass('scrolled');
-							console.log(section);
+							/*console.log(section);*/
 						}
 					} else if (pagePosition === "marketing") {
 						if (section === 1) {
 							$(".face-page__title_cases-menu").addClass('fixed');
-			    			$(".header, .cases-body__block-1, .snabservice-img").addClass('scrolled');
-			    			console.log(section);
+			    			$(".header, .cases-body__block-1, .santermic-img").addClass('scrolled');
+			    			/*console.log(section);*/
 						} else {
 							$(".face-page__title_cases-menu").removeClass('fixed');
-							$(".header, .cases-body__block-1, .snabservice-img").removeClass('scrolled');
-							console.log(section);
+							$(".header, .cases-body__block-1, .santermic-img").removeClass('scrolled');
+							/*console.log(section);*/
 						}
 					}
 				},

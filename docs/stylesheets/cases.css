@@ -74,6 +74,10 @@ body {
 	width: 100%;
 }
 
+.cases-body img.lg-hidden {
+	display: none;
+}
+
 .cases-body__block {
 	position: relative;
 	height: 550px;
@@ -119,6 +123,12 @@ body {
 	opacity: 0;
 }
 
+/* !!! */
+/* .cases-body__block-textblock-img.small.ss,
+.cases-body__block-textblock-img.small.tc {
+	display: none;
+} */
+
 .development {
 	background-color: #242938;
 	left: 0vw;
@@ -146,7 +156,8 @@ body {
 .st-img.scrolled,
 .tehnocor-img-2.scrolled,
 .tcm-img-2.scrolled,
-.milyakov-img.scrolled   {
+.milyakov-img.scrolled,
+.santermic-img.scrolled    {
 	opacity: 1 !important;
 }
 
@@ -157,6 +168,19 @@ body {
 .scrolled.open img {
 	opacity: 0;
 }
+
+
+/* Это уебанство */
+/* .cases-body__block-1 .cases-body__block-textblock.ss.tap {
+	background: transparent;
+	color: transparent;
+	background-image: url("../files/png/cases/ss.png");
+	background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    height: inherit;
+}
+ */
 
 .footer {
 	position: relative;

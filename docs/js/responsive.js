@@ -1,4 +1,4 @@
-$(document).ready(function(){
+$(function(){
 	var slideMenu = false;
 	var slideForm = false;
 	if ( $(window).width() >= 320 &  $(window).width() < 479) {
@@ -70,7 +70,7 @@ $(document).ready(function(){
 	} else if ( $(window).width() > 1200) {   
 		$(".header__menu-button_icon").click(function(e) {
 			e.preventDefault();
-			if(slideMenu) {
+			if(slideMenu ) {
 				$(this).removeClass('open');
 		        $(".face-page__title, .object__background-image, .footer__contacts, .face-page__title p:nth-child(even), .cases-body__block-textblock, .cases-body__block-textblock-img, .footer, .footer__slogan h1, .team__text-block, .team__photo-block-element_img, .team__photo-block, .header, .scrolled").removeClass('open');
 		        $(".face-page__title_cases-menu, .face-page__title_cases-menu.fixed").removeClass('open');
@@ -78,7 +78,6 @@ $(document).ready(function(){
 		        $(".logo, .fb, .vk").removeClass('coverup');
 		        $(".object__menu-slide-box").animate({left: '161vw'}, 600);
 		        $(".object__contact-form").animate({left: '-61vw'}, 600);
-		        $.scrollify.enable()
 		        slideForm = false;
 		        slideMenu = false;
 		    } else {
@@ -88,7 +87,6 @@ $(document).ready(function(){
 		        $(".face-page__title_cases-menu, .face-page__title_cases-menu.fixed").addClass('open');
 		        $(".logo, .fb, .vk").toggleClass('coverup');
 		        $(".logo-dark, .fb-dark, .vk-dark").removeClass('coverup');
-		        $.scrollify.disable()
 		        slideMenu = true;
 		    }
 		});

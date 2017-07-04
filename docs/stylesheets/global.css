@@ -153,7 +153,6 @@ body {
 .object__contact-form_box textarea  {
 	display: block;
 	resize: none;
-	/* background-color: #191A26; */
 	background-color: #1F212F;
 	border: none;
 	height: 50px;

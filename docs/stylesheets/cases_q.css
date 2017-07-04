@@ -74,6 +74,7 @@ less than 480
 	}
 
 	.cases-body__block {
+		height: 500px;
 		padding: 0px;
 		margin: 0px;
 		margin-bottom: 5px;
@@ -93,16 +94,8 @@ less than 480
 	}
 
 	.cases-body__block-textblock-img {
-		/* position: static;
-		padding: 0px;
-		margin: 0px;
-		height: 200px;
-		cursor: pointer;
-		background-size: cover;
-	    background-repeat: no-repeat;
-	    background-position: 50% 50%;
-	    z-index: 10; */
-	}
+		/* max-height: 10px;
+ */	}
 
 	.development,
 	.design,
