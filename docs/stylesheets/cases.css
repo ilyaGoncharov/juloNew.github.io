@@ -80,7 +80,7 @@ body {
 
 .cases-body__block {
 	position: relative;
-	height: 550px;
+	height: 500px;
 	margin: 0px;
 	padding: 0px;
 }
@@ -113,7 +113,7 @@ body {
 .cases-body__block-textblock-img {
 	border: 0px solid #E94E53;
 	background-size: cover;
-	height:  550px;
+	height:  500px;
 	max-height:  550px;
 	padding: 0px;
 	padding-right: 15px;
