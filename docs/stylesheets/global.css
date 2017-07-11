@@ -59,7 +59,7 @@ body {
 	-webkit-transition: .5s ease-in-out;
 	-moz-transition: .5s ease-in-out;
 	-o-transition: .5s ease-in-out;
-	transition: .5s ease-in-out;
+	transition: .5s ease-in-out; 
 }
 
 .object__background-image.open {
@@ -159,12 +159,34 @@ body {
 	width: 100%;
 	margin-bottom: 10px;
 	padding: 10px;
-	padding-left: 15px;
+	padding-left: 50px;
 }
 
 .object__contact-form_box input:focus,
 .object__contact-form_box textarea:focus {
 	outline: none;
+	background-color: white;
+	color: #1F212F;
+}
+
+.object__contact-form_box input[type="text"]:valid,
+.object__contact-form_box input[type="email"]:valid,
+.object__contact-form_box textarea:valid {
+	color: white;
+	background: url("../files/svg/formVal.svg");
+	background-size: 20px;
+	background-repeat: no-repeat;
+	background-position: 10px 17px;
+}
+
+.object__contact-form_box input[type="text"]:invalid:focus,
+.object__contact-form_box input[type="email"]:invalid:focus,
+.object__contact-form_box textarea:invalid:focus{
+	color: white;
+	background: url("../files/svg/formNval.svg");
+	background-size: 20px;
+	background-repeat: no-repeat;
+	background-position: 10px 17px;
 }
 
 .object__contact-form_box textarea {
@@ -173,7 +195,17 @@ body {
 
 .object__contact-form_box-button {
 	background-color: #E94E53 !important;
+	padding-left: 0px;
 }
+
+.object__contact-form_box input[type="submit"] {
+	padding-left: 0px;
+}
+
+.object__contact-form_box input[type="submit"]:focus {
+	color: white;
+}
+
 
 .object__contact-form_box-hidden {
 	display: none !important;
