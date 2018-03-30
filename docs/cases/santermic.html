@@ -21,11 +21,11 @@
 	<meta name="og:locale" content="ru_RU">
 	<meta name="og:type" content="website">
 		<!-- icons -->
-	<link rel="icon" type="image/png" href="files/png/logo.png" sizes="16x16"/>
-    <link rel="icon" type="image/png" href="files/png/logo.png" sizes="32x32"/>
+	<link rel="icon" type="image/png" href="/files/png/logo.png" sizes="16x16"/>
+    <link rel="icon" type="image/png" href="/files/png/logo.png" sizes="32x32"/>
 		<!-- styles -->
-	<link rel="stylesheet" type="text/css" href="stylesheets/bootstrap.min.css" media="screen">
-	<link rel="stylesheet" type="text/css" href="stylesheets/global.css" media="screen">
+	<link rel="stylesheet" type="text/css" href="/stylesheets/bootstrap.min.css" media="screen">
+	<link rel="stylesheet" type="text/css" href="/stylesheets/global.css" media="screen">
 	<!--[if lt IE 7]>
         <p class="browsehappy">Вы используете <strong> очень устаревшую </strong> версию браузера. Пожалуйста <a href="http://browsehappy.com/"> обновите его</a>, чтобы улучшить свою производительность в сети</p>
     <![endif]-->
@@ -37,28 +37,27 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 </head>
-<body>
-	<div class="object__background-image"></div>
+<body class="case-page">
+	<div class="object__background-image case-page"></div>
 	<div class="object__menu-slide-box">
 		<ul>
-            <a href="cases.html">
+            <a href="../cases.html">
             	<li class="object__menu-slide-box_menu-element">Портфолио</li>
             </a>
-            <a href="services.html"><li class="object__menu-slide-box_menu-element">Услуги</li></a>
-            <a href="team.html"><li class="object__menu-slide-box_menu-element">Команда</li></a>
+            <a href="../services.html"><li class="object__menu-slide-box_menu-element">Услуги</li></a>
+            <a href="../team.html"><li class="object__menu-slide-box_menu-element">Команда</li></a>
            	<a href="#" class="object__contact-form_activator">
            		<li class="object__menu-slide-box_menu-element">Связь</li>
             </a>
         </ul>
 	</div>
 	<div class="object__contact-form">
-		<img class="object__contact-form_logo coverup" src="files/png/logo.png" alt="">
+		<img class="object__contact-form_logo coverup" src="../files/png/logo.png" alt="">
 		<form id="form" class="object__contact-form_box" action="https://formspree.io/info@startjulo.ru"
       method="POST">
 			<input type="text" id="name" name="name" placeholder="Имя" minlength="3" required/>
 			<input type="text" id="company" name="company" placeholder="Компания" minlength="3" required/>
-			<textarea  id="message"  maxlength="220" name="message" placeholder="Сообщение" minlength="30" required>
-			</textarea>
+			<textarea id="message" name="message" placeholder="Сообщение" minlength="1" maxlength="300" required></textarea>
 			<input type="email" id="email" name="email" placeholder="Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" required/>	
 			<input type="submit" id="submitForm" class="object__contact-form_box-button" value="Отправить"/>
 		</form>
@@ -68,12 +67,12 @@
 
 		<div class="row header">
 			<div class="header__logo col-xs-4 col-md-2">
-				<a href="index.html">
-					<img class="logo" src="files/png/logo.png" alt="">
+				<a href="/index.html">
+					<img class="logo" src="/files/png/logo.png" alt="">
 				</a>
-				<img class="logo-dark coverup" src="files/png/logo-dark.png" alt="">
 			</div>
-			<div class="col-xs-offset-4 col-xs-4 col-md-offset-9 col-md-1 header__menu-button">
+			<div class="col-xs-2 col-md-offset-3 col-md-2 header__page-head"> Julo | Cases </div>
+			<div class="col-xs-offset-2 col-xs-4 col-md-offset-3 col-md-2 header__menu-button">
 				<div class="header__menu-button_icon">
 					<span></span>
 					<span></span>
@@ -84,7 +83,7 @@
 		</div>
 
 		<div class="row face-page__title not-main">
-			<div class="col-xs-12 col-md-8">
+			<div class="col-xs-12 col-md-6">
 				<h1 class="not-main cases"> 
 					Сантермик 
 				</h1>
@@ -95,53 +94,129 @@
 			</div>
 		</div>
 
-		<div class="row brief">
-			<div class="col-lg-offset-1 col-xs-12 col-md-5 col-lg-4">
-				<h3 class="cases-gallery__element_inner-headline cases-brief_inner-headline">
+		<div class="row cases-page__brief">
+			<div class="col-xs-12 col-md-offset-8 col-md-4">
+				<h3 class="">
 					Задача
 				</h3>
-				<p class="cases-gallery__element_inner-text">
+				<hr class="title28">
+				<p class="">
 					Увеличить объем продаж магазина за счет реализации торговой онлайн–площадки и ее продвижения.
-				</p>
-			</div>
-			<div class="col-lg-offset-2 col-md-offset-1 col-xs-12 col-md-5 col-lg-4">
-				<h3 class="cases-gallery__element_inner-headline cases-brief_inner-headline">
-					Результат
-				</h3>
-				<p class="cases-gallery__element_inner-text">
-					Подъем общего оборота магазина в 2,2 раза.				
 				</p>
 			</div>
 		</div>
 
-		<div class="row process">
-			<div class="col-xs-12">
-				<div class="row">
-					<div class="col-xs-12 col-lg-6">
-						<div class="row">
-							<h3>
-								Процесс
-							</h3>
-						</div>
-						<div class="row">
-							<h4>
-								Этапы
-							</h4>
-							<ol>
-								<li>Разработка площадки</li>
-								<li>Оптимизация</li>
-								<li>Продвижение и Реклама</li>
-							</ol>
-						</div>
-					</div>
-					<div class="col-xs-12 col-lg-6">
-						<div class="row">
-					
-						</div>
-					</div>
+		<div class="container-fluid cases-page__main">
+			<div class="row">
+				<div class="col-xs-12">
+					<h2 class="cases-gallery__element_inner-headline cases-page__brief_inner-headline">
+						Наше Решение
+					</h2>
 				</div>
 			</div>
-		</div>	
+
+			<div class="row cases-page__main__row-headline">
+				<div class="col-xs-12 col-md-6">
+					<h3>
+						Интернет-магазин на связке Wordpress + <br> WooCommerce
+					</h3>
+					<hr class="title28">
+				</div>
+				<div class="col-xs-12 col-md-6">
+					<p class="">
+						Анализ конкурентов на ключевые фразы и видимость в поиске по релевантным запросам.
+						<br>
+						<br>
+						Настройка динамических фильтров по каталогу для ускорения работы сайта.
+						<br>
+						<br>
+						Добавление технических страниц: Оплата, Доставка, Гарантии, Контакты, Акции, Обмен/ возврат, для поднятия позиций в поисковых ситемах.
+					</p>
+				</div>
+			</div>
+			<div class="row cases-page__main__graph">
+				<p>Релевантные запросы</p>
+				<img src="../files/png/cases/case-pages/relevantnie.png" alt="">
+			</div>
+
+			<div class="row cases-page__main__row-headline">
+				<div class="col-xs-12 col-md-6">
+					<h3>
+						SEO Оптимизация
+					</h3>
+					<hr class="title28">
+				</div>
+				<div class="col-xs-12 col-md-6">
+					<p class="">
+						Составление семантического ядра на основе маржинальных категорий товаров.	
+						<br>
+						<br>
+						Кластеризация семантики по релевантным страницам.
+						<br>
+						<br>
+						Оптимизация мета–информации на сайте.
+						<br>
+						<br>
+						Оптимизация заголовков страниц и текстов описания товаров.
+					</p>
+				</div>
+			</div>
+			<div class="row cases-page__main__graph">
+				<p>Переходы</p>
+				<img src="../files/png/cases/case-pages/perehodi.png" alt="">
+			</div>
+
+			<div class="row cases-page__main__row-headline">
+				<div class="col-xs-12 col-md-6">
+					<h3>
+						Продвижение и реклама
+					</h3>
+					<hr class="title28">
+				</div>
+				<div class="col-xs-12 col-md-6">
+					<p class="">
+						Запуск внешней оптимизации для постепенного наращивания ссылочной массы.	
+						<br>
+						<br>
+						Регистрация торговой площадки в тематических каталогах, на форумах и сервисах.
+						<br>
+						<br>
+						Создание таргетированной рекламной кампании в Яндекс.Директ. Сегментирование аудитории по целевым запросам/интересам/сайтам конкурентов.
+						<br>
+						<br>
+						Создание рекламной кампании в системе Яндекс.Маркет. Запуск дополнительного канала привлечения трафика и продаж.
+						<br>
+						<br>
+						Регистрация сайта в экзотических поисковых системах.
+						<br>
+						<br>
+						Отбор площадок–агрегаторов для размещения PR статей магазина. Заказ статей через систему Sape для повышения индекса цитирования.
+					</p>
+				</div>
+			</div>
+			<div class="row cases-page__main__graph">
+				<p>История показов по прямому запросу</p>
+				<img src="../files/png/cases/case-pages/istor.png" alt="">
+			</div>
+		</div>
+
+		<div class="row cases-page__brief brief-footer ">
+			<div class="col-xs-12 col-md-offset-8 col-md-4">
+				<h3 class="">
+					Результат
+				</h3>
+				<hr class="title28">
+				<p class="">
+					За год работы, мы реализовали динамику роста показов веб-ресурса с 0 до 15 тыс. (декабрь 2016).
+					<br>
+					<br>
+					Поиск по названию магазина "Сантермик" поднялся до ~150 запросов в месяц. Магазин вышел на стабильный показатель ~100 ежедневных лидов.
+					<br>
+					<br>
+					Общий оборот магазина вырос в 2,2 раза.
+				</p>
+			</div>
+		</div>
 
 		<div class="row footer not-main__footer">
 			<div class="not-main__footer__slogan">
@@ -152,16 +227,16 @@
 
 			<div class="col-xs-12 col-md-5 not-main__footer__link-modul">
 				<a class="not-main__footer__link-modul-icon" href="https://www.facebook.com/Julo-Digital-Agency-852399244907675">
-					<img class="fb" src="files/png/FB.png" alt="">
-					<img class="fb-dark coverup" src="files/png/FB-dark.png" alt="">
+					<img class="fb" src="../files/png/FB.png" alt="">
+					<!-- <img class="fb-dark coverup" src="../files/png/FB-dark.png" alt=""> -->
 				</a>
 				<a class="not-main__footer__link-modul-icon" href="https://www.instagram.com/julo.digital/">
-					<img class="ins" src="files/png/INS.png" alt=""> 
-					<img class="ins-dark coverup" src="files/png/INS-dark.png" alt="">
+					<img class="ins" src="../files/png/INS.png" alt=""> 
+					<!-- <img class="ins-dark coverup" src="../files/png/INS-dark.png" alt=""> -->
 				</a>
 				<a class="not-main__footer__link-modul-icon" href="https://vk.com/startjulo">
-					<img class="vk" src="files/png/VK.png" alt=""> 
-					<img class="vk-dark coverup" src="files/png/VK-dark.png" alt="">
+					<img class="vk" src="../files/png/VK.png" alt=""> 
+					<!-- <img class="vk-dark coverup" src="../files/png/VK-dark.png" alt=""> -->
 				</a>
 			</div>
 
@@ -211,10 +286,10 @@
 		ga('send', 'pageview');
 	</script>
 	<script
-		  src="https://code.jquery.com/jquery-2.2.4.js"
-		  integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="
-		  crossorigin="anonymous">
+		src="https://code.jquery.com/jquery-2.2.4.min.js"
+  		integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+  		crossorigin="anonymous">
     </script>
-	<script type="text/javascript" src="js/main.js"></script>
+	<script type="text/javascript" src="../js/main[v2.0].js"></script>
 </body>
 </html>
